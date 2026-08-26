@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: e138558dc01e049dcbbf9febb5910c1e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5043442614536860435
+    second: Super_Wheel_BTN_1_0
+  - first:
+      213: -2040523074071539638
+    second: Super_Wheel_BTN_1_1
+  - first:
+      213: 37742324455422168
+    second: Super_Wheel_BTN_1_2
+  - first:
+      213: -8184779000209006198
+    second: Super_Wheel_BTN_1_3
+  - first:
+      213: 2779308208173315551
+    second: Super_Wheel_BTN_1_4
+  - first:
+      213: 3713609049954501608
+    second: Super_Wheel_BTN_1_5
+  - first:
+      213: -312354867092027094
+    second: Super_Wheel_BTN_1_6
+  - first:
+      213: 6422139759784366229
+    second: Super_Wheel_BTN_1_7
+  - first:
+      213: -8506750863914926526
+    second: Super_Wheel_BTN_1_8
+  - first:
+      213: 8209637191425590528
+    second: Super_Wheel_BTN_1_9
+  - first:
+      213: 2572494604993077217
+    second: Super_Wheel_BTN_1_10
+  - first:
+      213: 9098058308653613724
+    second: Super_Wheel_BTN_1_11
+  - first:
+      213: -4482853407110166176
+    second: Super_Wheel_BTN_1_12
+  - first:
+      213: -2660269224068393402
+    second: Super_Wheel_BTN_1_13
+  - first:
+      213: 5804121569100219479
+    second: Super_Wheel_BTN_1_14
+  - first:
+      213: -6515740507312141136
+    second: Super_Wheel_BTN_1_15
+  - first:
+      213: -4164365193036428526
+    second: Super_Wheel_BTN_1_16
+  - first:
+      213: 4401425460058898382
+    second: Super_Wheel_BTN_1_17
+  - first:
+      213: 4688777890215116952
+    second: Super_Wheel_BTN_1_18
+  - first:
+      213: -1972824024181686517
+    second: Super_Wheel_BTN_1_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Super_Wheel_BTN_1_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 385
+        width: 91
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 313798c2658edf540800000000000000
+      internalID: 5043442614536860435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Wheel_BTN_1_1
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 385
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a405af5431b9ea3e0800000000000000
+      internalID: -2040523074071539638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Wheel_BTN_1_2
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 385
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d8b922b176168000800000000000000
+      internalID: 37742324455422168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Wheel_BTN_1_3
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 385
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8127773dd2d96e80800000000000000
+      internalID: -8184779000209006198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Wheel_BTN_1_4
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 385
+        width: 91
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd57f750716129620800000000000000
+      internalID: 2779308208173315551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Wheel_BTN_1_5
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 257
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e3c63161c3698330800000000000000
+      internalID: 3713609049954501608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Wheel_BTN_1_6
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 257
+        width: 91
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a298d1f37ea4aabf0800000000000000
+      internalID: -312354867092027094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Wheel_BTN_1_7
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 257
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5901cd7e516002950800000000000000
+      internalID: 6422139759784366229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Wheel_BTN_1_8
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 257
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24e7a93f823f1f980800000000000000
+      internalID: -8506750863914926526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Wheel_BTN_1_9
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 257
+        width: 91
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00502c1778d7ee170800000000000000
+      internalID: 8209637191425590528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Wheel_BTN_1_10
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 129
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ef983da63653b320800000000000000
+      internalID: 2572494604993077217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Wheel_BTN_1_11
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 129
+        width: 91
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c92071104dbc24e70800000000000000
+      internalID: 9098058308653613724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Wheel_BTN_1_12
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 129
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0698c01d394b9c1c0800000000000000
+      internalID: -4482853407110166176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Wheel_BTN_1_13
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 129
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 646df744c33d41bd0800000000000000
+      internalID: -2660269224068393402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Wheel_BTN_1_14
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 129
+        width: 91
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 754c667c0d16c8050800000000000000
+      internalID: 5804121569100219479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Wheel_BTN_1_15
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 7
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bc490dc7807395a0800000000000000
+      internalID: -6515740507312141136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Wheel_BTN_1_16
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 7
+        width: 91
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21b0012bbe33536c0800000000000000
+      internalID: -4164365193036428526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Wheel_BTN_1_17
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 7
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecfbb2cd221051d30800000000000000
+      internalID: 4401425460058898382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Wheel_BTN_1_18
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 7
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8904af026a2e11140800000000000000
+      internalID: 4688777890215116952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super_Wheel_BTN_1_19
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 7
+        width: 91
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0f3b42a00f1f94e0800000000000000
+      internalID: -1972824024181686517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Super_Wheel_BTN_1_0: 5043442614536860435
+      Super_Wheel_BTN_1_1: -2040523074071539638
+      Super_Wheel_BTN_1_10: 2572494604993077217
+      Super_Wheel_BTN_1_11: 9098058308653613724
+      Super_Wheel_BTN_1_12: -4482853407110166176
+      Super_Wheel_BTN_1_13: -2660269224068393402
+      Super_Wheel_BTN_1_14: 5804121569100219479
+      Super_Wheel_BTN_1_15: -6515740507312141136
+      Super_Wheel_BTN_1_16: -4164365193036428526
+      Super_Wheel_BTN_1_17: 4401425460058898382
+      Super_Wheel_BTN_1_18: 4688777890215116952
+      Super_Wheel_BTN_1_19: -1972824024181686517
+      Super_Wheel_BTN_1_2: 37742324455422168
+      Super_Wheel_BTN_1_3: -8184779000209006198
+      Super_Wheel_BTN_1_4: 2779308208173315551
+      Super_Wheel_BTN_1_5: 3713609049954501608
+      Super_Wheel_BTN_1_6: -312354867092027094
+      Super_Wheel_BTN_1_7: 6422139759784366229
+      Super_Wheel_BTN_1_8: -8506750863914926526
+      Super_Wheel_BTN_1_9: 8209637191425590528
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
