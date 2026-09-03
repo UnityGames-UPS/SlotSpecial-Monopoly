@@ -113,16 +113,14 @@ public class SymbolInfoCard : MonoBehaviour
     }
 
     // Symbol IDs whose card should show only a description, with no name and no multipliers.
-    private const int WildSymbolId = 8;
-    private const int ScatterSymbolId = 10;
-    private const int SuperWheelBonusSymbolId = 11;
+    private const int WildSymbolId = 9;
+    private const int DoubleWildSymbolId = 10;
 
     private static readonly System.Collections.Generic.Dictionary<int, string> DescriptionOnlySymbols =
         new System.Collections.Generic.Dictionary<int, string>
         {
-            { WildSymbolId, "Replaces any icon other than Scatter icon, HEAT'EM UP icon and Super Wheel icon." },
-            { ScatterSymbolId, "Three Scatter at any location, will be rewarded for 5 free times." },
-            { SuperWheelBonusSymbolId, "This icon only appears on the 5th reel and activates the SUPER WHEEL bonus game." }
+            { WildSymbolId, "Subtstitutes For Any Other Symbol Except For Bonus Symbols And Scatter Symbols." },
+            {DoubleWildSymbolId, "Randomly acts as a multiplier upto 2x." }
         };
 
     private void SetupCardContent(int symbolId, SocketIOManager socketManager, int betCounter)
@@ -144,7 +142,7 @@ public class SymbolInfoCard : MonoBehaviour
         // Description-only symbols (WILD, Scatter, Super Wheel Bonus): no name, no multipliers.
         if (DescriptionOnlySymbols.TryGetValue(symbolId, out string descriptionOverride))
         {
-            string description = !string.IsNullOrEmpty(symbolInfo.description) ? symbolInfo.description : descriptionOverride;
+            string description = descriptionOverride;
             SetDescriptionState(description);
             return;
         }
@@ -156,7 +154,7 @@ public class SymbolInfoCard : MonoBehaviour
             && symbolInfo.multiplier != null && symbolInfo.multiplier.Count > 0)
         {
             double bet = socketManager.initialData.bets[betCounter];
-            int matchCount = symbolInfo.multiplier.Count;
+            int matchCount = 5;
             for (int m = symbolInfo.multiplier.Count - 1; m >= 0; m--)
             {
                 double win = symbolInfo.multiplier[m];

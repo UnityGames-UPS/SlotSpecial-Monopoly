@@ -20,7 +20,7 @@ public class SocketIOManager : MonoBehaviour
   protected string NameSpace = "playground";
   protected string SocketURI = null;
   protected string TestSocketURI = "https://devrealtime.dingdinghouse.com/";
-  protected string gameID = "SL-SW";
+  protected string gameID = "SL-MP";
   // protected string gameID = "";
   private SocketManager manager;
   private const int maxReconnectionAttempts = 6;

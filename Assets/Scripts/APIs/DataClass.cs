@@ -33,13 +33,12 @@ public class Root
     public Player player { get; set; }
     public JackpotData jackpotData { get; set; }
     public Values values { get; set; }
+    public Features features { get; set; }
 
     // result Data Classes
     public bool success { get; set; }
     public List<List<string>> matrix { get; set; }
     public Payload payload { get; set; }
-    public Features features { get; set; }
-    public string gameId { get; set; }
 }
 
 [Serializable]
@@ -57,22 +56,6 @@ public class GameData
     public List<List<int>> lines { get; set; }
     public List<double> bets { get; set; }
     public int totalLines { get; set; }
-    public SuperWheelConfig superWheel { get; set; }
-}
-
-[Serializable]
-public class SuperWheelConfig
-{
-    public List<WheelSegment> inner { get; set; }
-    public List<WheelSegment> middle { get; set; }
-    public List<WheelSegment> outer { get; set; }
-}
-
-[Serializable]
-public class WheelSegment
-{
-    public int multiplier { get; set; }
-    public bool isPowerUp { get; set; }
 }
 
 [Serializable]
@@ -114,21 +97,64 @@ public class Symbol
     public string description { get; set; }
 }
 
+[Serializable]
+public class Features
+{
+    public FreeGamesConfig freeGames { get; set; }
+    public GoldenMonopolyConfig goldenMonopoly { get; set; }
+    public CheckersBonusConfig checkersBonus { get; set; }
+}
+
+[Serializable]
+public class FreeGamesConfig
+{
+    public List<int> reels { get; set; }
+    public bool enabled { get; set; }
+    public int spinsCount { get; set; }
+    public double triggerProbability { get; set; }
+}
+
+[Serializable]
+public class GoldenMonopolyConfig
+{
+    public bool enabled { get; set; }
+    public int multiplier { get; set; }
+}
+
+[Serializable]
+public class CheckersBonusConfig
+{
+    public bool enabled { get; set; }
+    public int rollsCount { get; set; }
+    public List<int> boardValues { get; set; }
+    public Dictionary<string, SpecialCell> specialCells { get; set; }
+    public double triggerProbability { get; set; }
+}
+
+[Serializable]
+public class SpecialCell
+{
+    public int value { get; set; }
+    public string action { get; set; }
+}
+
 // Result Data Classes
 
 [Serializable]
 public class Payload
 {
+    public double betAmountPerLine { get; set; }
+    public double totalBetAmount { get; set; }
     public double winAmount { get; set; }
     public List<LineWin> lineWins { get; set; }
-    public double heatEmUpWin { get; set; }
-    public int activeLines { get; set; }
-    public int freeSpinsRemaining { get; set; }
+    public double grandTotalWin { get; set; }
+    public double netReturnRatio { get; set; }
+    public bool isFreeSpinTriggered { get; set; }
     public bool isFreeSpinActive { get; set; }
-    public bool isFreeSpinsTriggered { get; set; }
-    public bool isWheelTriggered { get; set; }
-    public SuperWheelBonus superWheelBonus { get; set; }
-    public int freeSpinsAdded { get; set; }
+    public List<MagicDiceMultiplier> magicDiceMultipliers { get; set; }
+    public FreeGames freeGames { get; set; }
+    public bool goldenMultiplierApplied { get; set; }
+
 }
 
 [Serializable]
@@ -140,6 +166,12 @@ public class LineWin
     public string symbolName { get; set; }
     public double payout { get; set; }
     public int matchCount { get; set; }
+    public double basePayout { get; set; }
+    public double winInCredits { get; set; }
+    public double winInCash { get; set; }
+    public int matchLength { get; set; }
+    public double lineMultiplier { get; set; }
+    public bool goldenMultiplierApplied { get; set; }
 }
 
 [Serializable]
@@ -149,25 +181,21 @@ public class Position
 }
 
 [Serializable]
-public class Features
+public class FreeGames
 {
+    public bool triggered { get; set; }
+    public bool active { get; set; }
+    public int spinsRemaining { get; set; }
+    public int totalSpins { get; set; }
+    public double totalWinCash { get; set; }
+    public List<int> lockedWildRows { get; set; }
 }
 
 [Serializable]
-public class Spin
+public class MagicDiceMultiplier
 {
-    public string ring { get; set; }
-    public int stopIndex { get; set; }
+    public int row { get; set; }
+    public int col { get; set; }
     public int multiplier { get; set; }
-    public bool isPowerUp { get; set; }
-    public double awardValue { get; set; }
-}
-
-[Serializable]
-public class SuperWheelBonus
-{
-    public bool isTriggered { get; set; }
-    public List<Spin> spins { get; set; }
-    public double totalAwardValue { get; set; }
 }
 
