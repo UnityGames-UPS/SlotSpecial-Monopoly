@@ -1118,6 +1118,11 @@ public class UIManager : MonoBehaviour
         //if (gameLogoObject) gameLogoObject.SetActive(false);
         //UpdateFreeSpinCount(totalSpins);
         UpdateWinDisplay(0);
+
+        // Kick off the first free spin — pressing Start is what actually begins the bonus
+        // round, same as OnSpinButtonPressed does for a normal manual spin.
+        slotManager.StartSlots();
+        ShowReelSpinningButton(true);
     }
 
     // Shown, disabled, in the gap between every chained free spin (manual or autoplay) —

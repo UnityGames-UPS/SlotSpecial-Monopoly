@@ -45,6 +45,23 @@ public class SlotManager : MonoBehaviour
     [SerializeField] private List<Sprite> SixXMultiplierAnimation;
     [SerializeField] private List<Sprite> EightXMultiplierAnimation;
 
+    [Header("Free Spin Scatter Ticket")]
+    [SerializeField] private RectTransform scatterTicketImage;
+    [SerializeField] private float scatterTicketFlyDuration = 1f;
+    [SerializeField] private float scatterTicketWaitDuration = 2f;
+    [SerializeField] private float scatterTicketScaleUpDuration = 0.7f;
+    [SerializeField] private float scatterTicketScaleUpTarget = 2f;
+    [SerializeField] private float scatterTicketScaleDownDuration = 0.7f;
+    [SerializeField] private float mainSlotFreeSpinOffsetX = 190f;
+
+    [Header("Free Spin Dice Sequence")]
+    [SerializeField] private float diceFadeScaleDuration = 0.4f;
+    [SerializeField] private float diceRollDuration = 2f;
+    [SerializeField] private float laserTravelDuration = 0.5f;
+
+    private Vector3 _scatterTicketInitialLocalPos;
+    private Quaternion _scatterTicketInitialLocalRot;
+
     [Header("Slots Transforms")]
     [SerializeField] private Transform[] _slotTransforms;
     [SerializeField] private RectTransform mainSlotTransform;
@@ -106,6 +123,12 @@ public class SlotManager : MonoBehaviour
         shuffleSlotImages();
 
         SetupSymbolClickHandlers();
+
+        if (scatterTicketImage != null)
+        {
+            _scatterTicketInitialLocalPos = scatterTicketImage.localPosition;
+            _scatterTicketInitialLocalRot = scatterTicketImage.localRotation;
+        }
     }
 
     private void SetupSymbolClickHandlers()
@@ -313,19 +336,29 @@ public class SlotManager : MonoBehaviour
                     _resultImages[i].slotImages[j].sprite = _symbolSprites[symbolId];
                     SetSymbolSize(_resultImages[i].slotImages[j], symbolId);
 
-                    if(i == 3 && symbolId == 12)
+                    if (i == 3 && symbolId == 12)
                     {
                         _resultImages[i].slotImages[j].sprite = rightScatterSymbol;
                     }
-                    else if(i == 4 && symbolId == 12)
+                    else if (i == 4 && symbolId == 12)
                     {
                         _resultImages[i].slotImages[j].sprite = leftScatterSymbol;
                     }
 
-                    if(symbolId == 13)
+                    if (symbolId == 13)
                     {
-                        int randomSprite = UnityEngine.Random.Range(1, 9);
-                        _resultImages[i].slotImages[j].sprite = _symbolSprites[randomSprite];
+                        // if (isInFreeSpins)
+                        // {
+                        //     var md = socketManager.resultData.payload.magicDiceMultipliers
+                        //         ?.Find(m => m.row == j && m.col == i);
+                        //     if (md != null)
+                        //         _resultImages[i].slotImages[j].sprite = GetMultiplierSprite(md.multiplier);
+                        // }
+                        // else
+                        {
+                            int randomSprite = UnityEngine.Random.Range(1, 9);
+                            _resultImages[i].slotImages[j].sprite = _symbolSprites[randomSprite];
+                        }
                     }
                 }
             }
@@ -399,21 +432,18 @@ public class SlotManager : MonoBehaviour
             uiManager.UpdateFreeSpinTotalWin(_freeSpinsRoundWinTotal);
         }
 
-        if(isInFreeSpins)
+        if (isInFreeSpins)
         {
-            int spinCount = socketManager.resultData.payload.freeGames.totalSpins - socketManager.resultData.payload.freeGames.spinsRemaining;
-            foreach (var dices in DiceImages[spinCount-1].slotImages)
-            {
-                
-            }
+            yield return PlayMagicDiceSequence();
         }
 
-        if(socketManager.resultData.payload.isFreeSpinTriggered)
+        if (socketManager.resultData.payload.isFreeSpinTriggered)
         {
-            // Scatter Symbol Animation Here
-
             freeSpinsRemaining = socketManager.resultData.payload.freeGames.totalSpins;
             _freeSpinsRoundWinTotal = 0;
+
+            yield return PlayScatterTicketSequence(mainSlotFreeSpinOffsetX);
+
             uiManager.OnFreeSpinsTriggered(freeSpinsRemaining);
         }
 
@@ -450,11 +480,21 @@ public class SlotManager : MonoBehaviour
             }
             else
             {
+                var freeSpinPopupType = uiManager.GetWinPopupType(socketManager.resultData.payload.freeGames.totalWinCash)
+                    ?? UIManager.WinPopupType.BigWin;
+                bool freeSpinPopupClosed = false;
+                uiManager.ShowUniversalWinPopup(freeSpinPopupType, socketManager.resultData.payload.freeGames.totalWinCash, _isAutoSpin, () => freeSpinPopupClosed = true);
+                yield return new WaitUntil(() => freeSpinPopupClosed);
+
+                yield return PlayScatterTicketSequence(0f);
+
                 uiManager.OnFreeSpinsEnded(_freeSpinsRoundWinTotal);
             }
         }
-        else
+        else if (!socketManager.resultData.payload.isFreeSpinTriggered)
         {
+            // Free spins were just triggered above (Start button now showing) — leave the
+            // spin/stop buttons alone until StartFreeSpinsSequence kicks the bonus round off.
             uiManager.SetSpinButtonReady();
         }
     }
@@ -520,7 +560,18 @@ public class SlotManager : MonoBehaviour
 
                 int symbolID = int.Parse(socketManager.resultData.matrix[col][row]);
 
-                winAnimationImages[row].slotImages[col].sprite = _symbolSprites[symbolID];
+                if (symbolID == 13)
+                {
+                    var md = socketManager.resultData.payload.magicDiceMultipliers?.Find(m => m.row == row && m.col == col);
+                    var anim = winAnimationImages[row].slotImages[col].GetComponent<ImageAnimation>();
+                    anim.textureArray = GetMultiplierAnimation(md?.multiplier ?? 1);
+                    anim.doLoopAnimation = true;
+                    anim.StartAnimation();
+                }
+                else
+                {
+                    winAnimationImages[row].slotImages[col].sprite = _symbolSprites[symbolID];
+                }
                 winAnimationImages[row].slotImages[col].gameObject.SetActive(true);
                 _resultImages[row].slotImages[col].gameObject.SetActive(false);
                 SetAnimationSymbolSize(winAnimationImages[row].slotImages[col], symbolID);
@@ -590,7 +641,18 @@ public class SlotManager : MonoBehaviour
                         WinFrames[row].slotImages[col].GetComponent<ImageAnimation>().StartAnimation();
                     }
 
-                    winAnimationImages[row].slotImages[col].sprite = _symbolSprites[symbolID];
+                    if (symbolID == 13)
+                    {
+                        var md = socketManager.resultData.payload.magicDiceMultipliers?.Find(m => m.row == row && m.col == col);
+                        var anim = winAnimationImages[row].slotImages[col].GetComponent<ImageAnimation>();
+                        anim.textureArray = GetMultiplierAnimation(md?.multiplier ?? 1);
+                        anim.doLoopAnimation = true;
+                        anim.StartAnimation();
+                    }
+                    else
+                    {
+                        winAnimationImages[row].slotImages[col].sprite = _symbolSprites[symbolID];
+                    }
                     SetAnimationSymbolSize(winAnimationImages[row].slotImages[col], symbolID);
                     winAnimationImages[row].slotImages[col].gameObject.SetActive(true);
                     _resultImages[row].slotImages[col].gameObject.SetActive(false);
@@ -700,6 +762,149 @@ public class SlotManager : MonoBehaviour
             for (int i = 0; i < _alltweens.Count; i++)
                 _alltweens[i].Kill();
             _alltweens.Clear();
+        }
+    }
+
+    #endregion
+    #region Free Spins
+
+    // Shared by both the trigger (mainSlotTargetX = mainSlotFreeSpinOffsetX) and the
+    // end-of-round (mainSlotTargetX = 0f) transitions — same visual sequence both times,
+    // only the direction the main slot transform slides differs.
+    private IEnumerator PlayScatterTicketSequence(float mainSlotTargetX)
+    {
+        if (scatterTicketImage == null) yield break;
+
+        scatterTicketImage.gameObject.SetActive(true);
+        scatterTicketImage.localPosition = _scatterTicketInitialLocalPos;
+        scatterTicketImage.localRotation = _scatterTicketInitialLocalRot;
+        scatterTicketImage.localScale = Vector3.one;
+
+        DG.Tweening.Sequence flyIn = DOTween.Sequence();
+        flyIn.Join(scatterTicketImage.DOLocalMove(Vector3.zero, scatterTicketFlyDuration).SetEase(Ease.OutQuad));
+        flyIn.Join(scatterTicketImage.DOLocalRotate(new Vector3(0f, 0f, 360f), scatterTicketFlyDuration, RotateMode.FastBeyond360).SetEase(Ease.Linear));
+        yield return flyIn.WaitForCompletion();
+
+        yield return new WaitForSeconds(scatterTicketWaitDuration);
+
+        yield return scatterTicketImage.DOScale(scatterTicketScaleUpTarget, scatterTicketScaleUpDuration).WaitForCompletion();
+
+        bool scaleDownDone = false;
+        scatterTicketImage.DOScale(0f, scatterTicketScaleDownDuration).OnComplete(() => scaleDownDone = true);
+        mainSlotTransform.DOAnchorPosX(mainSlotTargetX, scatterTicketScaleDownDuration);
+        yield return new WaitUntil(() => scaleDownDone);
+
+        scatterTicketImage.gameObject.SetActive(false);
+    }
+
+    // Plays the magic-dice row for the free spin that just resolved: fades/scales the row's
+    // dice in, rolls for diceRollDuration, then fires a laser (in parallel) at every dice
+    // marked by the backend's magicDiceMultipliers for this row, swapping it to the destroy
+    // animation and finally the multiplier sprite — while the untouched dice in the same row
+    // just scale back down once their result image is revealed again.
+    private IEnumerator PlayMagicDiceSequence()
+    {
+        var payload = socketManager.resultData.payload;
+        int spinIndex = payload.freeGames.totalSpins - payload.freeGames.spinsRemaining - 1;
+        if (spinIndex < 0 || spinIndex >= DiceImages.Count) yield break;
+
+        var diceRow = DiceImages[spinIndex].slotImages; // 5 dice, one per reel column
+
+        var multipliersThisRow = payload.magicDiceMultipliers ?? new List<MagicDiceMultiplier>();
+        var destroyCols = new HashSet<int>();
+        foreach (var m in multipliersThisRow) destroyCols.Add(m.col);
+
+        // Hide this row's result images, fade+scale the dice row in, start rolling anim.
+        for (int col = 0; col < diceRow.Count; col++)
+        {
+
+            var dice = diceRow[col];
+            dice.gameObject.SetActive(true);
+            Color diceColor = dice.color;
+            diceColor.a = 0f;
+            dice.color = diceColor;
+            dice.transform.localScale = Vector3.zero;
+            dice.DOFade(1f, diceFadeScaleDuration);
+            dice.transform.DOScale(1f, diceFadeScaleDuration).OnComplete(() =>
+            {
+                _resultImages[col].slotImages[spinIndex].gameObject.SetActive(false);
+            });
+
+            var anim = dice.GetComponent<ImageAnimation>();
+            anim.textureArray = dicerollingAnimation;
+            anim.doLoopAnimation = true;
+            anim.StartAnimation();
+        }
+
+        yield return new WaitForSeconds(diceRollDuration);
+
+        // Fire all lasers in parallel at the marked columns.
+        var laserRoutines = new List<Coroutine>();
+        foreach (var md in multipliersThisRow)
+            laserRoutines.Add(StartCoroutine(DestroyDiceAtColumn(diceRow[md.col], md.multiplier, spinIndex, md.col)));
+
+        // Wait for the lasers to actually reach the marked dice before scaling the untouched
+        // ones down, so the two don't visibly happen at the same time.
+        yield return new WaitForSeconds(laserTravelDuration);
+
+        // Scale down the non-destroyed dice now that the lasers have hit.
+        for (int col = 0; col < diceRow.Count; col++)
+        {
+            if (destroyCols.Contains(col)) continue;
+
+            var dice = diceRow[col];
+            dice.GetComponent<ImageAnimation>().StopAnimation();
+            _resultImages[col].slotImages[spinIndex].gameObject.SetActive(true);
+            dice.transform.DOScale(0f, laserTravelDuration).OnComplete(() => dice.gameObject.SetActive(false));
+        }
+
+        foreach (var routine in laserRoutines)
+            yield return routine;
+    }
+
+    private IEnumerator DestroyDiceAtColumn(Image dice, int multiplier, int row, int col)
+    {
+        if (LaserPrefab != null && LaserShootPosition != null)
+        {
+            GameObject laser = Instantiate(LaserPrefab, LaserShootPosition.position, Quaternion.identity, LaserParent != null ? LaserParent.transform : null);
+            yield return laser.transform.DOMove(dice.transform.position, laserTravelDuration).WaitForCompletion();
+            Destroy(laser);
+        }
+
+        var anim = dice.GetComponent<ImageAnimation>();
+        anim.textureArray = dicedestroyingAnimation;
+        anim.doLoopAnimation = false;
+        anim.StartAnimation();
+        yield return new WaitUntil(() => anim.currentAnimationState == ImageAnimation.ImageState.FINISHED);
+
+        dice.gameObject.SetActive(false);
+        _resultImages[col].slotImages[row].sprite = GetMultiplierSprite(multiplier);
+        _resultImages[col].slotImages[row].gameObject.SetActive(true);
+    }
+
+    private Sprite GetMultiplierSprite(int multiplier)
+    {
+        switch (multiplier)
+        {
+            case 1: return OneXMultiplier;
+            case 2: return TwoXMultiplier;
+            case 4: return FourXMultiplier;
+            case 6: return SixMultiplier;
+            case 8: return EightXMultiplier;
+            default: return OneXMultiplier;
+        }
+    }
+
+    private List<Sprite> GetMultiplierAnimation(int multiplier)
+    {
+        switch (multiplier)
+        {
+            case 1: return OneXMultiplierAnimation;
+            case 2: return TwoXMultiplierAnimation;
+            case 4: return FourXMultiplierAnimation;
+            case 6: return SixXMultiplierAnimation;
+            case 8: return EightXMultiplierAnimation;
+            default: return OneXMultiplierAnimation;
         }
     }
 

@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: f137abdb9cc2c4e669b36d7be4a4dcb6
+guid: 103bde9df4ffa48ac8ec362e983e29f0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4619427818777855327
-    second: cloud_00026_0
+      213: -2347987029073453263
+    second: Cloud_00026_0
   - first:
-      213: 7584672931828365901
-    second: cloud_00026_1
+      213: -3626435277029551001
+    second: Cloud_00026_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -129,12 +129,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cloud_00026_0
+      name: Cloud_00026_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 204
+        width: 156
         height: 125
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -144,19 +144,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f55cfcb50218b1040800000000000000
-      internalID: 4619427818777855327
+      spriteID: 13f1adabc364a6fd0800000000000000
+      internalID: -2347987029073453263
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cloud_00026_1
+      name: Cloud_00026_1
       rect:
         serializedVersion: 2
-        x: 394
+        x: 191
         y: 0
-        width: 1526
+        width: 1729
         height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d4a762f98db224960800000000000000
-      internalID: 7584672931828365901
+      spriteID: 76455b744505cadc0800000000000000
+      internalID: -3626435277029551001
       vertices: []
       indices: 
       edges: []
@@ -186,8 +186,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      cloud_00026_0: 4619427818777855327
-      cloud_00026_1: 7584672931828365901
+      Cloud_00026_0: -2347987029073453263
+      Cloud_00026_1: -3626435277029551001
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,0 +1,211 @@
+character.png
+size:3792,1035
+filter:Linear,Linear
+pma:true
+Glasses
+bounds:3450,200,87,93
+offsets:1,1,89,95
+rotate:90
+Smoke 036/smoke_36_00000
+bounds:3278,7,22,97
+offsets:50,49,200,500
+rotate:90
+Smoke 036/smoke_36_00001
+bounds:3175,414,79,219
+offsets:16,52,200,500
+Smoke 036/smoke_36_00002
+bounds:2516,35,92,290
+offsets:12,51,200,500
+Smoke 036/smoke_36_00003
+bounds:1599,12,118,306
+offsets:5,51,200,500
+Smoke 036/smoke_36_00004
+bounds:258,14,135,322
+offsets:7,50,200,500
+rotate:90
+Smoke 036/smoke_36_00005
+bounds:3564,144,153,346
+offsets:7,50,200,500
+Smoke 036/smoke_36_00006
+bounds:3410,543,156,365
+offsets:8,51,200,500
+rotate:90
+Smoke 036/smoke_36_00007
+bounds:3410,701,163,373
+offsets:7,51,200,500
+rotate:90
+Smoke 036/smoke_36_00008
+bounds:3410,866,167,380
+offsets:6,51,200,500
+rotate:90
+Smoke 036/smoke_36_00009
+bounds:3278,31,170,387
+offsets:8,51,200,500
+Smoke 036/smoke_36_00010
+bounds:3238,641,170,392
+offsets:11,51,200,500
+Smoke 036/smoke_36_00011
+bounds:3066,635,170,398
+offsets:14,51,200,500
+Smoke 036/smoke_36_00012
+bounds:2893,627,171,406
+offsets:17,51,200,500
+Smoke 036/smoke_36_00013
+bounds:2544,626,173,407
+offsets:17,52,200,500
+Smoke 036/smoke_36_00014
+bounds:2719,626,172,407
+offsets:19,53,200,500
+Smoke 036/smoke_36_00015
+bounds:2377,622,165,411
+offsets:28,52,200,500
+Smoke 036/smoke_36_00016
+bounds:2209,622,166,411
+offsets:27,52,200,500
+Smoke 036/smoke_36_00017
+bounds:183,151,167,412
+offsets:27,52,200,500
+rotate:90
+Smoke 036/smoke_36_00018
+bounds:1975,324,165,294
+offsets:28,52,200,500
+Smoke 036/smoke_36_00019
+bounds:1884,20,165,298
+offsets:29,51,200,500
+Smoke 036/smoke_36_00020
+bounds:1719,14,163,304
+offsets:30,52,200,500
+Smoke 036/smoke_36_00021
+bounds:1433,8,164,310
+offsets:30,51,200,500
+Smoke 036/smoke_36_00022
+bounds:597,4,162,314
+offsets:33,52,200,500
+Smoke 036/smoke_36_00023
+bounds:2051,3,155,319
+offsets:34,51,200,500
+Smoke 036/smoke_36_00024
+bounds:2208,3,153,322
+offsets:37,52,200,500
+Smoke 036/smoke_36_00025
+bounds:2761,5,151,327
+offsets:38,51,200,500
+Smoke 036/smoke_36_00026
+bounds:2610,3,149,329
+offsets:39,53,200,500
+Smoke 036/smoke_36_00027
+bounds:2363,3,151,322
+offsets:38,63,200,500
+Smoke 036/smoke_36_00028
+bounds:761,4,152,314
+offsets:37,73,200,500
+Smoke 036/smoke_36_00029
+bounds:1279,7,152,311
+offsets:36,79,200,500
+Smoke 036/smoke_36_00030
+bounds:3256,464,150,175
+offsets:37,216,200,500
+Smoke 036/smoke_36_00031
+bounds:2,8,141,51
+offsets:42,342,200,500
+rotate:90
+Smoke 036/smoke_36_00032
+bounds:150,12,137,51
+offsets:45,344,200,500
+rotate:90
+Smoke 036/smoke_36_00033
+bounds:258,2,51,10
+offsets:48,386,200,500
+Smoke 036/smoke_36_00034
+bounds:55,2,11,6
+offsets:52,389,200,500
+arm_l
+bounds:2911,347,278,262
+rotate:90
+blink_3
+bounds:3564,492,160,49
+offsets:0,0,162,49
+body
+bounds:183,320,713,1790
+offsets:302,20,1098,1962
+rotate:90
+chain
+bounds:3175,349,63,91
+rotate:90
+cigar
+bounds:2914,89,256,127
+offsets:2,2,264,135
+rotate:90
+eyeball_l
+bounds:2574,9,24,24
+offsets:2,1,28,26
+eyeball_r
+bounds:2574,9,24,24
+offsets:2,1,28,26
+eyelid
+bounds:3345,425,159,37
+offsets:2,2,162,41
+finger
+bounds:3408,471,70,93
+offsets:2,0,72,93
+rotate:90
+glow_fx
+bounds:3450,289,98,98
+offsets:1,1,100,103
+glow_yellow
+bounds:3040,4,83,23
+offsets:1,0,86,24
+rotate:90
+halo
+bounds:3065,5,113,112
+offsets:12,12,138,136
+rotate:90
+hand
+bounds:1975,620,232,413
+offsets:41,0,273,413
+hand_r
+bounds:3043,120,225,213
+rotate:90
+hat
+bounds:2142,327,399,291
+offsets:3,2,404,294
+inner_mouth
+bounds:203,13,136,53
+offsets:3,0,139,53
+rotate:90
+lip_lower
+bounds:55,10,139,61
+rotate:90
+lip_upper
+bounds:118,10,139,30
+rotate:90
+moustache_l
+bounds:2516,5,56,28
+moustache_r
+bounds:3256,420,87,42
+offsets:0,0,87,43
+nose
+bounds:2914,4,83,124
+offsets:1,1,86,126
+rotate:90
+scarf
+bounds:2543,334,366,286
+scarf_shadow
+bounds:915,7,362,311
+offsets:2,3,388,314
+sparklefx
+bounds:3179,19,99,97
+offsets:0,0,100,99
+rotate:90
+stick
+bounds:2,151,179,882
+offsets:1,1,181,884
+teeth_closed
+bounds:3726,417,124,50
+offsets:1,2,127,53
+rotate:90
+teeth_open
+bounds:3450,389,99,34
+thumb
+bounds:3503,481,59,60
+offsets:1,1,61,62

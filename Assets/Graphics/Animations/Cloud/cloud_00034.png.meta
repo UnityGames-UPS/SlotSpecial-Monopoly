@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 44e9ef0da7c394fe98f680c10c6c8230
+guid: 971c2d8db9dd34d75940373b7d2f95be
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2985994276473885310
-    second: cloud_00034_0
+      213: 5896313645378491310
+    second: Cloud_00034_0
   - first:
-      213: -2658394752150266109
-    second: cloud_00034_1
+      213: 6078249452867925007
+    second: Cloud_00034_1
   - first:
-      213: -8396524323377203547
-    second: cloud_00034_2
+      213: -5558038000133838270
+    second: Cloud_00034_2
   - first:
-      213: 8471417106114342424
-    second: cloud_00034_3
+      213: -488921327393356095
+    second: Cloud_00034_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -135,13 +135,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cloud_00034_0
+      name: Cloud_00034_0
       rect:
         serializedVersion: 2
-        x: 1533
-        y: 204
-        width: 387
-        height: 648
+        x: 1364
+        y: 156
+        width: 556
+        height: 924
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e72539659f1607920800000000000000
-      internalID: 2985994276473885310
+      spriteID: ea3d21d350ae3d150800000000000000
+      internalID: 5896313645378491310
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cloud_00034_1
+      name: Cloud_00034_1
       rect:
         serializedVersion: 2
         x: 379
@@ -172,19 +172,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 30f1255ce0c7b1bd0800000000000000
-      internalID: -2658394752150266109
+      spriteID: f04b7666ca74a5450800000000000000
+      internalID: 6078249452867925007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cloud_00034_2
+      name: Cloud_00034_2
       rect:
         serializedVersion: 2
         x: 823
         y: 0
-        width: 696
+        width: 669
         height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -194,20 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5a6bc255d9d897b80800000000000000
-      internalID: -8396524323377203547
+      spriteID: 24a66e9f2e1edd2b0800000000000000
+      internalID: -5558038000133838270
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cloud_00034_3
+      name: Cloud_00034_3
       rect:
         serializedVersion: 2
-        x: 1559
+        x: 1613
         y: 0
-        width: 361
-        height: 202
+        width: 307
+        height: 152
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,8 +216,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 81eec1a79f4809570800000000000000
-      internalID: 8471417106114342424
+      spriteID: 1c64b95a4a00739f0800000000000000
+      internalID: -488921327393356095
       vertices: []
       indices: 
       edges: []
@@ -236,10 +236,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      cloud_00034_0: 2985994276473885310
-      cloud_00034_1: -2658394752150266109
-      cloud_00034_2: -8396524323377203547
-      cloud_00034_3: 8471417106114342424
+      Cloud_00034_0: 5896313645378491310
+      Cloud_00034_1: 6078249452867925007
+      Cloud_00034_2: -5558038000133838270
+      Cloud_00034_3: -488921327393356095
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

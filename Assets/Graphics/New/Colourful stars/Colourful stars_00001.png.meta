@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: a1ac459e11bc14d23a32274d04118a87
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -960160054433849005
+    second: Colourful stars_00001_0
+  - first:
+      213: 626699250393953492
+    second: Colourful stars_00001_1
+  - first:
+      213: -2663176006059366993
+    second: Colourful stars_00001_2
+  - first:
+      213: -3519456201462862055
+    second: Colourful stars_00001_3
+  - first:
+      213: -6268975230050493827
+    second: Colourful stars_00001_4
+  - first:
+      213: 432952761062137418
+    second: Colourful stars_00001_5
+  - first:
+      213: 8696781635294362102
+    second: Colourful stars_00001_6
+  - first:
+      213: 7740859774033643914
+    second: Colourful stars_00001_7
+  - first:
+      213: 7242411075658425011
+    second: Colourful stars_00001_8
+  - first:
+      213: -5278191185287852103
+    second: Colourful stars_00001_9
+  - first:
+      213: 1723031542063687603
+    second: Colourful stars_00001_10
+  - first:
+      213: 1082220314865606609
+    second: Colourful stars_00001_11
+  - first:
+      213: 8007536113399931373
+    second: Colourful stars_00001_12
+  - first:
+      213: 8687594731687345035
+    second: Colourful stars_00001_13
+  - first:
+      213: -8942543526489932690
+    second: Colourful stars_00001_14
+  - first:
+      213: 3036503008086998251
+    second: Colourful stars_00001_15
+  - first:
+      213: 1132289997522638047
+    second: Colourful stars_00001_16
+  - first:
+      213: -2207941330639496205
+    second: Colourful stars_00001_17
+  - first:
+      213: -4149191815271868536
+    second: Colourful stars_00001_18
+  - first:
+      213: -524995713593851443
+    second: Colourful stars_00001_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Colourful stars_00001_0
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 817
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35163f38483dca2f0800000000000000
+      internalID: -960160054433849005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colourful stars_00001_1
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 873
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d43cb8d5ab72b800800000000000000
+      internalID: 626699250393953492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colourful stars_00001_2
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 874
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa5ec78588f7a0bd0800000000000000
+      internalID: -2663176006059366993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colourful stars_00001_3
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 923
+        width: 191
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91fa24d4b31682fc0800000000000000
+      internalID: -3519456201462862055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colourful stars_00001_4
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 860
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7a1e132e302009a0800000000000000
+      internalID: -6268975230050493827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colourful stars_00001_5
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 840
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4e12a70e38220600800000000000000
+      internalID: 432952761062137418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colourful stars_00001_6
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 577
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f97cdcd1dc21b870800000000000000
+      internalID: 8696781635294362102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colourful stars_00001_7
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 387
+        width: 196
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a89c26f93fe0d6b60800000000000000
+      internalID: 7740859774033643914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colourful stars_00001_8
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 461
+        width: 98
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b2a9f95086328460800000000000000
+      internalID: 7242411075658425011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colourful stars_00001_9
+      rect:
+        serializedVersion: 2
+        x: 1513
+        y: 345
+        width: 192
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bfc150051910c6b0800000000000000
+      internalID: -5278191185287852103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colourful stars_00001_10
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 254
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b7ef79fe0079e710800000000000000
+      internalID: 1723031542063687603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colourful stars_00001_11
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 381
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1df964c74a1d40f00800000000000000
+      internalID: 1082220314865606609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colourful stars_00001_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 158
+        width: 147
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de1a05d5bab702f60800000000000000
+      internalID: 8007536113399931373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colourful stars_00001_13
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 244
+        width: 123
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8b77ce2169809870800000000000000
+      internalID: 8687594731687345035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colourful stars_00001_14
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 245
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6c3913da04b5e380800000000000000
+      internalID: -8942543526489932690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colourful stars_00001_15
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 271
+        width: 98
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bec3e64d563d32a20800000000000000
+      internalID: 3036503008086998251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colourful stars_00001_16
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 285
+        width: 55
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd4901de0c3b6bf00800000000000000
+      internalID: 1132289997522638047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colourful stars_00001_17
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 235
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fb5456de01db51e0800000000000000
+      internalID: -2207941330639496205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colourful stars_00001_18
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 249
+        width: 80
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88713c1070c1b66c0800000000000000
+      internalID: -4149191815271868536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colourful stars_00001_19
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 117
+        width: 127
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc1c2a61e27d6b8f0800000000000000
+      internalID: -524995713593851443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Colourful stars_00001_0: -960160054433849005
+      Colourful stars_00001_1: 626699250393953492
+      Colourful stars_00001_10: 1723031542063687603
+      Colourful stars_00001_11: 1082220314865606609
+      Colourful stars_00001_12: 8007536113399931373
+      Colourful stars_00001_13: 8687594731687345035
+      Colourful stars_00001_14: -8942543526489932690
+      Colourful stars_00001_15: 3036503008086998251
+      Colourful stars_00001_16: 1132289997522638047
+      Colourful stars_00001_17: -2207941330639496205
+      Colourful stars_00001_18: -4149191815271868536
+      Colourful stars_00001_19: -524995713593851443
+      Colourful stars_00001_2: -2663176006059366993
+      Colourful stars_00001_3: -3519456201462862055
+      Colourful stars_00001_4: -6268975230050493827
+      Colourful stars_00001_5: 432952761062137418
+      Colourful stars_00001_6: 8696781635294362102
+      Colourful stars_00001_7: 7740859774033643914
+      Colourful stars_00001_8: 7242411075658425011
+      Colourful stars_00001_9: -5278191185287852103
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

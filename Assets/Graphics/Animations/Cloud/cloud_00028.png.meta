@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 3483132f014774a2f894a779682ca3e8
+guid: 917266c2d646b4b8ead8058959ab262e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8207458675761724894
-    second: cloud_00028_0
+      213: 4336282161187249152
+    second: Cloud_00028_0
   - first:
-      213: 240355130702091275
-    second: cloud_00028_1
+      213: -3319810027503854046
+    second: Cloud_00028_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -129,12 +129,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cloud_00028_0
+      name: Cloud_00028_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 539
+        width: 491
         height: 131
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -144,19 +144,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eddb97d3e20c6e170800000000000000
-      internalID: 8207458675761724894
+      spriteID: 00cdd67a6a19d2c30800000000000000
+      internalID: 4336282161187249152
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cloud_00028_1
+      name: Cloud_00028_1
       rect:
         serializedVersion: 2
-        x: 683
+        x: 511
         y: 0
-        width: 1237
+        width: 1409
         height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b04d079c7b9e55300800000000000000
-      internalID: 240355130702091275
+      spriteID: 22e5adc7e5aade1d0800000000000000
+      internalID: -3319810027503854046
       vertices: []
       indices: 
       edges: []
@@ -186,8 +186,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      cloud_00028_0: 8207458675761724894
-      cloud_00028_1: 240355130702091275
+      Cloud_00028_0: 4336282161187249152
+      Cloud_00028_1: -3319810027503854046
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
