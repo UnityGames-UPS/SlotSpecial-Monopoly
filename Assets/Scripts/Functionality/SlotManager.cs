@@ -447,6 +447,19 @@ public class SlotManager : MonoBehaviour
             uiManager.OnFreeSpinsTriggered(freeSpinsRemaining);
         }
 
+        // Checkers Bonus plays out fully (cloud-in, board reveal, all rolls, cloud-out, win
+        // popup) before any base-spin win popup / line-win display below — control only returns
+        // here once the whole round has finished.
+        if (socketManager.resultData.payload.checkersBonus != null &&
+            socketManager.resultData.payload.checkersBonus.triggered)
+        {
+            // Fall back to 3 whenever the config value is missing OR zero — initData's
+            // checkersBonus config isn't always populated with a positive rollsCount, and a
+            // starting count of 0 would end the round right after its very first roll.
+            int startingRolls = socketManager.features?.checkersBonus?.rollsCount ?? 3;
+            if (startingRolls <= 0) startingRolls = 3;
+            yield return bonusManager.PlayBonusRound(socketManager.resultData.payload.checkersBonus, startingRolls);
+        }
 
         // Big/Huge/Mega win popup only applies to a normal (non free-spin) spin's own win —
         // shown before the win-line loop, which then plays once it's closed (Take, or the

@@ -23,6 +23,10 @@ public class ImageAnimation : MonoBehaviour
 	private float idealFrameRate = 0.0416666679f;
 	private float delayBetweenAnimation;
 
+	// One-shot completion hook for non-looping playthroughs (e.g. the bonus cloud transition) —
+	// callers resubscribe each use, it's cleared right after firing.
+	internal System.Action onAnimationComplete;
+
 	private void Awake()
 	{
 		if(StartOnAwake){
@@ -54,6 +58,8 @@ public class ImageAnimation : MonoBehaviour
 			else
 			{
 				currentAnimationState = ImageState.FINISHED;
+				onAnimationComplete?.Invoke();
+				onAnimationComplete = null;
 			}
 		}
 		else
@@ -102,6 +108,8 @@ public class ImageAnimation : MonoBehaviour
 			else
 			{
 				currentAnimationState = ImageState.FINISHED;
+				onAnimationComplete?.Invoke();
+				onAnimationComplete = null;
 			}
 		}
 		else

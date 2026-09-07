@@ -1,0 +1,1599 @@
+fileFormatVersion: 2
+guid: 0da710c2a7e9d49e6976733468964410
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7523214199257639182
+    second: Scatter_00015_0
+  - first:
+      213: 2034610604919214489
+    second: Scatter_00015_1
+  - first:
+      213: 959857225616312616
+    second: Scatter_00015_2
+  - first:
+      213: 8938495284381927474
+    second: Scatter_00015_3
+  - first:
+      213: -7438103750709517473
+    second: Scatter_00015_4
+  - first:
+      213: 7053165160423065843
+    second: Scatter_00015_5
+  - first:
+      213: -3696507271193767759
+    second: Scatter_00015_6
+  - first:
+      213: 7616586112906055458
+    second: Scatter_00015_7
+  - first:
+      213: -6290087182868093103
+    second: Scatter_00015_8
+  - first:
+      213: -6334195798625645052
+    second: Scatter_00015_9
+  - first:
+      213: 6531039309482551530
+    second: Scatter_00015_10
+  - first:
+      213: -7062121375392416630
+    second: Scatter_00015_11
+  - first:
+      213: 9032546739033922028
+    second: Scatter_00015_12
+  - first:
+      213: 8563475724910876444
+    second: Scatter_00015_13
+  - first:
+      213: 2340304436680323259
+    second: Scatter_00015_14
+  - first:
+      213: -2109144377614191318
+    second: Scatter_00015_15
+  - first:
+      213: 7163609741470880690
+    second: Scatter_00015_16
+  - first:
+      213: 5386038274945314317
+    second: Scatter_00015_17
+  - first:
+      213: -8455941238459775955
+    second: Scatter_00015_18
+  - first:
+      213: -1392023154786365702
+    second: Scatter_00015_19
+  - first:
+      213: 6057652833813350997
+    second: Scatter_00015_20
+  - first:
+      213: -3463994341463957563
+    second: Scatter_00015_21
+  - first:
+      213: 8772766522282146455
+    second: Scatter_00015_22
+  - first:
+      213: 5087793524694841486
+    second: Scatter_00015_23
+  - first:
+      213: -4531084872378602507
+    second: Scatter_00015_24
+  - first:
+      213: -2729458305123650416
+    second: Scatter_00015_25
+  - first:
+      213: 5262070107365452509
+    second: Scatter_00015_26
+  - first:
+      213: 3876037593418756387
+    second: Scatter_00015_27
+  - first:
+      213: 1884706034333076323
+    second: Scatter_00015_28
+  - first:
+      213: -2764780931240504997
+    second: Scatter_00015_29
+  - first:
+      213: 2848251960830333359
+    second: Scatter_00015_30
+  - first:
+      213: 5616894367493928204
+    second: Scatter_00015_31
+  - first:
+      213: -1765925764311303637
+    second: Scatter_00015_32
+  - first:
+      213: -71901448075954951
+    second: Scatter_00015_33
+  - first:
+      213: 5923443855846804015
+    second: Scatter_00015_34
+  - first:
+      213: -7139277345222600966
+    second: Scatter_00015_35
+  - first:
+      213: -2846390617638980794
+    second: Scatter_00015_36
+  - first:
+      213: 5344226375385536505
+    second: Scatter_00015_37
+  - first:
+      213: -5035581200134950573
+    second: Scatter_00015_38
+  - first:
+      213: -181149493367932824
+    second: Scatter_00015_39
+  - first:
+      213: -2834272308535542602
+    second: Scatter_00015_40
+  - first:
+      213: 8707151270842133527
+    second: Scatter_00015_41
+  - first:
+      213: 152316818947970727
+    second: Scatter_00015_42
+  - first:
+      213: 2170887391892239362
+    second: Scatter_00015_43
+  - first:
+      213: -5164619870499083449
+    second: Scatter_00015_44
+  - first:
+      213: 1778431186212294158
+    second: Scatter_00015_45
+  - first:
+      213: -4143919269942644503
+    second: Scatter_00015_46
+  - first:
+      213: -4516749018604839248
+    second: Scatter_00015_47
+  - first:
+      213: 1697126957936543840
+    second: Scatter_00015_48
+  - first:
+      213: 7131618197255376374
+    second: Scatter_00015_49
+  - first:
+      213: 2149454133990828474
+    second: Scatter_00015_50
+  - first:
+      213: 7781610146431017195
+    second: Scatter_00015_51
+  - first:
+      213: -1247531954612403828
+    second: Scatter_00015_52
+  - first:
+      213: 6684609991791832104
+    second: Scatter_00015_53
+  - first:
+      213: -8869075771106581352
+    second: Scatter_00015_54
+  - first:
+      213: 4919514292473583714
+    second: Scatter_00015_55
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Scatter_00015_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 450
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f6d214ab8c289790800000000000000
+      internalID: -7523214199257639182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_1
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 177
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 991d37ab0936c3c10800000000000000
+      internalID: 2034610604919214489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_2
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 164
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 829c3f7af09125d00800000000000000
+      internalID: 959857225616312616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_3
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 158
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 238c61c5a1aeb0c70800000000000000
+      internalID: 8938495284381927474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 131
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5365782c0c86c890800000000000000
+      internalID: -7438103750709517473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_5
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 142
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f88d291850e1e160800000000000000
+      internalID: 7053165160423065843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 125
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b0d8d6c83e53bcc0800000000000000
+      internalID: -3696507271193767759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_7
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 129
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22f40fc17bc83b960800000000000000
+      internalID: 7616586112906055458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 115
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 157e8e2980f15b8a0800000000000000
+      internalID: -6290087182868093103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_9
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 110
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40e852d2b7a6818a0800000000000000
+      internalID: -6334195798625645052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_10
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 109
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae8e1d726a9e2aa50800000000000000
+      internalID: 6531039309482551530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_11
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 119
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8cba0b960e4efd90800000000000000
+      internalID: -7062121375392416630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 98
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce9da35176d0a5d70800000000000000
+      internalID: 9032546739033922028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_13
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 89
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c175ef1fcc397d670800000000000000
+      internalID: 8563475724910876444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_14
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 102
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb0f9965c7e6a7020800000000000000
+      internalID: 2340304436680323259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_15
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 98
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a253b400d50dab2e0800000000000000
+      internalID: -2109144377614191318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 86
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b356edfa114a6360800000000000000
+      internalID: 7163609741470880690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_17
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 83
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0ee5cc464d0fba40800000000000000
+      internalID: 5386038274945314317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_18
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 78
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d244700ce3676aa80800000000000000
+      internalID: -8455941238459775955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 74
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afe07d3e05a8eace0800000000000000
+      internalID: -1392023154786365702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_20
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 71
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55a4514582b111450800000000000000
+      internalID: 6057652833813350997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_21
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 66
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cfd31ddf7b6defc0800000000000000
+      internalID: -3463994341463957563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_22
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 63
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79af0120ca02fb970800000000000000
+      internalID: 8772766522282146455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_23
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 63
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e88f7f121497b9640800000000000000
+      internalID: 5087793524694841486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_24
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 57
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fb2ab6b05a5e11c0800000000000000
+      internalID: -4531084872378602507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 53
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0947dddf1240f1ad0800000000000000
+      internalID: -2729458305123650416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 47
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dda28bc02e0a60940800000000000000
+      internalID: 5262070107365452509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_27
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 52
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 321f8c3b7a37ac530800000000000000
+      internalID: 3876037593418756387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_28
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 20
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36b45721722d72a10800000000000000
+      internalID: 1884706034333076323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_29
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 0
+        width: 39
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b51d2a7346681a9d0800000000000000
+      internalID: -2764780931240504997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_30
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 11
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa11a145116078720800000000000000
+      internalID: 2848251960830333359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_31
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 0
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c053e5beaa733fd40800000000000000
+      internalID: 5616894367493928204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_32
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2ab386afdb2e77e0800000000000000
+      internalID: -1765925764311303637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_33
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 0
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f4b890930e800ff0800000000000000
+      internalID: -71901448075954951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_34
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 0
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2a08ba9dcc443250800000000000000
+      internalID: 5923443855846804015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_35
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 0
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af6530d74113cec90800000000000000
+      internalID: -7139277345222600966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_36
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 1
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 643bf9760d69f78d0800000000000000
+      internalID: -2846390617638980794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_37
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 0
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f7d020d2918a2a40800000000000000
+      internalID: 5344226375385536505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_38
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 2
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 351325004950e1ab0800000000000000
+      internalID: -5035581200134950573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_39
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 868ff8cde7d6c7df0800000000000000
+      internalID: -181149493367932824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_40
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 0
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bc330d1a54aaa8d0800000000000000
+      internalID: -2834272308535542602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_41
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 1
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71ce228c2f306d870800000000000000
+      internalID: 8707151270842133527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_42
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 0
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a616bef6532d1200800000000000000
+      internalID: 152316818947970727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_43
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 2
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2047c11c49a802e10800000000000000
+      internalID: 2170887391892239362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_44
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 0
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74b6af257959358b0800000000000000
+      internalID: -5164619870499083449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_45
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 0
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0e09a7cdb14ea810800000000000000
+      internalID: 1778431186212294158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_46
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 0
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e03c212167dd76c0800000000000000
+      internalID: -4143919269942644503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_47
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 2
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bed676c2b84151c0800000000000000
+      internalID: -4516749018604839248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_48
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 0
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0680c8af9f76d8710800000000000000
+      internalID: 1697126957936543840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_49
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 0
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fd4e1927f898f260800000000000000
+      internalID: 7131618197255376374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_50
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 0
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab9a485852564dd10800000000000000
+      internalID: 2149454133990828474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_51
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 2
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be0a89e0335ddfb60800000000000000
+      internalID: 7781610146431017195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_52
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 0
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8101670c40efaee0800000000000000
+      internalID: -1247531954612403828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_53
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82c67c6fe5184cc50800000000000000
+      internalID: 6684609991791832104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_54
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 0
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8942b299396bae480800000000000000
+      internalID: -8869075771106581352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scatter_00015_55
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 2
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 268585e2f20a54440800000000000000
+      internalID: 4919514292473583714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Scatter_00015_0: -7523214199257639182
+      Scatter_00015_1: 2034610604919214489
+      Scatter_00015_10: 6531039309482551530
+      Scatter_00015_11: -7062121375392416630
+      Scatter_00015_12: 9032546739033922028
+      Scatter_00015_13: 8563475724910876444
+      Scatter_00015_14: 2340304436680323259
+      Scatter_00015_15: -2109144377614191318
+      Scatter_00015_16: 7163609741470880690
+      Scatter_00015_17: 5386038274945314317
+      Scatter_00015_18: -8455941238459775955
+      Scatter_00015_19: -1392023154786365702
+      Scatter_00015_2: 959857225616312616
+      Scatter_00015_20: 6057652833813350997
+      Scatter_00015_21: -3463994341463957563
+      Scatter_00015_22: 8772766522282146455
+      Scatter_00015_23: 5087793524694841486
+      Scatter_00015_24: -4531084872378602507
+      Scatter_00015_25: -2729458305123650416
+      Scatter_00015_26: 5262070107365452509
+      Scatter_00015_27: 3876037593418756387
+      Scatter_00015_28: 1884706034333076323
+      Scatter_00015_29: -2764780931240504997
+      Scatter_00015_3: 8938495284381927474
+      Scatter_00015_30: 2848251960830333359
+      Scatter_00015_31: 5616894367493928204
+      Scatter_00015_32: -1765925764311303637
+      Scatter_00015_33: -71901448075954951
+      Scatter_00015_34: 5923443855846804015
+      Scatter_00015_35: -7139277345222600966
+      Scatter_00015_36: -2846390617638980794
+      Scatter_00015_37: 5344226375385536505
+      Scatter_00015_38: -5035581200134950573
+      Scatter_00015_39: -181149493367932824
+      Scatter_00015_4: -7438103750709517473
+      Scatter_00015_40: -2834272308535542602
+      Scatter_00015_41: 8707151270842133527
+      Scatter_00015_42: 152316818947970727
+      Scatter_00015_43: 2170887391892239362
+      Scatter_00015_44: -5164619870499083449
+      Scatter_00015_45: 1778431186212294158
+      Scatter_00015_46: -4143919269942644503
+      Scatter_00015_47: -4516749018604839248
+      Scatter_00015_48: 1697126957936543840
+      Scatter_00015_49: 7131618197255376374
+      Scatter_00015_5: 7053165160423065843
+      Scatter_00015_50: 2149454133990828474
+      Scatter_00015_51: 7781610146431017195
+      Scatter_00015_52: -1247531954612403828
+      Scatter_00015_53: 6684609991791832104
+      Scatter_00015_54: -8869075771106581352
+      Scatter_00015_55: 4919514292473583714
+      Scatter_00015_6: -3696507271193767759
+      Scatter_00015_7: 7616586112906055458
+      Scatter_00015_8: -6290087182868093103
+      Scatter_00015_9: -6334195798625645052
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

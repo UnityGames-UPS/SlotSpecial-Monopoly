@@ -39,6 +39,12 @@ public class SocketIOManager : MonoBehaviour
   [SerializeField] private GameObject RaycastBlocker;
   internal List<List<int>> LineData = null; //
 
+#if UNITY_EDITOR
+  [Header("Debug (Editor only)")]
+  [Tooltip("Splices a hardcoded checkers-bonus round onto every ResultData response so the bonus flow can be exercised without a live backend trigger.")]
+  [SerializeField] private bool debugForceCheckersBonus = false;
+#endif
+
   [Header("Ping Pong")]
   internal bool isConnected = false; //Back2 Start.       //
   private bool hasEverConnected = false;          //
@@ -460,6 +466,57 @@ public class SocketIOManager : MonoBehaviour
 #endif
   } //Back2 end
 
+#if UNITY_EDITOR
+  // Deterministic, repeatable stand-in for a real backend checkers-bonus trigger — matches the
+  // sample payload used to design the feature. Editor-only; toggle debugForceCheckersBonus off
+  // before shipping.
+  private CheckersBonus BuildDebugCheckersBonus()
+  {
+    return new CheckersBonus
+    {
+      triggered = true,
+      winInCash = 18,
+      finalPosition = 21,
+      board = new List<Board>
+      {
+        new Board { multiplier = 0 },
+        new Board { addRolls = 2 },
+        new Board { isEnd = true },
+        new Board { multiplier = 5 },
+        new Board { multiplier = 5 },
+        new Board { multiplier = 10 },
+        new Board { addRolls = 2 },
+        new Board { },
+        new Board { addRolls = 2 },
+        new Board { },
+        new Board { multiplier = 5 },
+        new Board { addRolls = 1 },
+        new Board { addRolls = 1 },
+        new Board { multiplier = 10 },
+        new Board { multiplier = 5, vault = new Vault { minMultiplier = 20, maxMultiplier = 150 } },
+        new Board { },
+        new Board { multiplier = 10 },
+        new Board { vault = new Vault { minMultiplier = 20, maxMultiplier = 150 } },
+        new Board { multiplier = 5 },
+        new Board { multiplier = 10 },
+        new Board { multiplier = 10 },
+        new Board { multiplier = 20 },
+        new Board { addRolls = 3 },
+        new Board { multiplier = 20 },
+      },
+      rolls = new List<Roll>
+      {
+        new Roll { dice1 = 3, dice2 = 4, sum = 7, position = 7, rewardMultiplier = 0, isEnd = false, winInCash = 0 },
+        new Roll { dice1 = 3, dice2 = 3, sum = 6, position = 13, rewardMultiplier = 10, isEnd = false, winInCash = 4 },
+        new Roll { dice1 = 5, dice2 = 4, sum = 9, position = 22, rewardMultiplier = 0, isEnd = false, rollsAdded = 3, winInCash = 0 },
+        new Roll { dice1 = 4, dice2 = 2, sum = 6, position = 4, rewardMultiplier = 5, isEnd = false, winInCash = 2 },
+        new Roll { dice1 = 5, dice2 = 4, sum = 9, position = 13, rewardMultiplier = 10, isEnd = false, winInCash = 4 },
+        new Roll { dice1 = 6, dice2 = 2, sum = 8, position = 21, rewardMultiplier = 20, isEnd = false, winInCash = 8 },
+      },
+    };
+  }
+#endif
+
   private void ParseResponse(string jsonObject)
   {
     Debug.Log(jsonObject);
@@ -493,12 +550,18 @@ public class SocketIOManager : MonoBehaviour
       case "ResultData":
         {
           resultData = myData;
+#if UNITY_EDITOR
+          if (debugForceCheckersBonus) resultData.payload.checkersBonus = BuildDebugCheckersBonus();
+#endif
           isResultdone = true;
           break;
         }
       case "BonusResultData":
         {
           resultData = myData;
+#if UNITY_EDITOR
+          if (debugForceCheckersBonus) resultData.payload.checkersBonus = BuildDebugCheckersBonus();
+#endif
           isResultdone = true;
           break;
         }

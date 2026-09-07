@@ -1068,11 +1068,11 @@ public class UIManager : MonoBehaviour
     {
         audioController.PlayUIButton(false);
 
-        // if (bonusManager != null && !bonusManager.isBonusFinished)
-        // {
-        //     bonusManager.RequestWheelStart();
-        // }
-        // else
+        if (bonusManager != null && bonusManager.IsBonusRoundActive)
+        {
+            bonusManager.RequestRoll();
+        }
+        else
         {
             OnFreeSpinStartButtonClicked();
         }
@@ -1630,7 +1630,7 @@ public class UIManager : MonoBehaviour
     private void AnimateUwpWinCount(double winAmount, bool autoCloseAfterTake)
     {
         int decimals = GetDecimalPlaces(winAmount);
-        string formatStr = decimals > 0 ? "0." + new string('0', decimals) : "0";
+        string formatStr = decimals > 0 ? "0." + new string('0', decimals) : "F2";
 
         SetUwpWinAmountText(0.0, formatStr);
 

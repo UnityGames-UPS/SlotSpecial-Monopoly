@@ -154,6 +154,7 @@ public class Payload
     public List<MagicDiceMultiplier> magicDiceMultipliers { get; set; }
     public FreeGames freeGames { get; set; }
     public bool goldenMultiplierApplied { get; set; }
+    public CheckersBonus checkersBonus { get; set; }
 
 }
 
@@ -197,5 +198,43 @@ public class MagicDiceMultiplier
     public int row { get; set; }
     public int col { get; set; }
     public int multiplier { get; set; }
+}
+
+public class Board
+{
+    public int multiplier { get; set; }
+    public int? addRolls { get; set; }
+    public bool? isEnd { get; set; }
+    public Vault vault { get; set; }
+    public bool? resetPosition { get; set; }
+}
+
+public class CheckersBonus
+{
+    public bool triggered { get; set; }
+    public List<Board> board { get; set; }
+    public double winInCash { get; set; }
+    public List<Roll> rolls { get; set; }
+    public int finalPosition { get; set; }
+}
+
+public class Roll
+{
+    public int dice1 { get; set; }
+    public int dice2 { get; set; }
+    public int sum { get; set; }
+    public int position { get; set; }
+    public int rewardMultiplier { get; set; }
+    public bool isEnd { get; set; }
+    public double winInCash { get; set; }
+    public int? rollsAdded { get; set; }
+    public bool? isReset { get; set; }
+    public bool? vaultActivated { get; set; }
+}
+
+public class Vault
+{
+    public int minMultiplier { get; set; }
+    public int maxMultiplier { get; set; }
 }
 
