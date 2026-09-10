@@ -1,0 +1,6669 @@
+fileFormatVersion: 2
+guid: a7c0661b44a3743ec87a5d2f2ce82894
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8230503331404828418
+    second: Monopoly_Bg_4_0
+  - first:
+      213: -7297255242624379932
+    second: Monopoly_Bg_4_1
+  - first:
+      213: 4081246544002599791
+    second: Monopoly_Bg_4_2
+  - first:
+      213: -2436613881658862979
+    second: Monopoly_Bg_4_3
+  - first:
+      213: -56257581304968424
+    second: Monopoly_Bg_4_4
+  - first:
+      213: -4578179721592458746
+    second: Monopoly_Bg_4_5
+  - first:
+      213: -9141044777742932457
+    second: Monopoly_Bg_4_6
+  - first:
+      213: 2762480123351891624
+    second: Monopoly_Bg_4_7
+  - first:
+      213: -4754293174454987645
+    second: Monopoly_Bg_4_8
+  - first:
+      213: -1982099107853773922
+    second: Monopoly_Bg_4_9
+  - first:
+      213: -8055741808680413630
+    second: Monopoly_Bg_4_10
+  - first:
+      213: 8679066685408184164
+    second: Monopoly_Bg_4_11
+  - first:
+      213: 7439315491759001543
+    second: Monopoly_Bg_4_12
+  - first:
+      213: -5771894296828792532
+    second: Monopoly_Bg_4_13
+  - first:
+      213: -5851848848188332348
+    second: Monopoly_Bg_4_14
+  - first:
+      213: 6191525814791499476
+    second: Monopoly_Bg_4_15
+  - first:
+      213: -872032861232006028
+    second: Monopoly_Bg_4_16
+  - first:
+      213: -3962958722590340728
+    second: Monopoly_Bg_4_17
+  - first:
+      213: -1465360297131586543
+    second: Monopoly_Bg_4_18
+  - first:
+      213: -4078176929313616582
+    second: Monopoly_Bg_4_19
+  - first:
+      213: -4868960504197759458
+    second: Monopoly_Bg_4_20
+  - first:
+      213: 2005995206011738947
+    second: Monopoly_Bg_4_21
+  - first:
+      213: 9074134746207028880
+    second: Monopoly_Bg_4_22
+  - first:
+      213: -1895962626684225558
+    second: Monopoly_Bg_4_23
+  - first:
+      213: -5754870088912104278
+    second: Monopoly_Bg_4_24
+  - first:
+      213: 2926417321055013438
+    second: Monopoly_Bg_4_25
+  - first:
+      213: 2357291154634550938
+    second: Monopoly_Bg_4_26
+  - first:
+      213: -6745538624982211981
+    second: Monopoly_Bg_4_27
+  - first:
+      213: -3874560332930791961
+    second: Monopoly_Bg_4_28
+  - first:
+      213: -7155042821561086705
+    second: Monopoly_Bg_4_29
+  - first:
+      213: 8624932779040319497
+    second: Monopoly_Bg_4_30
+  - first:
+      213: 8065770071253965688
+    second: Monopoly_Bg_4_31
+  - first:
+      213: -7584900770871018816
+    second: Monopoly_Bg_4_32
+  - first:
+      213: 4564494507040149503
+    second: Monopoly_Bg_4_33
+  - first:
+      213: -6788746131751176114
+    second: Monopoly_Bg_4_34
+  - first:
+      213: -4308605115301295275
+    second: Monopoly_Bg_4_35
+  - first:
+      213: -6397004035667712682
+    second: Monopoly_Bg_4_36
+  - first:
+      213: -6220819071857263401
+    second: Monopoly_Bg_4_37
+  - first:
+      213: -347241122296285142
+    second: Monopoly_Bg_4_38
+  - first:
+      213: -9111748146720842752
+    second: Monopoly_Bg_4_39
+  - first:
+      213: 4916359446631703024
+    second: Monopoly_Bg_4_40
+  - first:
+      213: -4732129513382258469
+    second: Monopoly_Bg_4_41
+  - first:
+      213: -1954191455841407270
+    second: Monopoly_Bg_4_42
+  - first:
+      213: -246904332078011686
+    second: Monopoly_Bg_4_43
+  - first:
+      213: 6515244461976809582
+    second: Monopoly_Bg_4_44
+  - first:
+      213: -9119991138518424396
+    second: Monopoly_Bg_4_45
+  - first:
+      213: 8358296612158341653
+    second: Monopoly_Bg_4_46
+  - first:
+      213: -678702087385006476
+    second: Monopoly_Bg_4_47
+  - first:
+      213: 7147715212870137964
+    second: Monopoly_Bg_4_48
+  - first:
+      213: -6138039635744316725
+    second: Monopoly_Bg_4_49
+  - first:
+      213: 780341895987421829
+    second: Monopoly_Bg_4_50
+  - first:
+      213: -1423958130467575202
+    second: Monopoly_Bg_4_51
+  - first:
+      213: -2470797960734371065
+    second: Monopoly_Bg_4_52
+  - first:
+      213: -1748767725681401342
+    second: Monopoly_Bg_4_53
+  - first:
+      213: -4271879726870571065
+    second: Monopoly_Bg_4_54
+  - first:
+      213: 7544218306274566927
+    second: Monopoly_Bg_4_55
+  - first:
+      213: -4602214100859023311
+    second: Monopoly_Bg_4_56
+  - first:
+      213: -3241452936912137923
+    second: Monopoly_Bg_4_57
+  - first:
+      213: 4426008742392161965
+    second: Monopoly_Bg_4_58
+  - first:
+      213: -6584769933898204709
+    second: Monopoly_Bg_4_59
+  - first:
+      213: -925835211491087439
+    second: Monopoly_Bg_4_60
+  - first:
+      213: -3756223678573552521
+    second: Monopoly_Bg_4_61
+  - first:
+      213: -7155672239611171493
+    second: Monopoly_Bg_4_62
+  - first:
+      213: -8898948416262390383
+    second: Monopoly_Bg_4_63
+  - first:
+      213: -279116239227827554
+    second: Monopoly_Bg_4_64
+  - first:
+      213: 3181824198014788827
+    second: Monopoly_Bg_4_65
+  - first:
+      213: 5749940001409130549
+    second: Monopoly_Bg_4_66
+  - first:
+      213: 3801300651855621358
+    second: Monopoly_Bg_4_67
+  - first:
+      213: -1760577597314880642
+    second: Monopoly_Bg_4_68
+  - first:
+      213: -1391648494234583082
+    second: Monopoly_Bg_4_69
+  - first:
+      213: 8655603828068845455
+    second: Monopoly_Bg_4_70
+  - first:
+      213: 1202732702303011113
+    second: Monopoly_Bg_4_71
+  - first:
+      213: 8833843742167229401
+    second: Monopoly_Bg_4_72
+  - first:
+      213: 1293547307137724390
+    second: Monopoly_Bg_4_73
+  - first:
+      213: 8299136006995081487
+    second: Monopoly_Bg_4_74
+  - first:
+      213: 6243208064608087392
+    second: Monopoly_Bg_4_75
+  - first:
+      213: 6761008334902449483
+    second: Monopoly_Bg_4_76
+  - first:
+      213: -8827604107831041468
+    second: Monopoly_Bg_4_77
+  - first:
+      213: -1048142627474172414
+    second: Monopoly_Bg_4_78
+  - first:
+      213: -7397370716387813949
+    second: Monopoly_Bg_4_79
+  - first:
+      213: 4371732420081120892
+    second: Monopoly_Bg_4_80
+  - first:
+      213: -171008625901323400
+    second: Monopoly_Bg_4_81
+  - first:
+      213: 845151986480756540
+    second: Monopoly_Bg_4_82
+  - first:
+      213: -6651755901443981134
+    second: Monopoly_Bg_4_83
+  - first:
+      213: 6515514790548817593
+    second: Monopoly_Bg_4_84
+  - first:
+      213: -7692805190409140894
+    second: Monopoly_Bg_4_85
+  - first:
+      213: -218927070740492454
+    second: Monopoly_Bg_4_86
+  - first:
+      213: -514155536534477218
+    second: Monopoly_Bg_4_87
+  - first:
+      213: 587482093817251675
+    second: Monopoly_Bg_4_88
+  - first:
+      213: -5979684070475849815
+    second: Monopoly_Bg_4_89
+  - first:
+      213: -2302490902717685200
+    second: Monopoly_Bg_4_90
+  - first:
+      213: 3231983141798048335
+    second: Monopoly_Bg_4_91
+  - first:
+      213: -2360478100415487527
+    second: Monopoly_Bg_4_92
+  - first:
+      213: -4449834075456589113
+    second: Monopoly_Bg_4_93
+  - first:
+      213: -1850765320925555166
+    second: Monopoly_Bg_4_94
+  - first:
+      213: -1228209128404840979
+    second: Monopoly_Bg_4_95
+  - first:
+      213: -5285470550556371890
+    second: Monopoly_Bg_4_96
+  - first:
+      213: 1032617370908045276
+    second: Monopoly_Bg_4_97
+  - first:
+      213: -8156742502363244432
+    second: Monopoly_Bg_4_98
+  - first:
+      213: -8481345190260182937
+    second: Monopoly_Bg_4_99
+  - first:
+      213: 1627090722848852643
+    second: Monopoly_Bg_4_100
+  - first:
+      213: 73727314798496428
+    second: Monopoly_Bg_4_101
+  - first:
+      213: -1817253781113012652
+    second: Monopoly_Bg_4_102
+  - first:
+      213: 2236502874462294826
+    second: Monopoly_Bg_4_103
+  - first:
+      213: -3974319445975867750
+    second: Monopoly_Bg_4_104
+  - first:
+      213: -420624978705792647
+    second: Monopoly_Bg_4_105
+  - first:
+      213: 4686790299188903166
+    second: Monopoly_Bg_4_106
+  - first:
+      213: -4286565891292768561
+    second: Monopoly_Bg_4_107
+  - first:
+      213: 1935104280372751162
+    second: Monopoly_Bg_4_108
+  - first:
+      213: 2647187417040045800
+    second: Monopoly_Bg_4_109
+  - first:
+      213: 8327623886403481950
+    second: Monopoly_Bg_4_110
+  - first:
+      213: 5729886849938083961
+    second: Monopoly_Bg_4_111
+  - first:
+      213: -2521240502858921511
+    second: Monopoly_Bg_4_112
+  - first:
+      213: -6238721371801358603
+    second: Monopoly_Bg_4_113
+  - first:
+      213: -3389675361152580216
+    second: Monopoly_Bg_4_114
+  - first:
+      213: -509993570825186457
+    second: Monopoly_Bg_4_115
+  - first:
+      213: 898768674907264693
+    second: Monopoly_Bg_4_116
+  - first:
+      213: -8855527771852523679
+    second: Monopoly_Bg_4_117
+  - first:
+      213: 7425427618369015936
+    second: Monopoly_Bg_4_118
+  - first:
+      213: 23748751058999998
+    second: Monopoly_Bg_4_119
+  - first:
+      213: 7862148086413396904
+    second: Monopoly_Bg_4_120
+  - first:
+      213: 2718510458857867825
+    second: Monopoly_Bg_4_121
+  - first:
+      213: 4982069655312670132
+    second: Monopoly_Bg_4_122
+  - first:
+      213: -5259428234934539307
+    second: Monopoly_Bg_4_123
+  - first:
+      213: 2435908929930989258
+    second: Monopoly_Bg_4_124
+  - first:
+      213: 7493248955866400959
+    second: Monopoly_Bg_4_125
+  - first:
+      213: 2921100279800237194
+    second: Monopoly_Bg_4_126
+  - first:
+      213: -2619911913862035493
+    second: Monopoly_Bg_4_127
+  - first:
+      213: -4510134904195997115
+    second: Monopoly_Bg_4_128
+  - first:
+      213: 5681577741634173871
+    second: Monopoly_Bg_4_129
+  - first:
+      213: 8169061890732624573
+    second: Monopoly_Bg_4_130
+  - first:
+      213: -915514330133215672
+    second: Monopoly_Bg_4_131
+  - first:
+      213: -6792276326928213004
+    second: Monopoly_Bg_4_132
+  - first:
+      213: -7615898684164177684
+    second: Monopoly_Bg_4_133
+  - first:
+      213: -4187369483595604728
+    second: Monopoly_Bg_4_134
+  - first:
+      213: 4846217662726991536
+    second: Monopoly_Bg_4_135
+  - first:
+      213: 1026117466260516010
+    second: Monopoly_Bg_4_136
+  - first:
+      213: -1777976770512378848
+    second: Monopoly_Bg_4_137
+  - first:
+      213: 5834406465370783541
+    second: Monopoly_Bg_4_138
+  - first:
+      213: 8964580829724358420
+    second: Monopoly_Bg_4_139
+  - first:
+      213: -5994919887164174583
+    second: Monopoly_Bg_4_140
+  - first:
+      213: -4214179938934988785
+    second: Monopoly_Bg_4_141
+  - first:
+      213: -7545804053892189554
+    second: Monopoly_Bg_4_142
+  - first:
+      213: 7209370536517140810
+    second: Monopoly_Bg_4_143
+  - first:
+      213: 6250931756095865946
+    second: Monopoly_Bg_4_144
+  - first:
+      213: 8285233975920835054
+    second: Monopoly_Bg_4_145
+  - first:
+      213: 3423063313392114443
+    second: Monopoly_Bg_4_146
+  - first:
+      213: 4995778698686392529
+    second: Monopoly_Bg_4_147
+  - first:
+      213: 2018820774266886092
+    second: Monopoly_Bg_4_148
+  - first:
+      213: -8828961810596191045
+    second: Monopoly_Bg_4_149
+  - first:
+      213: -2514045089308865269
+    second: Monopoly_Bg_4_150
+  - first:
+      213: -548708862862341588
+    second: Monopoly_Bg_4_151
+  - first:
+      213: -4309041036980060000
+    second: Monopoly_Bg_4_152
+  - first:
+      213: 1121356515126136378
+    second: Monopoly_Bg_4_153
+  - first:
+      213: 8273008894273936089
+    second: Monopoly_Bg_4_154
+  - first:
+      213: -5047843023858136933
+    second: Monopoly_Bg_4_155
+  - first:
+      213: 4585237152429155951
+    second: Monopoly_Bg_4_156
+  - first:
+      213: -1929333807643581545
+    second: Monopoly_Bg_4_157
+  - first:
+      213: -4840686515991413881
+    second: Monopoly_Bg_4_158
+  - first:
+      213: -213059037175015856
+    second: Monopoly_Bg_4_159
+  - first:
+      213: -3135155498378859812
+    second: Monopoly_Bg_4_160
+  - first:
+      213: 3465820505356604141
+    second: Monopoly_Bg_4_161
+  - first:
+      213: -5439429657594023065
+    second: Monopoly_Bg_4_162
+  - first:
+      213: 5989561950485455315
+    second: Monopoly_Bg_4_163
+  - first:
+      213: -12100647741699144
+    second: Monopoly_Bg_4_164
+  - first:
+      213: -3809017402585249405
+    second: Monopoly_Bg_4_165
+  - first:
+      213: 7531613713544776309
+    second: Monopoly_Bg_4_166
+  - first:
+      213: -1495555765192605342
+    second: Monopoly_Bg_4_167
+  - first:
+      213: -5282703370543599284
+    second: Monopoly_Bg_4_168
+  - first:
+      213: 2985738455032100612
+    second: Monopoly_Bg_4_169
+  - first:
+      213: 5863630612470721235
+    second: Monopoly_Bg_4_170
+  - first:
+      213: -5764807401388426477
+    second: Monopoly_Bg_4_171
+  - first:
+      213: 8605221367754365751
+    second: Monopoly_Bg_4_172
+  - first:
+      213: -1593236253785677463
+    second: Monopoly_Bg_4_173
+  - first:
+      213: -5602800144444684341
+    second: Monopoly_Bg_4_174
+  - first:
+      213: -648038215361336956
+    second: Monopoly_Bg_4_175
+  - first:
+      213: -7302587925567374577
+    second: Monopoly_Bg_4_176
+  - first:
+      213: -7187244374310710219
+    second: Monopoly_Bg_4_177
+  - first:
+      213: 3643916065868467763
+    second: Monopoly_Bg_4_178
+  - first:
+      213: 3881473471668586601
+    second: Monopoly_Bg_4_179
+  - first:
+      213: -5413549602302895765
+    second: Monopoly_Bg_4_180
+  - first:
+      213: -4305898098427266858
+    second: Monopoly_Bg_4_181
+  - first:
+      213: 8169683190547662068
+    second: Monopoly_Bg_4_182
+  - first:
+      213: -7525584828655961959
+    second: Monopoly_Bg_4_183
+  - first:
+      213: -1926837743259945788
+    second: Monopoly_Bg_4_184
+  - first:
+      213: 3677846623301116745
+    second: Monopoly_Bg_4_185
+  - first:
+      213: -1238440549146079255
+    second: Monopoly_Bg_4_186
+  - first:
+      213: -8405233838660823229
+    second: Monopoly_Bg_4_187
+  - first:
+      213: -1268196107419759371
+    second: Monopoly_Bg_4_188
+  - first:
+      213: -8909354056201408580
+    second: Monopoly_Bg_4_189
+  - first:
+      213: -5909227643160130832
+    second: Monopoly_Bg_4_190
+  - first:
+      213: 5505979827438469773
+    second: Monopoly_Bg_4_191
+  - first:
+      213: -5309317470157592635
+    second: Monopoly_Bg_4_192
+  - first:
+      213: -4786450998149844171
+    second: Monopoly_Bg_4_193
+  - first:
+      213: -8710731402892047677
+    second: Monopoly_Bg_4_194
+  - first:
+      213: -6329720628225309071
+    second: Monopoly_Bg_4_195
+  - first:
+      213: -9118632765789833608
+    second: Monopoly_Bg_4_196
+  - first:
+      213: 7806971004965164900
+    second: Monopoly_Bg_4_197
+  - first:
+      213: 3735022939556172285
+    second: Monopoly_Bg_4_198
+  - first:
+      213: -4458716050179761687
+    second: Monopoly_Bg_4_199
+  - first:
+      213: -1231932406049174941
+    second: Monopoly_Bg_4_200
+  - first:
+      213: 4457568192855971613
+    second: Monopoly_Bg_4_201
+  - first:
+      213: -958627639760359669
+    second: Monopoly_Bg_4_202
+  - first:
+      213: -3160115133816593189
+    second: Monopoly_Bg_4_203
+  - first:
+      213: -8957443175191478869
+    second: Monopoly_Bg_4_204
+  - first:
+      213: 2421477202249436058
+    second: Monopoly_Bg_4_205
+  - first:
+      213: 3298777370063189966
+    second: Monopoly_Bg_4_206
+  - first:
+      213: 458115000843571160
+    second: Monopoly_Bg_4_207
+  - first:
+      213: 692176212821291402
+    second: Monopoly_Bg_4_208
+  - first:
+      213: -5789590589692877814
+    second: Monopoly_Bg_4_209
+  - first:
+      213: -4658815056336793022
+    second: Monopoly_Bg_4_210
+  - first:
+      213: 3380366907651624082
+    second: Monopoly_Bg_4_211
+  - first:
+      213: -9147761059857738873
+    second: Monopoly_Bg_4_212
+  - first:
+      213: 8210977453452715338
+    second: Monopoly_Bg_4_213
+  - first:
+      213: 7623607445014399194
+    second: Monopoly_Bg_4_214
+  - first:
+      213: 620839575622609031
+    second: Monopoly_Bg_4_215
+  - first:
+      213: -7650154283892150853
+    second: Monopoly_Bg_4_216
+  - first:
+      213: 300542619175603917
+    second: Monopoly_Bg_4_217
+  - first:
+      213: 1734621977875997937
+    second: Monopoly_Bg_4_218
+  - first:
+      213: -6727331303743930969
+    second: Monopoly_Bg_4_219
+  - first:
+      213: 5856937240033745042
+    second: Monopoly_Bg_4_220
+  - first:
+      213: -7352906075936089979
+    second: Monopoly_Bg_4_221
+  - first:
+      213: 7007134319385000914
+    second: Monopoly_Bg_4_222
+  - first:
+      213: -4020744007563590317
+    second: Monopoly_Bg_4_223
+  - first:
+      213: 33976474179953428
+    second: Monopoly_Bg_4_224
+  - first:
+      213: 5974254835074097531
+    second: Monopoly_Bg_4_225
+  - first:
+      213: -108373993570951011
+    second: Monopoly_Bg_4_226
+  - first:
+      213: -3568675012106578592
+    second: Monopoly_Bg_4_227
+  - first:
+      213: -4113632400695826492
+    second: Monopoly_Bg_4_228
+  - first:
+      213: 4968748549598911690
+    second: Monopoly_Bg_4_229
+  - first:
+      213: 3115960017976624270
+    second: Monopoly_Bg_4_230
+  - first:
+      213: 4080797225943455318
+    second: Monopoly_Bg_4_231
+  - first:
+      213: -358807744760966001
+    second: Monopoly_Bg_4_232
+  - first:
+      213: -686702738497937051
+    second: Monopoly_Bg_4_233
+  - first:
+      213: 8849346958119754369
+    second: Monopoly_Bg_4_234
+  - first:
+      213: 4073432281741496145
+    second: Monopoly_Bg_4_235
+  - first:
+      213: 3061086158516311011
+    second: Monopoly_Bg_4_236
+  - first:
+      213: 6476940472905995498
+    second: Monopoly_Bg_4_237
+  - first:
+      213: 4777381850263676767
+    second: Monopoly_Bg_4_238
+  - first:
+      213: 3713661187036052358
+    second: Monopoly_Bg_4_239
+  - first:
+      213: 3234103534338881829
+    second: Monopoly_Bg_4_240
+  - first:
+      213: -2143277883881694738
+    second: Monopoly_Bg_4_241
+  - first:
+      213: -6214095544862392878
+    second: Monopoly_Bg_4_242
+  - first:
+      213: -5021705230287931281
+    second: Monopoly_Bg_4_243
+  - first:
+      213: 1741429621661306632
+    second: Monopoly_Bg_4_244
+  - first:
+      213: -3610968099100969230
+    second: Monopoly_Bg_4_245
+  - first:
+      213: -9052207042934219019
+    second: Monopoly_Bg_4_246
+  - first:
+      213: -8244808262038688628
+    second: Monopoly_Bg_4_247
+  - first:
+      213: 4861993839125209450
+    second: Monopoly_Bg_4_248
+  - first:
+      213: 7811831523686781483
+    second: Monopoly_Bg_4_249
+  - first:
+      213: -1609821632999235415
+    second: Monopoly_Bg_4_250
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 0
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 0
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_0
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 2008
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20fcd0f3c2f983270800000000000000
+      internalID: 8230503331404828418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_1
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 2024
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e35404f401faba90800000000000000
+      internalID: -7297255242624379932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_2
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 2025
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6bc010cb1083a830800000000000000
+      internalID: 4081246544002599791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_3
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 1978
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7210f895986f2ed0800000000000000
+      internalID: -2436613881658862979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_4
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 1968
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81b05622702283ff0800000000000000
+      internalID: -56257581304968424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_5
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 1993
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 602b598acc90770c0800000000000000
+      internalID: -4578179721592458746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_6
+      rect:
+        serializedVersion: 2
+        x: 1593
+        y: 1979
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71661bab43c742180800000000000000
+      internalID: -9141044777742932457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_7
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 1967
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ae7773390d465620800000000000000
+      internalID: 2762480123351891624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_8
+      rect:
+        serializedVersion: 2
+        x: 1566
+        y: 1947
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 384db821c8b550eb0800000000000000
+      internalID: -4754293174454987645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_9
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1927
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e93d1ceec5b2e74e0800000000000000
+      internalID: -1982099107853773922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_10
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 1925
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24657539181443090800000000000000
+      internalID: -8055741808680413630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_11
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 1922
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4678eadaa2d327870800000000000000
+      internalID: 8679066685408184164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_12
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 1928
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cf0b5a4602cd3760800000000000000
+      internalID: 7439315491759001543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_13
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 1928
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c21ba64c7bc16efa0800000000000000
+      internalID: -5771894296828792532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_14
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 1920
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c6a47c1a7e0acea0800000000000000
+      internalID: -5851848848188332348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_15
+      rect:
+        serializedVersion: 2
+        x: 1817
+        y: 1915
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4deee48ace7bce550800000000000000
+      internalID: 6191525814791499476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_16
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1893
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47c7cc1abbae5e3f0800000000000000
+      internalID: -872032861232006028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_17
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 1895
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8898778d90eb009c0800000000000000
+      internalID: -3962958722590340728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_18
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 1883
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11cc285d29ef9abe0800000000000000
+      internalID: -1465360297131586543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_19
+      rect:
+        serializedVersion: 2
+        x: 1537
+        y: 1881
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3d811d90b76767c0800000000000000
+      internalID: -4078176929313616582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_20
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 1894
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1eb2e1e73afd6cb0800000000000000
+      internalID: -4868960504197759458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_21
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 1835
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34b577bf20ab6db10800000000000000
+      internalID: 2005995206011738947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_22
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 1867
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09603bf897dcded70800000000000000
+      internalID: 9074134746207028880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_23
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 1864
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae7f119490030b5e0800000000000000
+      internalID: -1895962626684225558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_24
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 1828
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa49fdd05289220b0800000000000000
+      internalID: -5754870088912104278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_25
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 1832
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3ac8067c09bc9820800000000000000
+      internalID: 2926417321055013438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_26
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 1833
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9ea920d0d7c6b020800000000000000
+      internalID: 2357291154634550938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_27
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 1813
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37222472c580362a0800000000000000
+      internalID: -6745538624982211981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_28
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 1807
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e547dec7ebca3ac0800000000000000
+      internalID: -3874560332930791961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_29
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 1817
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0d842c767e24bc90800000000000000
+      internalID: -7155042821561086705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_30
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 1780
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 908225a6aaae1b770800000000000000
+      internalID: 8624932779040319497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_31
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1797
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87bd111452f5fef60800000000000000
+      internalID: 8065770071253965688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_32
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 1788
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ca75a77fe40db690800000000000000
+      internalID: -7584900770871018816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_33
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 1779
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fff89570297585f30800000000000000
+      internalID: 4564494507040149503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_34
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 1764
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e48f9aa8c5789c1a0800000000000000
+      internalID: -6788746131751176114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_35
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 1759
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55b0901c972c434c0800000000000000
+      internalID: -4308605115301295275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_36
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 1747
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 655294be8b64937a0800000000000000
+      internalID: -6397004035667712682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_37
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 1767
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dcf8f173063ba9a0800000000000000
+      internalID: -6220819071857263401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_38
+      rect:
+        serializedVersion: 2
+        x: 1883
+        y: 1737
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a283f1ef90a5e2bf0800000000000000
+      internalID: -347241122296285142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_39
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1720
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00c51ef26519c8180800000000000000
+      internalID: -9111748146720842752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_40
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 1733
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f16e946eda6a3440800000000000000
+      internalID: 4916359446631703024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_41
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 1727
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd855bb8749145eb0800000000000000
+      internalID: -4732129513382258469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_42
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 1741
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ade2873893151e4e0800000000000000
+      internalID: -1954191455841407270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_43
+      rect:
+        serializedVersion: 2
+        x: 1697
+        y: 1694
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ada2cf071d1d29cf0800000000000000
+      internalID: -246904332078011686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_44
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 1704
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6075f4a15cca6a50800000000000000
+      internalID: 6515244461976809582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_45
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 1716
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b426e911684f6180800000000000000
+      internalID: -9119991138518424396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_46
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 1710
+        width: 35
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5128c0f0c72aef370800000000000000
+      internalID: 8358296612158341653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_47
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 1711
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47eb9152c04c496f0800000000000000
+      internalID: -678702087385006476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_48
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 1723
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c68b7caad19c13360800000000000000
+      internalID: 7147715212870137964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_49
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 1702
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc22136d87d41daa0800000000000000
+      internalID: -6138039635744316725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_50
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 1707
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5826fa9e1d454da00800000000000000
+      internalID: 780341895987421829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_51
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 1681
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5a6372ff951d3ce0800000000000000
+      internalID: -1423958130467575202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_52
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 1674
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7031ba67856f5bdd0800000000000000
+      internalID: -2470797960734371065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_53
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 1681
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 202a714d4012bb7e0800000000000000
+      internalID: -1748767725681401342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_54
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1677
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c7dfa4950c37b4c0800000000000000
+      internalID: -4271879726870571065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_55
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 1686
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f03ae7d149272b860800000000000000
+      internalID: 7544218306274566927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_56
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 1651
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 130110aa8a6a120c0800000000000000
+      internalID: -4602214100859023311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_57
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 1662
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3194335abb0403d0800000000000000
+      internalID: -3241452936912137923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_58
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 1635
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da6ee0f40875c6d30800000000000000
+      internalID: 4426008742392161965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_59
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 1580
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd9335af1a23e94a0800000000000000
+      internalID: -6584769933898204709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_60
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 1585
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bb668ac7c5c623f0800000000000000
+      internalID: -925835211491087439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_61
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 1528
+        width: 59
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77c56b537763fdbc0800000000000000
+      internalID: -3756223678573552521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_62
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 1528
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5d2adca202f1bc90800000000000000
+      internalID: -7155672239611171493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_63
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 1528
+        width: 61
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19db7266095908480800000000000000
+      internalID: -8898948416262390383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_64
+      rect:
+        serializedVersion: 2
+        x: 1613
+        y: 1514
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9a48cd5241602cf0800000000000000
+      internalID: -279116239227827554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_65
+      rect:
+        serializedVersion: 2
+        x: 1747
+        y: 1501
+        width: 35
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd4e964004c182c20800000000000000
+      internalID: 3181824198014788827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_66
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1491
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 530eccf77f3ebcf40800000000000000
+      internalID: 5749940001409130549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_67
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 1507
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeca05e7dcee0c430800000000000000
+      internalID: 3801300651855621358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_68
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 1496
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7b2980d00c2197e0800000000000000
+      internalID: -1760577597314880642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_69
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 1459
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dfb0f8511fdface0800000000000000
+      internalID: -1391648494234583082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_70
+      rect:
+        serializedVersion: 2
+        x: 1611
+        y: 1467
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f870e8082d1ee1870800000000000000
+      internalID: 8655603828068845455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_71
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 1476
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92144883507f0b010800000000000000
+      internalID: 1202732702303011113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_72
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1411
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d36f2d641e189a70800000000000000
+      internalID: 8833843742167229401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_73
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 1409
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ef6b1e1c6a93f110800000000000000
+      internalID: 1293547307137724390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_74
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 1405
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0978974a347c2370800000000000000
+      internalID: 8299136006995081487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_75
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 1411
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06da1d528a454a650800000000000000
+      internalID: 6243208064608087392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_76
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 1390
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b45d05d524de3dd50800000000000000
+      internalID: 6761008334902449483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_77
+      rect:
+        serializedVersion: 2
+        x: 1668
+        y: 1376
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 442a3f6a5dc0e7580800000000000000
+      internalID: -8827604107831041468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_78
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 1380
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 206157765df3471f0800000000000000
+      internalID: -1048142627474172414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_79
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 1362
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c5d3d1c682475990800000000000000
+      internalID: -7397370716387813949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_80
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 1395
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c767eff39738bac30800000000000000
+      internalID: 4371732420081120892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_81
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1376
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87bbf9f8f8470adf0800000000000000
+      internalID: -171008625901323400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_82
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 1368
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c37b66ff0459abb00800000000000000
+      internalID: 845151986480756540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_83
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 1316
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b0c2d9004730b3a0800000000000000
+      internalID: -6651755901443981134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_84
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 1352
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b6477b6e22cb6a50800000000000000
+      internalID: 6515514790548817593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_85
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 1313
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 265c163007aad3590800000000000000
+      internalID: -7692805190409140894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_86
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 1301
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5fcbc43df636fcf0800000000000000
+      internalID: -218927070740492454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_87
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 1291
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e56ef8d734a5dd8f0800000000000000
+      internalID: -514155536534477218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_88
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 1327
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5741e90ad7272800800000000000000
+      internalID: 587482093817251675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_89
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 1298
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9af99360505e30da0800000000000000
+      internalID: -5979684070475849815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_90
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 1290
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 032a1fc19b8eb00e0800000000000000
+      internalID: -2302490902717685200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_91
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 1313
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f427cee2b8f4adc20800000000000000
+      internalID: 3231983141798048335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_92
+      rect:
+        serializedVersion: 2
+        x: 1819
+        y: 1291
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d165ac8ca5ed3fd0800000000000000
+      internalID: -2360478100415487527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_93
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1282
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c23bfe0c730f32c0800000000000000
+      internalID: -4449834075456589113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_94
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 1271
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 226de931fb2c056e0800000000000000
+      internalID: -1850765320925555166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_95
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 1248
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ded89871e4684fee0800000000000000
+      internalID: -1228209128404840979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_96
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 1232
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e449c43b98c36a6b0800000000000000
+      internalID: -5285470550556371890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_97
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 1258
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdf2fdd1708945e00800000000000000
+      internalID: 1032617370908045276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_98
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 1218
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 078de4e09ed6dce80800000000000000
+      internalID: -8156742502363244432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_99
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 1252
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 760f21d4c753c4a80800000000000000
+      internalID: -8481345190260182937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_100
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 1245
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aa4db84466949610800000000000000
+      internalID: 1627090722848852643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_101
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1206
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caacec82a9ee50100800000000000000
+      internalID: 73727314798496428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_102
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 1191
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45ef5067051d7c6e0800000000000000
+      internalID: -1817253781113012652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_103
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 1200
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a23177bc387a90f10800000000000000
+      internalID: 2236502874462294826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_104
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 1203
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9e5eae458168d8c0800000000000000
+      internalID: -3974319445975867750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_105
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 1212
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 971c5987fc3a92af0800000000000000
+      internalID: -420624978705792647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_106
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 1192
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efcb6e702f2da0140800000000000000
+      internalID: 4686790299188903166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_107
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 1164
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc65037780f0384c0800000000000000
+      internalID: -4286565891292768561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_108
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 1160
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3ba4f2271fdada10800000000000000
+      internalID: 1935104280372751162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_109
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 1185
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e64e8e2ee2bcb420800000000000000
+      internalID: 2647187417040045800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_110
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 1175
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5133249dc9a19370800000000000000
+      internalID: 8327623886403481950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_111
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 1179
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 970ddb55bb5a48f40800000000000000
+      internalID: 5729886849938083961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_112
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 1165
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d944c9ee11c20dd0800000000000000
+      internalID: -2521240502858921511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_113
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1161
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fe642d67fb9b69a0800000000000000
+      internalID: -6238721371801358603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_114
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 1145
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8854b92e73475f0d0800000000000000
+      internalID: -3389675361152580216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_115
+      rect:
+        serializedVersion: 2
+        x: 1563
+        y: 1141
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7635b35ac832ce8f0800000000000000
+      internalID: -509993570825186457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_116
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 1135
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b698131951197c00800000000000000
+      internalID: 898768674907264693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_117
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 1148
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 167bf1cf868da1580800000000000000
+      internalID: -8855527771852523679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_118
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 1077
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 080924ac31b6c0760800000000000000
+      internalID: 7425427618369015936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_119
+      rect:
+        serializedVersion: 2
+        x: 1766
+        y: 1119
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eba1bbefc5f545000800000000000000
+      internalID: 23748751058999998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_120
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 1091
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ab00367706fb1d60800000000000000
+      internalID: 7862148086413396904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_121
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 1101
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13a486aebd61ab520800000000000000
+      internalID: 2718510458857867825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_122
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 1072
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bd1a2394fdd32540800000000000000
+      internalID: 4982069655312670132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_123
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 1068
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5db211fc2e1c207b0800000000000000
+      internalID: -5259428234934539307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_124
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 1059
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ace0db904461ec120800000000000000
+      internalID: 2435908929930989258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_125
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 1040
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb8cbf3793e5df760800000000000000
+      internalID: 7493248955866400959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_126
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 1016
+        width: 39
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8c89c25a35d98820800000000000000
+      internalID: 2921100279800237194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_127
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 1014
+        width: 58
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd78077cef334abd0800000000000000
+      internalID: -2619911913862035493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_128
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 1016
+        width: 22
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 542ae4a4338c861c0800000000000000
+      internalID: -4510134904195997115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_129
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 1002
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fabfedd8ad409de40800000000000000
+      internalID: 5681577741634173871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_130
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 990
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dba8c4112865e5170800000000000000
+      internalID: 8169061890732624573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_131
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 999
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84641ad31907b43f0800000000000000
+      internalID: -915514330133215672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_132
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 988
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fb162deaacfcb1a0800000000000000
+      internalID: -6792276326928213004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_133
+      rect:
+        serializedVersion: 2
+        x: 1612
+        y: 984
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce0870d5f74ee4690800000000000000
+      internalID: -7615898684164177684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_134
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 982
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80d19fae3a973e5c0800000000000000
+      internalID: -4187369483595604728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_135
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 964
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bee013b949314340800000000000000
+      internalID: 4846217662726991536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_136
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 953
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aac284226608d3e00800000000000000
+      internalID: 1026117466260516010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_137
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 961
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 024a6be1c8b5357e0800000000000000
+      internalID: -1777976770512378848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_138
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 956
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53ffaaba4c9f7f050800000000000000
+      internalID: 5834406465370783541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_139
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 882
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4173ffba4c6986c70800000000000000
+      internalID: 8964580829724358420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_140
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 875
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90f87a40024cdcca0800000000000000
+      internalID: -5994919887164174583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_141
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 856
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f00e3385ca93485c0800000000000000
+      internalID: -4214179938934988785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_142
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 884
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e82bd0f313be74790800000000000000
+      internalID: -7545804053892189554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_143
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 878
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a41854b5e44dc0460800000000000000
+      internalID: 7209370536517140810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_144
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 861
+        width: 45
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a548d453055cfb650800000000000000
+      internalID: 6250931756095865946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_145
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 840
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee932cf67601bf270800000000000000
+      internalID: 8285233975920835054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_146
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 847
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0b986682f9218f20800000000000000
+      internalID: 3423063313392114443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_147
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 787
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d86aa7f142945540800000000000000
+      internalID: 4995778698686392529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_148
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 780
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc75b5b4cca440c10800000000000000
+      internalID: 2018820774266886092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_149
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 812
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb4ace7d20a397580800000000000000
+      internalID: -8828961810596191045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_150
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 789
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0d0e6eaf415c1dd0800000000000000
+      internalID: -2514045089308865269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_151
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 781
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2a4bf742389268f0800000000000000
+      internalID: -548708862862341588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_152
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 815
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a00934d1063334c0800000000000000
+      internalID: -4309041036980060000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_153
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 801
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3ec9ae2fcbdf8f00800000000000000
+      internalID: 1121356515126136378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_154
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 779
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9da58dec1c1afc270800000000000000
+      internalID: 8273008894273936089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_155
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 802
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b988001b38572f9b0800000000000000
+      internalID: -5047843023858136933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_156
+      rect:
+        serializedVersion: 2
+        x: 1887
+        y: 780
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f66a67185e802af30800000000000000
+      internalID: 4585237152429155951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_157
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 752
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 793a04ebf11a935e0800000000000000
+      internalID: -1929333807643581545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_158
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 698
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78bfe41c24d62dcb0800000000000000
+      internalID: -4840686515991413881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_159
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 740
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0561ffc3fef0b0df0800000000000000
+      internalID: -213059037175015856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_160
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 750
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdae38b5fa0bd74d0800000000000000
+      internalID: -3135155498378859812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_161
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 704
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de29b0d0361191030800000000000000
+      internalID: 3465820505356604141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_162
+      rect:
+        serializedVersion: 2
+        x: 1794
+        y: 742
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7633266bb834384b0800000000000000
+      internalID: -5439429657594023065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_163
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 692
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d1a1e22cd23f1350800000000000000
+      internalID: 5989561950485455315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_164
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 701
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bbcdc5668205dff0800000000000000
+      internalID: -12100647741699144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_165
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 693
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38900a77ad6a32bc0800000000000000
+      internalID: -3809017402585249405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_166
+      rect:
+        serializedVersion: 2
+        x: 1594
+        y: 702
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57a0c4da4caa58860800000000000000
+      internalID: 7531613713544776309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_167
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 680
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26148e194f7be3be0800000000000000
+      internalID: -1495555765192605342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_168
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 667
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c417df0064110b6b0800000000000000
+      internalID: -5282703370543599284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_169
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 670
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40779644e497f6920800000000000000
+      internalID: 2985738455032100612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_170
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 678
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3da6c66a9fccf5150800000000000000
+      internalID: 5863630612470721235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_171
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 666
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31b33b1363a4fffa0800000000000000
+      internalID: -5764807401388426477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_172
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 670
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73b9996dd33eb6770800000000000000
+      internalID: 8605221367754365751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_173
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 641
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 961a4d98110b3e9e0800000000000000
+      internalID: -1593236253785677463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_174
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 630
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc70eda14fade32b0800000000000000
+      internalID: -5602800144444684341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_175
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 640
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48962843da4b107f0800000000000000
+      internalID: -648038215361336956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_176
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 631
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0bff73f8fef7aa90800000000000000
+      internalID: -7302587925567374577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_177
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 610
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 534194b3257c14c90800000000000000
+      internalID: -7187244374310710219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_178
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 566
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33ecd690b5ac19230800000000000000
+      internalID: 3643916065868467763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_179
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 610
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96888ebbe83cdd530800000000000000
+      internalID: 3881473471668586601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_180
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 567
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6957c4a1553fd4b0800000000000000
+      internalID: -5413549602302895765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_181
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 565
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d8763c3e706e34c0800000000000000
+      internalID: -4305898098427266858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_182
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 579
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f4c214b39b806170800000000000000
+      internalID: 8169683190547662068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_183
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 586
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99874e87870cf8790800000000000000
+      internalID: -7525584828655961959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_184
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 580
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c4fc25084f7245e0800000000000000
+      internalID: -1926837743259945788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_185
+      rect:
+        serializedVersion: 2
+        x: 1878
+        y: 589
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 943ab3094065a0330800000000000000
+      internalID: 3677846623301116745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_186
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 560
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ef45b0d1ec20dee0800000000000000
+      internalID: -1238440549146079255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_187
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 541
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34757884b5c9a5b80800000000000000
+      internalID: -8405233838660823229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_188
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 560
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fc46b70c56766ee0800000000000000
+      internalID: -1268196107419759371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_189
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 558
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbfeded80bd9b5480800000000000000
+      internalID: -8909354056201408580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_190
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 507
+        width: 39
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fa858854c43efda0800000000000000
+      internalID: -5909227643160130832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_191
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 536
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d82cfea2b7b296c40800000000000000
+      internalID: 5505979827438469773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_192
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 507
+        width: 39
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c72b7f04e38156b0800000000000000
+      internalID: -5309317470157592635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_193
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 493
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 533f6784d2c139db0800000000000000
+      internalID: -4786450998149844171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_194
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 475
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ca87c4c0f34d1780800000000000000
+      internalID: -8710731402892047677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_195
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 494
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1760b2bff905828a0800000000000000
+      internalID: -6329720628225309071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_196
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 474
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 876fbd5efcb147180800000000000000
+      internalID: -9118632765789833608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_197
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 414
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46719b214cee75c60800000000000000
+      internalID: 7806971004965164900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_198
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 424
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df15e24139775d330800000000000000
+      internalID: 3735022939556172285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_199
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 408
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e9d3ba20657f12c0800000000000000
+      internalID: -4458716050179761687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_200
+      rect:
+        serializedVersion: 2
+        x: 1682
+        y: 423
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36a8526f00c47eee0800000000000000
+      internalID: -1231932406049174941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_201
+      rect:
+        serializedVersion: 2
+        x: 1817
+        y: 409
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d17924977a67cdd30800000000000000
+      internalID: 4457568192855971613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_202
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 403
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0f663c9d3542b2f0800000000000000
+      internalID: -958627639760359669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_203
+      rect:
+        serializedVersion: 2
+        x: 1613
+        y: 402
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd4a68f57040524d0800000000000000
+      internalID: -3160115133816593189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_204
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 367
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: badf6f604e4c0b380800000000000000
+      internalID: -8957443175191478869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_205
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 381
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9bc8c79fa0da9120800000000000000
+      internalID: 2421477202249436058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_206
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 369
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec7b6b75a8c97cd20800000000000000
+      internalID: 3298777370063189966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_207
+      rect:
+        serializedVersion: 2
+        x: 1753
+        y: 381
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8df0f838a2d8b5600800000000000000
+      internalID: 458115000843571160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_208
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 347
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a813037299a1b9900800000000000000
+      internalID: 692176212821291402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_209
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 346
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a046962880e37afa0800000000000000
+      internalID: -5789590589692877814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_210
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 319
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 242ddc4c360985fb0800000000000000
+      internalID: -4658815056336793022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_211
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 295
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29c8f05eac979ee20800000000000000
+      internalID: 3380366907651624082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_212
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 317
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 783570178cf9c0180800000000000000
+      internalID: -9147761059857738873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_213
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 295
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a456ac38d7043f170800000000000000
+      internalID: 8210977453452715338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_214
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 255
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad84b13649e7cc960800000000000000
+      internalID: 7623607445014399194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_215
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 240
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7886d7ffd4aad9800800000000000000
+      internalID: 620839575622609031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_216
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 221
+        width: 50
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbdeca7063135d590800000000000000
+      internalID: -7650154283892150853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_217
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 243
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcec3d77bedbb2400800000000000000
+      internalID: 300542619175603917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_218
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 216
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f462ea9f7d921810800000000000000
+      internalID: 1734621977875997937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_219
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 229
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ad3af972d7b3a2a0800000000000000
+      internalID: -6727331303743930969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_220
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 242
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 298d7ff6365084150800000000000000
+      internalID: 5856937240033745042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_221
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 215
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 588940d91ea35f990800000000000000
+      internalID: -7352906075936089979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_222
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 215
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2db3460c9875e3160800000000000000
+      internalID: 7007134319385000914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_223
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 240
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3554460c0a27338c0800000000000000
+      internalID: -4020744007563590317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_224
+      rect:
+        serializedVersion: 2
+        x: 1887
+        y: 213
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 413673a5c65b87000800000000000000
+      internalID: 33976474179953428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_225
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 226
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b71604a9e11d8e250800000000000000
+      internalID: 5974254835074097531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_226
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 226
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9020525d6afe7ef0800000000000000
+      internalID: -108373993570951011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_227
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 185
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0651390fbf4897ec0800000000000000
+      internalID: -3568675012106578592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_228
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 182
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c7ecf3602179e6c0800000000000000
+      internalID: -4113632400695826492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_229
+      rect:
+        serializedVersion: 2
+        x: 1795
+        y: 182
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acc9415fa7a84f440800000000000000
+      internalID: 4968748549598911690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_230
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 131
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8401d5902d1e3b20800000000000000
+      internalID: 3115960017976624270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_231
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 145
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65652ccb477e1a830800000000000000
+      internalID: 4080797225943455318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_232
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 140
+        width: 43
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f841dd6d142450bf0800000000000000
+      internalID: -358807744760966001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_233
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 149
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 561ea856f775876f0800000000000000
+      internalID: -686702738497937051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_234
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 137
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18a59ec2c223fca70800000000000000
+      internalID: 8849346958119754369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_235
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 80
+        width: 66
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15f8fc9041db78830800000000000000
+      internalID: 4073432281741496145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_236
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 145
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e3da3194a92b7a20800000000000000
+      internalID: 3061086158516311011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_237
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 76
+        width: 59
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae499e63b07b2e950800000000000000
+      internalID: 6476940472905995498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_238
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 79
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f576d5d2b7bac4240800000000000000
+      internalID: 4777381850263676767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_239
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 105
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68b707d7c23998330800000000000000
+      internalID: 3713661187036052358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_240
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 77
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 529ba1b8708d1ec20800000000000000
+      internalID: 3234103534338881829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_241
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 75
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee9d744ce1c8142e0800000000000000
+      internalID: -2143277883881694738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_242
+      rect:
+        serializedVersion: 2
+        x: 1838
+        y: 71
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ddb320960913c9a0800000000000000
+      internalID: -6214095544862392878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_243
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 47
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6877fdf2b15f4ab0800000000000000
+      internalID: -5021705230287931281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_244
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 14
+        width: 45
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80f0770b30dca2810800000000000000
+      internalID: 1741429621661306632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_245
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 38
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f6b1d545a343edc0800000000000000
+      internalID: -3610968099100969230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_246
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 9
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fedd94b7a9106280800000000000000
+      internalID: -9052207042934219019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_247
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 25
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8c6afb819e849d80800000000000000
+      internalID: -8244808262038688628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_248
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 22
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a61223103a5497340800000000000000
+      internalID: 4861993839125209450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_249
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 1
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b229c86c163396c60800000000000000
+      internalID: 7811831523686781483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Bg_4_250
+      rect:
+        serializedVersion: 2
+        x: 1878
+        y: 1
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a0675501c3c8a9e0800000000000000
+      internalID: -1609821632999235415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Monopoly_Bg_4_0: 8230503331404828418
+      Monopoly_Bg_4_1: -7297255242624379932
+      Monopoly_Bg_4_10: -8055741808680413630
+      Monopoly_Bg_4_100: 1627090722848852643
+      Monopoly_Bg_4_101: 73727314798496428
+      Monopoly_Bg_4_102: -1817253781113012652
+      Monopoly_Bg_4_103: 2236502874462294826
+      Monopoly_Bg_4_104: -3974319445975867750
+      Monopoly_Bg_4_105: -420624978705792647
+      Monopoly_Bg_4_106: 4686790299188903166
+      Monopoly_Bg_4_107: -4286565891292768561
+      Monopoly_Bg_4_108: 1935104280372751162
+      Monopoly_Bg_4_109: 2647187417040045800
+      Monopoly_Bg_4_11: 8679066685408184164
+      Monopoly_Bg_4_110: 8327623886403481950
+      Monopoly_Bg_4_111: 5729886849938083961
+      Monopoly_Bg_4_112: -2521240502858921511
+      Monopoly_Bg_4_113: -6238721371801358603
+      Monopoly_Bg_4_114: -3389675361152580216
+      Monopoly_Bg_4_115: -509993570825186457
+      Monopoly_Bg_4_116: 898768674907264693
+      Monopoly_Bg_4_117: -8855527771852523679
+      Monopoly_Bg_4_118: 7425427618369015936
+      Monopoly_Bg_4_119: 23748751058999998
+      Monopoly_Bg_4_12: 7439315491759001543
+      Monopoly_Bg_4_120: 7862148086413396904
+      Monopoly_Bg_4_121: 2718510458857867825
+      Monopoly_Bg_4_122: 4982069655312670132
+      Monopoly_Bg_4_123: -5259428234934539307
+      Monopoly_Bg_4_124: 2435908929930989258
+      Monopoly_Bg_4_125: 7493248955866400959
+      Monopoly_Bg_4_126: 2921100279800237194
+      Monopoly_Bg_4_127: -2619911913862035493
+      Monopoly_Bg_4_128: -4510134904195997115
+      Monopoly_Bg_4_129: 5681577741634173871
+      Monopoly_Bg_4_13: -5771894296828792532
+      Monopoly_Bg_4_130: 8169061890732624573
+      Monopoly_Bg_4_131: -915514330133215672
+      Monopoly_Bg_4_132: -6792276326928213004
+      Monopoly_Bg_4_133: -7615898684164177684
+      Monopoly_Bg_4_134: -4187369483595604728
+      Monopoly_Bg_4_135: 4846217662726991536
+      Monopoly_Bg_4_136: 1026117466260516010
+      Monopoly_Bg_4_137: -1777976770512378848
+      Monopoly_Bg_4_138: 5834406465370783541
+      Monopoly_Bg_4_139: 8964580829724358420
+      Monopoly_Bg_4_14: -5851848848188332348
+      Monopoly_Bg_4_140: -5994919887164174583
+      Monopoly_Bg_4_141: -4214179938934988785
+      Monopoly_Bg_4_142: -7545804053892189554
+      Monopoly_Bg_4_143: 7209370536517140810
+      Monopoly_Bg_4_144: 6250931756095865946
+      Monopoly_Bg_4_145: 8285233975920835054
+      Monopoly_Bg_4_146: 3423063313392114443
+      Monopoly_Bg_4_147: 4995778698686392529
+      Monopoly_Bg_4_148: 2018820774266886092
+      Monopoly_Bg_4_149: -8828961810596191045
+      Monopoly_Bg_4_15: 6191525814791499476
+      Monopoly_Bg_4_150: -2514045089308865269
+      Monopoly_Bg_4_151: -548708862862341588
+      Monopoly_Bg_4_152: -4309041036980060000
+      Monopoly_Bg_4_153: 1121356515126136378
+      Monopoly_Bg_4_154: 8273008894273936089
+      Monopoly_Bg_4_155: -5047843023858136933
+      Monopoly_Bg_4_156: 4585237152429155951
+      Monopoly_Bg_4_157: -1929333807643581545
+      Monopoly_Bg_4_158: -4840686515991413881
+      Monopoly_Bg_4_159: -213059037175015856
+      Monopoly_Bg_4_16: -872032861232006028
+      Monopoly_Bg_4_160: -3135155498378859812
+      Monopoly_Bg_4_161: 3465820505356604141
+      Monopoly_Bg_4_162: -5439429657594023065
+      Monopoly_Bg_4_163: 5989561950485455315
+      Monopoly_Bg_4_164: -12100647741699144
+      Monopoly_Bg_4_165: -3809017402585249405
+      Monopoly_Bg_4_166: 7531613713544776309
+      Monopoly_Bg_4_167: -1495555765192605342
+      Monopoly_Bg_4_168: -5282703370543599284
+      Monopoly_Bg_4_169: 2985738455032100612
+      Monopoly_Bg_4_17: -3962958722590340728
+      Monopoly_Bg_4_170: 5863630612470721235
+      Monopoly_Bg_4_171: -5764807401388426477
+      Monopoly_Bg_4_172: 8605221367754365751
+      Monopoly_Bg_4_173: -1593236253785677463
+      Monopoly_Bg_4_174: -5602800144444684341
+      Monopoly_Bg_4_175: -648038215361336956
+      Monopoly_Bg_4_176: -7302587925567374577
+      Monopoly_Bg_4_177: -7187244374310710219
+      Monopoly_Bg_4_178: 3643916065868467763
+      Monopoly_Bg_4_179: 3881473471668586601
+      Monopoly_Bg_4_18: -1465360297131586543
+      Monopoly_Bg_4_180: -5413549602302895765
+      Monopoly_Bg_4_181: -4305898098427266858
+      Monopoly_Bg_4_182: 8169683190547662068
+      Monopoly_Bg_4_183: -7525584828655961959
+      Monopoly_Bg_4_184: -1926837743259945788
+      Monopoly_Bg_4_185: 3677846623301116745
+      Monopoly_Bg_4_186: -1238440549146079255
+      Monopoly_Bg_4_187: -8405233838660823229
+      Monopoly_Bg_4_188: -1268196107419759371
+      Monopoly_Bg_4_189: -8909354056201408580
+      Monopoly_Bg_4_19: -4078176929313616582
+      Monopoly_Bg_4_190: -5909227643160130832
+      Monopoly_Bg_4_191: 5505979827438469773
+      Monopoly_Bg_4_192: -5309317470157592635
+      Monopoly_Bg_4_193: -4786450998149844171
+      Monopoly_Bg_4_194: -8710731402892047677
+      Monopoly_Bg_4_195: -6329720628225309071
+      Monopoly_Bg_4_196: -9118632765789833608
+      Monopoly_Bg_4_197: 7806971004965164900
+      Monopoly_Bg_4_198: 3735022939556172285
+      Monopoly_Bg_4_199: -4458716050179761687
+      Monopoly_Bg_4_2: 4081246544002599791
+      Monopoly_Bg_4_20: -4868960504197759458
+      Monopoly_Bg_4_200: -1231932406049174941
+      Monopoly_Bg_4_201: 4457568192855971613
+      Monopoly_Bg_4_202: -958627639760359669
+      Monopoly_Bg_4_203: -3160115133816593189
+      Monopoly_Bg_4_204: -8957443175191478869
+      Monopoly_Bg_4_205: 2421477202249436058
+      Monopoly_Bg_4_206: 3298777370063189966
+      Monopoly_Bg_4_207: 458115000843571160
+      Monopoly_Bg_4_208: 692176212821291402
+      Monopoly_Bg_4_209: -5789590589692877814
+      Monopoly_Bg_4_21: 2005995206011738947
+      Monopoly_Bg_4_210: -4658815056336793022
+      Monopoly_Bg_4_211: 3380366907651624082
+      Monopoly_Bg_4_212: -9147761059857738873
+      Monopoly_Bg_4_213: 8210977453452715338
+      Monopoly_Bg_4_214: 7623607445014399194
+      Monopoly_Bg_4_215: 620839575622609031
+      Monopoly_Bg_4_216: -7650154283892150853
+      Monopoly_Bg_4_217: 300542619175603917
+      Monopoly_Bg_4_218: 1734621977875997937
+      Monopoly_Bg_4_219: -6727331303743930969
+      Monopoly_Bg_4_22: 9074134746207028880
+      Monopoly_Bg_4_220: 5856937240033745042
+      Monopoly_Bg_4_221: -7352906075936089979
+      Monopoly_Bg_4_222: 7007134319385000914
+      Monopoly_Bg_4_223: -4020744007563590317
+      Monopoly_Bg_4_224: 33976474179953428
+      Monopoly_Bg_4_225: 5974254835074097531
+      Monopoly_Bg_4_226: -108373993570951011
+      Monopoly_Bg_4_227: -3568675012106578592
+      Monopoly_Bg_4_228: -4113632400695826492
+      Monopoly_Bg_4_229: 4968748549598911690
+      Monopoly_Bg_4_23: -1895962626684225558
+      Monopoly_Bg_4_230: 3115960017976624270
+      Monopoly_Bg_4_231: 4080797225943455318
+      Monopoly_Bg_4_232: -358807744760966001
+      Monopoly_Bg_4_233: -686702738497937051
+      Monopoly_Bg_4_234: 8849346958119754369
+      Monopoly_Bg_4_235: 4073432281741496145
+      Monopoly_Bg_4_236: 3061086158516311011
+      Monopoly_Bg_4_237: 6476940472905995498
+      Monopoly_Bg_4_238: 4777381850263676767
+      Monopoly_Bg_4_239: 3713661187036052358
+      Monopoly_Bg_4_24: -5754870088912104278
+      Monopoly_Bg_4_240: 3234103534338881829
+      Monopoly_Bg_4_241: -2143277883881694738
+      Monopoly_Bg_4_242: -6214095544862392878
+      Monopoly_Bg_4_243: -5021705230287931281
+      Monopoly_Bg_4_244: 1741429621661306632
+      Monopoly_Bg_4_245: -3610968099100969230
+      Monopoly_Bg_4_246: -9052207042934219019
+      Monopoly_Bg_4_247: -8244808262038688628
+      Monopoly_Bg_4_248: 4861993839125209450
+      Monopoly_Bg_4_249: 7811831523686781483
+      Monopoly_Bg_4_25: 2926417321055013438
+      Monopoly_Bg_4_250: -1609821632999235415
+      Monopoly_Bg_4_26: 2357291154634550938
+      Monopoly_Bg_4_27: -6745538624982211981
+      Monopoly_Bg_4_28: -3874560332930791961
+      Monopoly_Bg_4_29: -7155042821561086705
+      Monopoly_Bg_4_3: -2436613881658862979
+      Monopoly_Bg_4_30: 8624932779040319497
+      Monopoly_Bg_4_31: 8065770071253965688
+      Monopoly_Bg_4_32: -7584900770871018816
+      Monopoly_Bg_4_33: 4564494507040149503
+      Monopoly_Bg_4_34: -6788746131751176114
+      Monopoly_Bg_4_35: -4308605115301295275
+      Monopoly_Bg_4_36: -6397004035667712682
+      Monopoly_Bg_4_37: -6220819071857263401
+      Monopoly_Bg_4_38: -347241122296285142
+      Monopoly_Bg_4_39: -9111748146720842752
+      Monopoly_Bg_4_4: -56257581304968424
+      Monopoly_Bg_4_40: 4916359446631703024
+      Monopoly_Bg_4_41: -4732129513382258469
+      Monopoly_Bg_4_42: -1954191455841407270
+      Monopoly_Bg_4_43: -246904332078011686
+      Monopoly_Bg_4_44: 6515244461976809582
+      Monopoly_Bg_4_45: -9119991138518424396
+      Monopoly_Bg_4_46: 8358296612158341653
+      Monopoly_Bg_4_47: -678702087385006476
+      Monopoly_Bg_4_48: 7147715212870137964
+      Monopoly_Bg_4_49: -6138039635744316725
+      Monopoly_Bg_4_5: -4578179721592458746
+      Monopoly_Bg_4_50: 780341895987421829
+      Monopoly_Bg_4_51: -1423958130467575202
+      Monopoly_Bg_4_52: -2470797960734371065
+      Monopoly_Bg_4_53: -1748767725681401342
+      Monopoly_Bg_4_54: -4271879726870571065
+      Monopoly_Bg_4_55: 7544218306274566927
+      Monopoly_Bg_4_56: -4602214100859023311
+      Monopoly_Bg_4_57: -3241452936912137923
+      Monopoly_Bg_4_58: 4426008742392161965
+      Monopoly_Bg_4_59: -6584769933898204709
+      Monopoly_Bg_4_6: -9141044777742932457
+      Monopoly_Bg_4_60: -925835211491087439
+      Monopoly_Bg_4_61: -3756223678573552521
+      Monopoly_Bg_4_62: -7155672239611171493
+      Monopoly_Bg_4_63: -8898948416262390383
+      Monopoly_Bg_4_64: -279116239227827554
+      Monopoly_Bg_4_65: 3181824198014788827
+      Monopoly_Bg_4_66: 5749940001409130549
+      Monopoly_Bg_4_67: 3801300651855621358
+      Monopoly_Bg_4_68: -1760577597314880642
+      Monopoly_Bg_4_69: -1391648494234583082
+      Monopoly_Bg_4_7: 2762480123351891624
+      Monopoly_Bg_4_70: 8655603828068845455
+      Monopoly_Bg_4_71: 1202732702303011113
+      Monopoly_Bg_4_72: 8833843742167229401
+      Monopoly_Bg_4_73: 1293547307137724390
+      Monopoly_Bg_4_74: 8299136006995081487
+      Monopoly_Bg_4_75: 6243208064608087392
+      Monopoly_Bg_4_76: 6761008334902449483
+      Monopoly_Bg_4_77: -8827604107831041468
+      Monopoly_Bg_4_78: -1048142627474172414
+      Monopoly_Bg_4_79: -7397370716387813949
+      Monopoly_Bg_4_8: -4754293174454987645
+      Monopoly_Bg_4_80: 4371732420081120892
+      Monopoly_Bg_4_81: -171008625901323400
+      Monopoly_Bg_4_82: 845151986480756540
+      Monopoly_Bg_4_83: -6651755901443981134
+      Monopoly_Bg_4_84: 6515514790548817593
+      Monopoly_Bg_4_85: -7692805190409140894
+      Monopoly_Bg_4_86: -218927070740492454
+      Monopoly_Bg_4_87: -514155536534477218
+      Monopoly_Bg_4_88: 587482093817251675
+      Monopoly_Bg_4_89: -5979684070475849815
+      Monopoly_Bg_4_9: -1982099107853773922
+      Monopoly_Bg_4_90: -2302490902717685200
+      Monopoly_Bg_4_91: 3231983141798048335
+      Monopoly_Bg_4_92: -2360478100415487527
+      Monopoly_Bg_4_93: -4449834075456589113
+      Monopoly_Bg_4_94: -1850765320925555166
+      Monopoly_Bg_4_95: -1228209128404840979
+      Monopoly_Bg_4_96: -5285470550556371890
+      Monopoly_Bg_4_97: 1032617370908045276
+      Monopoly_Bg_4_98: -8156742502363244432
+      Monopoly_Bg_4_99: -8481345190260182937
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

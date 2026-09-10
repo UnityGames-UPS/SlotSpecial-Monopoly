@@ -115,12 +115,16 @@ public class SymbolInfoCard : MonoBehaviour
     // Symbol IDs whose card should show only a description, with no name and no multipliers.
     private const int WildSymbolId = 9;
     private const int DoubleWildSymbolId = 10;
+    private const int ScatterSymbolId = 11;
+    private const int RouletteSymbolId = 12;
 
     private static readonly System.Collections.Generic.Dictionary<int, string> DescriptionOnlySymbols =
         new System.Collections.Generic.Dictionary<int, string>
         {
             { WildSymbolId, "Subtstitutes For Any Other Symbol Except For Bonus Symbols And Scatter Symbols." },
-            {DoubleWildSymbolId, "Randomly acts as a multiplier upto 2x." }
+            {DoubleWildSymbolId, "Randomly acts as a multiplier upto 2x." },
+            { ScatterSymbolId, "Lands on any position to trigger the Super Wheel Bonus." },
+            { RouletteSymbolId, "Lands on any position to trigger the Super Wheel Bonus." }
         };
 
     private void SetupCardContent(int symbolId, SocketIOManager socketManager, int betCounter)

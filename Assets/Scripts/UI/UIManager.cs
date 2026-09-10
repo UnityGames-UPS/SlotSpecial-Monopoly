@@ -18,7 +18,7 @@ public class UIManager : MonoBehaviour
 
     [Header("Loading & Intro")]
     [SerializeField] private GameObject gameScreen;
-    [SerializeField] private GameObject gameLogoObject;
+    [SerializeField] internal GameObject gameLogoObject;
 
     [Header("Bet Controls")]
     [SerializeField] private TMP_Text betAmountText;
@@ -335,7 +335,7 @@ public class UIManager : MonoBehaviour
         InitializeUI();
         UpdateJackpotPortraitLevitationFromCurrentOrientation();
 
-        //ShowUniversalWinPopup(WinPopupType.HugeWin, 99.99,false);
+        ShowUniversalWinPopup(WinPopupType.HugeWin, 99.99,false);
     }
 
     private void OnEnable()
@@ -1823,7 +1823,7 @@ public class UIManager : MonoBehaviour
             else if (c == ',')
                 sb.Append("<sprite index=11>");
             else if (c == '+')
-                sb.Append("<sprite index=12>");
+                sb.Append("<sprite index=10>");
         }
         return sb.ToString();
     }

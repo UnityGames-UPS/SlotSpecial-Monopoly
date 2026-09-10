@@ -1,0 +1,628 @@
+Monopoly_Bg.png
+size:1919,2000
+filter:Linear,Linear
+pma:true
+B_P_Fx/Comp 1_00048
+bounds:2,1145,953,479
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00049
+bounds:957,984,959,482
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00050
+bounds:957,497,960,485
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00051
+bounds:2,655,953,488
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00052
+bounds:2,162,953,491
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00080
+bounds:957,2,957,493
+offsets:0,0,960,540
+Dice
+bounds:1083,1468,370,362
+offsets:18,17,408,380
+L_1
+bounds:726,1626,219,355
+offsets:5,4,233,362
+rotate:90
+L_2
+bounds:780,1847,151,355
+offsets:6,3,160,362
+rotate:90
+L_3
+bounds:1137,1836,200,162
+offsets:3,3,206,168
+L_4
+bounds:1339,1832,268,166
+offsets:2,4,274,173
+R_1
+bounds:450,1638,274,222
+offsets:2,3,280,229
+R_2
+bounds:2,1722,175,446
+offsets:4,4,184,454
+rotate:90
+R_3
+bounds:2,1908,90,188
+offsets:3,3,96,194
+rotate:90
+R_4
+bounds:526,1862,136,252
+offsets:6,3,146,257
+rotate:90
+R_5
+bounds:192,1906,92,124
+offsets:3,3,97,130
+rotate:90
+R_6
+bounds:318,1899,206,99
+offsets:3,1,212,102
+R_7
+bounds:1609,1805,193,233
+offsets:2,3,198,238
+rotate:90
+
+Monopoly_Bg_2.png
+size:1924,1626
+filter:Linear,Linear
+pma:true
+BG
+bounds:2,544,1920,1080
+offsets:1,1,1922,1082
+B_P_Fx/Comp 1_00000
+bounds:962,2,957,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00002
+bounds:2,2,958,540
+offsets:0,0,960,540
+
+Monopoly_Bg_3.png
+size:1917,2014
+filter:Linear,Linear
+pma:true
+B_P_Fx/Comp 1_00053
+bounds:2,1518,952,494
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00054
+bounds:956,1515,952,497
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00055
+bounds:2,1016,951,500
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00056
+bounds:955,1011,951,502
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00057
+bounds:2,509,949,505
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00081
+bounds:953,507,957,502
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00118
+bounds:959,2,956,503
+offsets:0,33,960,540
+B_P_Fx/Comp 1_00133
+bounds:2,3,955,502
+offsets:0,0,960,540
+
+Monopoly_Bg_4.png
+size:1918,2042
+filter:Linear,Linear
+pma:true
+B_P_Fx/Comp 1_00058
+bounds:2,519,887,508
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00059
+bounds:2,2,952,511
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00082
+bounds:956,2,957,511
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00117
+bounds:2,1536,956,504
+offsets:0,30,960,540
+B_P_Fx/Comp 1_00119
+bounds:960,1536,956,504
+offsets:0,35,960,540
+B_P_Fx/Comp 1_00134
+bounds:2,1029,955,505
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00135
+bounds:959,1027,955,507
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00136
+bounds:891,515,955,510
+offsets:0,0,960,540
+
+Monopoly_Bg_5.png
+size:1918,1548
+filter:Linear,Linear
+pma:true
+B_P_Fx/Comp 1_00036
+bounds:2,3,954,515
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00060
+bounds:2,520,954,513
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00088
+bounds:2,1035,957,511
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00115
+bounds:958,2,956,515
+offsets:0,25,960,540
+B_P_Fx/Comp 1_00116
+bounds:958,519,956,513
+offsets:0,27,960,540
+B_P_Fx/Comp 1_00137
+bounds:961,1034,955,512
+offsets:0,0,960,540
+
+Monopoly_Bg_6.png
+size:1917,1560
+filter:Linear,Linear
+pma:true
+B_P_Fx/Comp 1_00020
+bounds:959,522,956,518
+offsets:0,22,960,540
+B_P_Fx/Comp 1_00021
+bounds:959,1042,956,516
+offsets:0,24,960,540
+B_P_Fx/Comp 1_00022
+bounds:959,2,956,518
+offsets:0,22,960,540
+B_P_Fx/Comp 1_00061
+bounds:2,525,955,516
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00138
+bounds:2,1043,955,515
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00139
+bounds:2,5,955,518
+offsets:0,0,960,540
+
+Monopoly_Bg_7.png
+size:1919,1565
+filter:Linear,Linear
+pma:true
+B_P_Fx/Comp 1_00037
+bounds:2,524,954,519
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00062
+bounds:958,524,956,519
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00083
+bounds:2,3,957,519
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00089
+bounds:2,1045,957,518
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00113
+bounds:961,2,956,520
+offsets:0,20,960,540
+B_P_Fx/Comp 1_00114
+bounds:961,1045,956,518
+offsets:0,22,960,540
+
+Monopoly_Bg_8.png
+size:1922,1575
+filter:Linear,Linear
+pma:true
+B_P_Fx/Comp 1_00018
+bounds:958,527,956,523
+offsets:0,17,960,540
+B_P_Fx/Comp 1_00023
+bounds:2,2,956,523
+offsets:0,17,960,540
+B_P_Fx/Comp 1_00038
+bounds:2,529,954,522
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00063
+bounds:959,1052,956,521
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00112
+bounds:960,2,960,523
+offsets:0,17,960,540
+B_P_Fx/Comp 1_00140
+bounds:2,1053,955,520
+offsets:0,0,960,540
+
+Monopoly_Bg_9.png
+size:1919,1582
+filter:Linear,Linear
+pma:true
+B_P_Fx/Comp 1_00017
+bounds:961,529,956,525
+offsets:0,15,960,540
+B_P_Fx/Comp 1_00039
+bounds:2,2,930,526
+offsets:24,0,960,540
+B_P_Fx/Comp 1_00064
+bounds:959,1056,956,524
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00090
+bounds:2,530,957,524
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00111
+bounds:934,2,960,525
+offsets:0,15,960,540
+B_P_Fx/Comp 1_00141
+bounds:2,1057,955,523
+offsets:0,0,960,540
+
+Monopoly_Bg_10.png
+size:1920,1588
+filter:Linear,Linear
+pma:true
+B_P_Fx/Comp 1_00007
+bounds:2,531,957,527
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00015
+bounds:961,531,957,527
+offsets:0,11,960,540
+B_P_Fx/Comp 1_00016
+bounds:2,2,956,527
+offsets:0,13,960,540
+B_P_Fx/Comp 1_00024
+bounds:960,2,956,527
+offsets:0,13,960,540
+B_P_Fx/Comp 1_00065
+bounds:2,1060,956,526
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00142
+bounds:960,1060,955,526
+offsets:0,0,960,540
+
+Monopoly_Bg_11.png
+size:1919,1595
+filter:Linear,Linear
+pma:true
+B_P_Fx/Comp 1_00040
+bounds:959,534,952,529
+offsets:2,0,960,540
+B_P_Fx/Comp 1_00066
+bounds:2,3,957,529
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00084
+bounds:2,1066,957,527
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00109
+bounds:961,2,956,530
+offsets:0,10,960,540
+B_P_Fx/Comp 1_00110
+bounds:961,1065,956,528
+offsets:0,12,960,540
+B_P_Fx/Comp 1_00143
+bounds:2,536,955,528
+offsets:0,0,960,540
+
+Monopoly_Bg_12.png
+size:1919,1602
+filter:Linear,Linear
+pma:true
+B_P_Fx/Comp 1_00014
+bounds:2,1069,957,531
+offsets:0,9,960,540
+B_P_Fx/Comp 1_00025
+bounds:961,1069,956,531
+offsets:0,9,960,540
+B_P_Fx/Comp 1_00041
+bounds:2,2,954,532
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00067
+bounds:958,2,957,532
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00091
+bounds:2,536,957,531
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00144
+bounds:961,536,955,531
+offsets:0,0,960,540
+
+Monopoly_Bg_13.png
+size:1919,1609
+filter:Linear,Linear
+pma:true
+B_P_Fx/Comp 1_00008
+bounds:960,538,957,534
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00013
+bounds:960,1074,957,533
+offsets:0,7,960,540
+B_P_Fx/Comp 1_00068
+bounds:960,2,957,534
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00097
+bounds:2,540,956,533
+offsets:0,7,960,540
+B_P_Fx/Comp 1_00107
+bounds:2,4,956,534
+offsets:0,5,960,540
+B_P_Fx/Comp 1_00108
+bounds:2,1075,956,532
+offsets:0,8,960,540
+
+Monopoly_Bg_14.png
+size:1919,1614
+filter:Linear,Linear
+pma:true
+B_P_Fx/Comp 1_00012
+bounds:959,1077,957,535
+offsets:0,5,960,540
+B_P_Fx/Comp 1_00042
+bounds:2,541,954,535
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00085
+bounds:958,540,957,535
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00096
+bounds:960,2,957,536
+offsets:0,4,960,540
+B_P_Fx/Comp 1_00101
+bounds:2,3,956,535
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00145
+bounds:2,1078,955,534
+offsets:0,0,960,540
+
+Monopoly_Bg_15.png
+size:1920,1620
+filter:Linear,Linear
+pma:true
+B_P_Fx/Comp 1_00011
+bounds:959,1081,957,537
+offsets:0,3,960,540
+B_P_Fx/Comp 1_00069
+bounds:2,542,957,537
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00092
+bounds:961,542,957,537
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00095
+bounds:960,2,957,538
+offsets:0,2,960,540
+B_P_Fx/Comp 1_00106
+bounds:2,3,956,537
+offsets:0,3,960,540
+B_P_Fx/Comp 1_00146
+bounds:2,1082,955,536
+offsets:0,0,960,540
+
+Monopoly_Bg_16.png
+size:1920,1626
+filter:Linear,Linear
+pma:true
+B_P_Fx/Comp 1_00001
+bounds:2,2,957,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00003
+bounds:961,2,957,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00043
+bounds:2,1085,954,539
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00070
+bounds:958,1085,957,539
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00105
+bounds:2,544,956,539
+offsets:0,1,960,540
+B_P_Fx/Comp 1_00147
+bounds:960,544,956,539
+offsets:0,0,960,540
+
+Monopoly_Bg_17.png
+size:1920,1628
+filter:Linear,Linear
+pma:true
+B_P_Fx/Comp 1_00004
+bounds:2,1086,957,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00005
+bounds:2,544,957,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00006
+bounds:961,1086,957,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00009
+bounds:2,2,957,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00010
+bounds:961,544,957,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00071
+bounds:961,2,957,540
+offsets:0,0,960,540
+
+Monopoly_Bg_18.png
+size:1917,1628
+filter:Linear,Linear
+pma:true
+B_P_Fx/Comp 1_00019
+bounds:2,1086,956,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00026
+bounds:960,1086,955,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00027
+bounds:2,544,955,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00028
+bounds:959,544,955,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00029
+bounds:2,2,955,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00030
+bounds:959,2,954,540
+offsets:0,0,960,540
+
+Monopoly_Bg_19.png
+size:1914,1628
+filter:Linear,Linear
+pma:true
+B_P_Fx/Comp 1_00031
+bounds:2,1086,954,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00032
+bounds:958,1086,954,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00033
+bounds:2,544,954,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00034
+bounds:958,544,954,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00035
+bounds:2,2,954,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00044
+bounds:958,2,953,540
+offsets:0,0,960,540
+
+Monopoly_Bg_20.png
+size:1920,1628
+filter:Linear,Linear
+pma:true
+B_P_Fx/Comp 1_00072
+bounds:2,1086,957,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00073
+bounds:2,544,957,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00074
+bounds:961,1086,957,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00075
+bounds:2,2,957,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00076
+bounds:961,544,957,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00077
+bounds:961,2,957,540
+offsets:0,0,960,540
+
+Monopoly_Bg_21.png
+size:1920,1628
+filter:Linear,Linear
+pma:true
+B_P_Fx/Comp 1_00078
+bounds:2,1086,957,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00079
+bounds:2,544,957,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00086
+bounds:961,1086,957,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00087
+bounds:2,2,957,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00093
+bounds:961,544,957,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00094
+bounds:961,2,957,540
+offsets:0,0,960,540
+
+Monopoly_Bg_22.png
+size:1918,1628
+filter:Linear,Linear
+pma:true
+B_P_Fx/Comp 1_00045
+bounds:2,1086,953,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00046
+bounds:957,1086,953,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00047
+bounds:2,544,953,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00098
+bounds:957,544,956,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00099
+bounds:2,2,956,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00100
+bounds:960,2,956,540
+offsets:0,0,960,540
+
+Monopoly_Bg_23.png
+size:1918,1628
+filter:Linear,Linear
+pma:true
+B_P_Fx/Comp 1_00102
+bounds:2,1086,956,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00103
+bounds:960,1086,956,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00104
+bounds:2,544,956,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00120
+bounds:960,544,956,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00121
+bounds:2,2,956,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00122
+bounds:960,2,956,540
+offsets:0,0,960,540
+
+Monopoly_Bg_24.png
+size:1918,1628
+filter:Linear,Linear
+pma:true
+B_P_Fx/Comp 1_00123
+bounds:2,1086,956,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00124
+bounds:960,1086,956,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00125
+bounds:2,544,956,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00126
+bounds:960,544,956,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00127
+bounds:2,2,956,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00128
+bounds:960,2,956,540
+offsets:0,0,960,540
+
+Monopoly_Bg_25.png
+size:1920,1628
+filter:Linear,Linear
+pma:true
+B_P_Fx/Comp 1_00129
+bounds:2,2,956,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00130
+bounds:961,544,956,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00131
+bounds:960,2,955,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00148
+bounds:2,1086,957,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00149
+bounds:2,544,957,540
+offsets:0,0,960,540
+B_P_Fx/Comp 1_00150
+bounds:961,1086,957,540
+offsets:0,0,960,540
+
+Monopoly_Bg_26.png
+size:959,544
+filter:Linear,Linear
+pma:true
+B_P_Fx/Comp 1_00132
+bounds:2,2,955,540
+offsets:0,0,960,540

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using System;
 using System.Collections;
+using Spine.Unity;
 using Unity.VisualScripting;
 
 public class SlotManager : MonoBehaviour
@@ -19,11 +20,33 @@ public class SlotManager : MonoBehaviour
     [Header("Slot Images")]
     [SerializeField] private List<SlotImage> _totalImages;
     [SerializeField] internal List<SlotImage> _resultImages;
+    [SerializeField] private List<ImageAnimation> reelBgs;
     [SerializeField] private List<SlotImage> winAnimationImages;
     [SerializeField] internal List<SlotImage> SlotOverlays;
     [SerializeField] internal List<SlotImage> WinFrames;
 
     [SerializeField] private List<SlotImage> DiceImages;
+
+    [Header("Character Animations")]
+    [SerializeField] internal GameObject characterAnimationParent;
+    [SerializeField] private SpineAnimController spineAnimController;
+
+    [SerializeField] private GameObject NormalCharacterAnimationParentLandscape;
+    [SerializeField] private GameObject NormalCharacterAnimationParentPortrait;
+    [SerializeField] private GameObject BonusCharacterAnimationParentBoth;
+
+    [SerializeField] private Vector2 characterNormalAnimationLandscapePosition;
+    [SerializeField] private Vector2 characterNormalAnimationPortraitPosition;
+    [SerializeField] private Vector3 characterNormalAnimationLandscapeScale;
+    [SerializeField] private Vector3 characterNormalAnimationPortraitScale;
+
+    [SerializeField] private Vector2 characterBonusAnimationLandscapePosition;
+    [SerializeField] private Vector2 characterBonusAnimationPortraitPosition;
+    [SerializeField] private Vector3 characterBonusAnimationLandscapeScale;
+    [SerializeField] private Vector3 characterBonusAnimationPortraitScale;
+
+    internal enum CharacterAnimState { Normal, Bonus }
+    private CharacterAnimState? _activeCharacterState;
 
     [Header("Free Spin Sprites and Animations")]
     [SerializeField] private List<Sprite> dicerollingAnimation;
@@ -79,11 +102,19 @@ public class SlotManager : MonoBehaviour
     [SerializeField] private UIManager uiManager;
     [SerializeField] private BonusManager bonusManager;
     [SerializeField] private SocketIOManager socketManager;
+    [SerializeField] private OrientationChange orientationChange;
+
+    [Header("Bonus Zoom")]
+    [SerializeField] private float bonusZoomInDuration = 0.3f;
+    [SerializeField] private float bonusZoomOutDuration = 0.1f;
+    [SerializeField] private float bonusZoomScaleLandscape = 1.2f;
+    [SerializeField] private float bonusZoomScalePortrait = 0.9f;
 
 
     internal bool SocketConnected = false;
     internal bool _isAutoSpin = false;
     internal bool isInFreeSpins = false;
+    internal bool isBonus = false;
     internal int freeSpinsRemaining = 0;
     private bool _wasAutoSpinOn;
     private List<Tween> _alltweens = new List<Tween>();
@@ -162,6 +193,7 @@ public class SlotManager : MonoBehaviour
 
                 Sprite image = _symbolSprites[randomSprite];
                 slotImg.slotImages[j].sprite = image;
+                slotImg.slotImages[j].preserveAspect = true;
                 SetSymbolSize(slotImg.slotImages[j], randomSprite);
             }
         }
@@ -249,8 +281,6 @@ public class SlotManager : MonoBehaviour
     }
     #endregion
 
-    #region SlotSpin
-
     internal void RequestInstantStop()
     {
         if (isTweening)
@@ -259,6 +289,124 @@ public class SlotManager : MonoBehaviour
         }
     }
 
+    private OrientationChange GetOrientationChange()
+    {
+        if (orientationChange != null) return orientationChange;
+        orientationChange = FindFirstObjectByType<OrientationChange>();
+        return orientationChange;
+    }
+
+    #region Character Animation
+
+    private void OnEnable()
+    {
+        OrientationChange.OnOrientationChanged += HandleCharacterOrientationChanged;
+    }
+
+    private void OnDisable()
+    {
+        OrientationChange.OnOrientationChanged -= HandleCharacterOrientationChanged;
+    }
+
+    private void HandleCharacterOrientationChanged(OrientationChange.OrientationMode mode, int width, int height)
+    {
+        // Only reposition the character while a sequence has actually placed it on screen —
+        // an orientation flip with no active sequence has nothing to re-orient.
+        if (_activeCharacterState.HasValue)
+        {
+            ApplyCharacterOrientationVisuals(_activeCharacterState.Value);
+        }
+    }
+
+    // Marks which position/scale/rotation set (Normal vs Bonus) the character currently belongs
+    // to and applies it immediately. Kept live via HandleCharacterOrientationChanged until
+    // DeactivateCharacterAnimation() clears it.
+    internal void SetCharacterOrientationState(CharacterAnimState state)
+    {
+        _activeCharacterState = state;
+        ApplyCharacterOrientationVisuals(state);
+    }
+
+    private void ApplyCharacterOrientationVisuals(CharacterAnimState state)
+    {
+        if (characterAnimationParent == null) return;
+
+        var currentOrientation = GetOrientationChange();
+        bool isPortrait = currentOrientation != null && currentOrientation.CurrentMode == OrientationChange.OrientationMode.MobilePortrait;
+
+        // Bonus shares one parent across both orientations; Normal has a separate parent per orientation.
+        GameObject targetParent = state == CharacterAnimState.Bonus
+            ? BonusCharacterAnimationParentBoth
+            : (isPortrait ? NormalCharacterAnimationParentPortrait : NormalCharacterAnimationParentLandscape);
+
+        if (targetParent != null && characterAnimationParent.transform.parent != targetParent.transform)
+        {
+            // worldPositionStays: false — anchoredPosition/localScale below are set explicitly
+            // right after, so there's nothing worth preserving across the reparent.
+            characterAnimationParent.transform.SetParent(targetParent.transform, false);
+        }
+
+        RectTransform rt = characterAnimationParent.GetComponent<RectTransform>();
+        if (rt != null)
+        {
+            if (state == CharacterAnimState.Bonus)
+            {
+                rt.anchoredPosition = isPortrait ? characterBonusAnimationPortraitPosition : characterBonusAnimationLandscapePosition;
+                rt.localScale = isPortrait ? characterBonusAnimationPortraitScale : characterBonusAnimationLandscapeScale;
+            }
+            else
+            {
+                rt.anchoredPosition = isPortrait ? characterNormalAnimationPortraitPosition : characterNormalAnimationLandscapePosition;
+                rt.localScale = isPortrait ? characterNormalAnimationPortraitScale : characterNormalAnimationLandscapeScale;
+            }
+        }
+
+        // Bonus animations always face rotated 180 on Y; normal animations only flip in portrait.
+        float rotationY = state == CharacterAnimState.Bonus ? 180f : (isPortrait ? 180f : 0f);
+        if (spineAnimController != null)
+        {
+            spineAnimController.transform.localRotation = Quaternion.Euler(0f, rotationY, 0f);
+        }
+    }
+
+    // Sets animName and plays it, overriding whatever was playing/looping before (matches the
+    // manual isPlaying-reset pattern SpineAnimController already expects between clips). Waits
+    // for the clip's duration when not looping so the caller can chain the next clip immediately.
+    internal IEnumerator PlayCharacterAnim(string animName, bool loop)
+    {
+        if (spineAnimController == null) yield break;
+
+        spineAnimController.isPlaying = false;
+        spineAnimController.animName = animName;
+        spineAnimController.Play(loop);
+
+        if (!loop)
+        {
+            float duration = spineAnimController.GetAnimationDuration();
+            yield return new WaitForSeconds(duration);
+            spineAnimController.isPlaying = false;
+        }
+    }
+
+    // Fire-and-forget variant for looping clips (idle_left) — no wait, caller continues immediately.
+    internal void PlayCharacterAnimLoop(string animName)
+    {
+        if (spineAnimController == null) return;
+
+        spineAnimController.isPlaying = false;
+        spineAnimController.animName = animName;
+        spineAnimController.Play(true);
+    }
+
+    internal void DeactivateCharacterAnimation()
+    {
+        if (characterAnimationParent != null) characterAnimationParent.SetActive(false);
+        _activeCharacterState = null;
+    }
+
+    #endregion
+
+    #region SlotSpin
     internal void StartSlots(bool autoSpin = false)
     {
         if (_isSpinning) return;
@@ -279,6 +427,7 @@ public class SlotManager : MonoBehaviour
     private IEnumerator TweenRoutine()
     {
         _isSpinning = true;
+        isBonus = false;
 
         // No-op unless the between-chained-free-spins placeholder was showing.
         uiManager.HideFreeSpinBetweenSpinsPlaceholder();
@@ -334,15 +483,18 @@ public class SlotManager : MonoBehaviour
                 if (int.TryParse(socketManager.resultData.matrix[j][i], out int symbolId))
                 {
                     _resultImages[i].slotImages[j].sprite = _symbolSprites[symbolId];
+                    _resultImages[i].slotImages[j].preserveAspect = true;
                     SetSymbolSize(_resultImages[i].slotImages[j], symbolId);
 
                     if (i == 3 && symbolId == 12)
                     {
                         _resultImages[i].slotImages[j].sprite = rightScatterSymbol;
+                        _resultImages[i].slotImages[j].preserveAspect = false;
                     }
                     else if (i == 4 && symbolId == 12)
                     {
                         _resultImages[i].slotImages[j].sprite = leftScatterSymbol;
+                        _resultImages[i].slotImages[j].preserveAspect = false;
                     }
 
                     if (symbolId == 13)
@@ -378,23 +530,83 @@ public class SlotManager : MonoBehaviour
                 if (_stopSpinToggle) break;
             }
         }
-        bool bonusZoomTriggered = false;
+        bool bonusThresholdReached = false;
+        Vector3 mainSlotRestScale = mainSlotTransform.localScale;
+        Vector3 landscapeBgRestScale = landscapeBackground.transform.localScale;
+        Vector3 portraitBgRestScale = portraitBackground.transform.localScale;
+        var currentOrientation = GetOrientationChange();
+        bool isPortraitOrientation = currentOrientation != null && currentOrientation.CurrentMode == OrientationChange.OrientationMode.MobilePortrait;
         for (int i = 0; i < _numberOfSlots; i++)
         {
-            bool triggerBonusZoom = !bonusZoomTriggered && bonusSymbolCount >= 2;
-            if (triggerBonusZoom)
+            if (!bonusThresholdReached && bonusSymbolCount >= 2) bonusThresholdReached = true;
+
+            // Stop button / Turbo / Quick Spin (which already force _stopSpinToggle true before
+            // this loop even starts) should never show the zoom at all — and a Stop press mid-hold
+            // should cut it immediately rather than waiting the animation out.
+            bool playZoomThisReel = bonusThresholdReached && !_stopSpinToggle;
+
+            if (playZoomThisReel)
             {
-                bonusZoomTriggered = true;
+                mainSlotTransform.DOKill();
+                landscapeBackground.transform.DOKill();
+                portraitBackground.transform.DOKill();
 
-                mainSlotTransform.localScale = new Vector3(1f, 1f, 1f);
-                landscapeBackground.transform.localScale = new Vector3(1f, 1f, 1f);
-                portraitBackground.transform.localScale = new Vector3(1f, 1f, 1f);
+                float targetScale = isPortraitOrientation ? bonusZoomScalePortrait : bonusZoomScaleLandscape;
+                mainSlotTransform.DOScale(targetScale, bonusZoomInDuration);
+                landscapeBackground.transform.DOScale(1.15f, bonusZoomInDuration);
+                portraitBackground.transform.DOScale(1.15f, bonusZoomInDuration);
 
-                mainSlotTransform.DOScale(1.2f, 1f).OnComplete(() => mainSlotTransform.DOScale(1f, 0.5f));
-                landscapeBackground.transform.DOScale(1.15f, 1f).OnComplete(() => landscapeBackground.transform.DOScale(1f, 0.5f));
-                portraitBackground.transform.DOScale(1.15f, 1f).OnComplete(() => portraitBackground.transform.DOScale(1f, 0.5f));
+                if (reelBgs != null && i < reelBgs.Count && reelBgs[i] != null)
+                {
+                    reelBgs[i].gameObject.SetActive(true);
+                    reelBgs[i].StartAnimation();
+                }
+
+                // Polled instead of a flat WaitForSeconds so a Stop press during the hold breaks out immediately.
+                float zoomHoldElapsed = 0f;
+                while (zoomHoldElapsed < 1.3f && !_stopSpinToggle)
+                {
+                    yield return null;
+                    zoomHoldElapsed += Time.deltaTime;
+                }
             }
+
             yield return StopTweening(_slotTransforms[i], i, _stopSpinToggle);
+
+            if (playZoomThisReel)
+            {
+                mainSlotTransform.DOKill();
+                landscapeBackground.transform.DOKill();
+                portraitBackground.transform.DOKill();
+
+                if (_stopSpinToggle)
+                {
+                    // Stop landed mid-hold — snap back instantly, no animated wind-down.
+                    mainSlotTransform.localScale = mainSlotRestScale;
+                    landscapeBackground.transform.localScale = landscapeBgRestScale;
+                    portraitBackground.transform.localScale = portraitBgRestScale;
+                }
+                else
+                {
+                    mainSlotTransform.DOScale(mainSlotRestScale, bonusZoomOutDuration);
+                    landscapeBackground.transform.DOScale(landscapeBgRestScale, bonusZoomOutDuration);
+                    portraitBackground.transform.DOScale(portraitBgRestScale, bonusZoomOutDuration);
+                }
+
+                if (reelBgs != null && i < reelBgs.Count && reelBgs[i] != null)
+                {
+                    reelBgs[i].gameObject.SetActive(false);
+                    reelBgs[i].StopAnimation();
+                }
+
+                if (!_stopSpinToggle)
+                {
+                    // Let the reset fully play out before the next reel's zoom-in fires,
+                    // instead of the next iteration's DOKill() cutting it short.
+                    yield return new WaitForSeconds(bonusZoomOutDuration);
+                }
+            }
+
             for (int j = 0; j < _resultImages[i].slotImages.Count; j++)
             {
                 if (_resultImages[i].slotImages[j].sprite == _symbolSprites[11])
@@ -407,12 +619,6 @@ public class SlotManager : MonoBehaviour
                     bonusSymbolCount++;
                 }
             }
-            if (!triggerBonusZoom)
-            {
-                mainSlotTransform.DOScale(1f, 0.5f);
-                landscapeBackground.transform.DOScale(1f, 0.5f);
-                portraitBackground.transform.DOScale(1f, 0.5f);
-            }
             audioController.PlayReelStop();
         }
         isTweening = false;
@@ -424,6 +630,28 @@ public class SlotManager : MonoBehaviour
         // Reels have fully stopped — nothing left to instant-stop, so the stop button goes away
         // right here rather than staying visible through any heatup/free-spin/wheel-trigger animations.
         uiManager.HideStopButtonAfterReelsStopped();
+
+        // Checkers Bonus plays out fully (cloud-in, board reveal, all rolls, cloud-out, win
+        // popup) before any base-spin win popup / line-win display below — control only returns
+        // here once the whole round has finished.
+        if (socketManager.resultData.payload.checkersBonus != null &&
+            socketManager.resultData.payload.checkersBonus.triggered)
+        {
+            isBonus = true;
+
+            //SpineAnimation
+            characterAnimationParent.SetActive(true);
+            SetCharacterOrientationState(CharacterAnimState.Normal);
+            yield return PlayCharacterAnim("pop_left", false);
+            yield return PlayCharacterAnim("action_left", false);
+
+            // Fall back to 3 whenever the config value is missing OR zero — initData's
+            // checkersBonus config isn't always populated with a positive rollsCount, and a
+            // starting count of 0 would end the round right after its very first roll.
+            int startingRolls = socketManager.features?.checkersBonus?.rollsCount ?? 3;
+            if (startingRolls <= 0) startingRolls = 3;
+            yield return bonusManager.PlayBonusRound(socketManager.resultData.payload.checkersBonus, startingRolls);
+        }
 
         // Reels have fully stopped now — safe to reveal the updated free-spin count/total-win.
         if (isInFreeSpins)
@@ -442,29 +670,16 @@ public class SlotManager : MonoBehaviour
             freeSpinsRemaining = socketManager.resultData.payload.freeGames.totalSpins;
             _freeSpinsRoundWinTotal = 0;
 
+            yield return PlayFreeSpinCharacterIntro();
             yield return PlayScatterTicketSequence(mainSlotFreeSpinOffsetX);
 
             uiManager.OnFreeSpinsTriggered(freeSpinsRemaining);
         }
 
-        // Checkers Bonus plays out fully (cloud-in, board reveal, all rolls, cloud-out, win
-        // popup) before any base-spin win popup / line-win display below — control only returns
-        // here once the whole round has finished.
-        if (socketManager.resultData.payload.checkersBonus != null &&
-            socketManager.resultData.payload.checkersBonus.triggered)
-        {
-            // Fall back to 3 whenever the config value is missing OR zero — initData's
-            // checkersBonus config isn't always populated with a positive rollsCount, and a
-            // starting count of 0 would end the round right after its very first roll.
-            int startingRolls = socketManager.features?.checkersBonus?.rollsCount ?? 3;
-            if (startingRolls <= 0) startingRolls = 3;
-            yield return bonusManager.PlayBonusRound(socketManager.resultData.payload.checkersBonus, startingRolls);
-        }
-
         // Big/Huge/Mega win popup only applies to a normal (non free-spin) spin's own win —
         // shown before the win-line loop, which then plays once it's closed (Take, or the
         // 3s autoplay auto-close after Take becomes interactable).
-        if (!isInFreeSpins)
+        if (!isInFreeSpins && !isBonus)
         {
             var popupType = uiManager.GetWinPopupType(socketManager.resultData.payload.winAmount);
             if (popupType.HasValue)
@@ -499,7 +714,7 @@ public class SlotManager : MonoBehaviour
                 uiManager.ShowUniversalWinPopup(freeSpinPopupType, socketManager.resultData.payload.freeGames.totalWinCash, _isAutoSpin, () => freeSpinPopupClosed = true);
                 yield return new WaitUntil(() => freeSpinPopupClosed);
 
-                yield return PlayScatterTicketSequence(0f);
+                yield return PlayScatterTicketSequence(0f, hideCharacterAfterScaleUp: true);
 
                 uiManager.OnFreeSpinsEnded(_freeSpinsRoundWinTotal);
             }
@@ -568,18 +783,22 @@ public class SlotManager : MonoBehaviour
                 int col = line.position[0];
                 int row = line.position[1];
                 //SlotOverlays[row].slotImages[col].gameObject.SetActive(false);
-                WinFrames[row].slotImages[col].gameObject.SetActive(true);
-                WinFrames[row].slotImages[col].GetComponent<ImageAnimation>().StartAnimation();
-
                 int symbolID = int.Parse(socketManager.resultData.matrix[col][row]);
+
+                if (symbolID != 0)
+                {
+                    WinFrames[row].slotImages[col].gameObject.SetActive(true);
+                    WinFrames[row].slotImages[col].GetComponent<ImageAnimation>().StartAnimation();
+                }
+
 
                 if (symbolID == 13)
                 {
                     var md = socketManager.resultData.payload.magicDiceMultipliers?.Find(m => m.row == row && m.col == col);
-                    var anim = winAnimationImages[row].slotImages[col].GetComponent<ImageAnimation>();
-                    anim.textureArray = GetMultiplierAnimation(md?.multiplier ?? 1);
-                    anim.doLoopAnimation = true;
-                    anim.StartAnimation();
+                    var anim1 = winAnimationImages[row].slotImages[col].GetComponent<ImageAnimation>();
+                    anim1.textureArray = GetMultiplierAnimation(md?.multiplier ?? 1);
+                    anim1.doLoopAnimation = true;
+                    anim1.StartAnimation();
                 }
                 else
                 {
@@ -589,11 +808,14 @@ public class SlotManager : MonoBehaviour
                 _resultImages[row].slotImages[col].gameObject.SetActive(false);
                 SetAnimationSymbolSize(winAnimationImages[row].slotImages[col], symbolID);
 
-                // ImageAnimation anim = winAnimationImages[row].slotImages[col].GetComponent<ImageAnimation>();
-                // anim.textureArray = GetAnimationSprite(symbolID);
-                // anim.AnimationSpeed = 31f;
-                // anim.doLoopAnimation = true;
-                // anim.StartAnimation();
+                if (symbolID != 13)
+                {
+                    ImageAnimation anim = winAnimationImages[row].slotImages[col].GetComponent<ImageAnimation>();
+                    anim.textureArray = GetAnimationSprite(symbolID);
+                    anim.AnimationSpeed = 31f;
+                    anim.doLoopAnimation = true;
+                    anim.StartAnimation();
+                }
             }
         }
 
@@ -646,7 +868,10 @@ public class SlotManager : MonoBehaviour
                     // Already animating for the previous line and still part of this one ->
                     // skip re-activating/restarting it, let it keep animating as-is.
                     if (previousPositions.Contains((row, col)))
+                    {
+                        WinFrames[row].slotImages[col].GetComponent<ImageAnimation>().StartAnimation();
                         continue;
+                    }
 
                     if (symbolID != 0)
                     {
@@ -657,10 +882,10 @@ public class SlotManager : MonoBehaviour
                     if (symbolID == 13)
                     {
                         var md = socketManager.resultData.payload.magicDiceMultipliers?.Find(m => m.row == row && m.col == col);
-                        var anim = winAnimationImages[row].slotImages[col].GetComponent<ImageAnimation>();
-                        anim.textureArray = GetMultiplierAnimation(md?.multiplier ?? 1);
-                        anim.doLoopAnimation = true;
-                        anim.StartAnimation();
+                        var anim1 = winAnimationImages[row].slotImages[col].GetComponent<ImageAnimation>();
+                        anim1.textureArray = GetMultiplierAnimation(md?.multiplier ?? 1);
+                        anim1.doLoopAnimation = true;
+                        anim1.StartAnimation();
                     }
                     else
                     {
@@ -670,12 +895,15 @@ public class SlotManager : MonoBehaviour
                     winAnimationImages[row].slotImages[col].gameObject.SetActive(true);
                     _resultImages[row].slotImages[col].gameObject.SetActive(false);
 
-                    // ImageAnimation anim = winAnimationImages[row].slotImages[col].GetComponent<ImageAnimation>();
-                    // anim.StopAnimation();
-                    // anim.textureArray = GetAnimationSprite(symbolID);
-                    // anim.AnimationSpeed = 31f;
-                    // anim.doLoopAnimation = true;
-                    // anim.StartAnimation();
+                    if (symbolID != 13)
+                    {
+                        ImageAnimation anim = winAnimationImages[row].slotImages[col].GetComponent<ImageAnimation>();
+                        anim.StopAnimation();
+                        anim.textureArray = GetAnimationSprite(symbolID);
+                        anim.AnimationSpeed = 31f;
+                        anim.doLoopAnimation = true;
+                        anim.StartAnimation();
+                    }
                 }
                 audioController.PlayPaylineHighlight();
 
@@ -689,7 +917,7 @@ public class SlotManager : MonoBehaviour
 
                 previousPositions = currentPositions;
 
-                yield return new WaitForSeconds(2f);
+                yield return new WaitForSeconds(2.4f);
             }
         }
     }
@@ -781,10 +1009,23 @@ public class SlotManager : MonoBehaviour
     #endregion
     #region Free Spins
 
+    // Character intro that plays before the free-spin-trigger scatter ticket flies in: pop_left
+    // -> toss_left -> idle_left (looping), then a short beat before the ticket sequence starts.
+    private IEnumerator PlayFreeSpinCharacterIntro()
+    {
+        characterAnimationParent.SetActive(true);
+        SetCharacterOrientationState(CharacterAnimState.Normal);
+        yield return PlayCharacterAnim("pop_left", false);
+        yield return PlayCharacterAnim("toss_left", false);
+        PlayCharacterAnimLoop("idle_left");
+        yield return new WaitForSeconds(0.7f);
+    }
+
     // Shared by both the trigger (mainSlotTargetX = mainSlotFreeSpinOffsetX) and the
     // end-of-round (mainSlotTargetX = 0f) transitions — same visual sequence both times,
-    // only the direction the main slot transform slides differs.
-    private IEnumerator PlayScatterTicketSequence(float mainSlotTargetX)
+    // only the direction the main slot transform slides differs. hideCharacterAfterScaleUp is
+    // only set on the end-of-round call, once the ticket has scaled up to full size.
+    private IEnumerator PlayScatterTicketSequence(float mainSlotTargetX, bool hideCharacterAfterScaleUp = false)
     {
         if (scatterTicketImage == null) yield break;
 
@@ -802,9 +1043,22 @@ public class SlotManager : MonoBehaviour
 
         yield return scatterTicketImage.DOScale(scatterTicketScaleUpTarget, scatterTicketScaleUpDuration).WaitForCompletion();
 
+        if (hideCharacterAfterScaleUp)
+        {
+            DeactivateCharacterAnimation();
+        }
+
         bool scaleDownDone = false;
         scatterTicketImage.DOScale(0f, scatterTicketScaleDownDuration).OnComplete(() => scaleDownDone = true);
-        mainSlotTransform.DOAnchorPosX(mainSlotTargetX, scatterTicketScaleDownDuration);
+
+        // The main slot only needs to make room for the ticket sideways in landscape — in
+        // portrait it stays put.
+        var currentOrientation = GetOrientationChange();
+        bool isPortraitOrientation = currentOrientation != null && currentOrientation.CurrentMode == OrientationChange.OrientationMode.MobilePortrait;
+        if (!isPortraitOrientation)
+        {
+            mainSlotTransform.DOAnchorPosX(mainSlotTargetX, scatterTicketScaleDownDuration);
+        }
         yield return new WaitUntil(() => scaleDownDone);
 
         scatterTicketImage.gameObject.SetActive(false);
@@ -850,6 +1104,15 @@ public class SlotManager : MonoBehaviour
         }
 
         yield return new WaitForSeconds(diceRollDuration);
+
+        // One snap_left per row, only when this row actually has something to shoot — idle_left
+        // just keeps looping uninterrupted on a row with no hits.
+        if (multipliersThisRow.Count > 0)
+        {
+            yield return PlayCharacterAnim("snap_left", false);
+            PlayCharacterAnimLoop("idle_left");
+            yield return new WaitForSeconds(0.5f);
+        }
 
         // Fire all lasers in parallel at the marked columns.
         var laserRoutines = new List<Coroutine>();
