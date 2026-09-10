@@ -77,6 +77,11 @@ public class SlotManager : MonoBehaviour
     [SerializeField] private float scatterTicketScaleDownDuration = 0.7f;
     [SerializeField] private float mainSlotFreeSpinOffsetX = 190f;
 
+    [Header("Free Spin Scatter Combine")]
+    [SerializeField] private RectTransform scatterCombineAnimationParent; // parent to spawn the combined-ticket object under (controls sort order)
+    [SerializeField] private RectTransform scatterCombinedTicketPrefab;   // prefab with Image + ImageAnimation, frames pre-assigned in the Inspector
+    [SerializeField] private float scatterCombineMoveDuration = 0.6f;     // time for both half-tickets to travel to the meeting point
+
     [Header("Free Spin Dice Sequence")]
     [SerializeField] private float diceFadeScaleDuration = 0.4f;
     [SerializeField] private float diceRollDuration = 2f;
@@ -475,7 +480,15 @@ public class SlotManager : MonoBehaviour
 
         socketManager.AccumulateResult(uiManager.betCounter);
         yield return new WaitUntil(() => socketManager.isResultdone);
+        // Backend sends the running cumulative free-spin win in freeGames.totalWinCash on every
+        // free spin — mirror it locally so the win-amount UI reflects it instead of staying at 0.
+        if (isInFreeSpins && socketManager.resultData.payload.freeGames != null)
+        {
+            _freeSpinsRoundWinTotal = socketManager.resultData.payload.freeGames.totalWinCash;
+        }
         // // Load result matrix into result images
+        int? reel3ScatterRow = null;
+        int? reel4ScatterRow = null;
         for (int j = 0; j < socketManager.resultData.matrix.Count; j++)
         {
             for (int i = 0; i < socketManager.resultData.matrix[j].Count; i++)
@@ -490,11 +503,13 @@ public class SlotManager : MonoBehaviour
                     {
                         _resultImages[i].slotImages[j].sprite = rightScatterSymbol;
                         _resultImages[i].slotImages[j].preserveAspect = false;
+                        reel3ScatterRow = j;
                     }
                     else if (i == 4 && symbolId == 12)
                     {
                         _resultImages[i].slotImages[j].sprite = leftScatterSymbol;
                         _resultImages[i].slotImages[j].preserveAspect = false;
+                        reel4ScatterRow = j;
                     }
 
                     if (symbolId == 13)
@@ -670,7 +685,9 @@ public class SlotManager : MonoBehaviour
             freeSpinsRemaining = socketManager.resultData.payload.freeGames.totalSpins;
             _freeSpinsRoundWinTotal = 0;
 
+            yield return PlayScatterSymbolsCombineIntro(reel3ScatterRow, reel4ScatterRow);
             yield return PlayFreeSpinCharacterIntro();
+            StopScatterSymbolsCombineIntro();
             yield return PlayScatterTicketSequence(mainSlotFreeSpinOffsetX);
 
             uiManager.OnFreeSpinsTriggered(freeSpinsRemaining);
@@ -708,6 +725,7 @@ public class SlotManager : MonoBehaviour
             }
             else
             {
+                ResetOverlays();
                 var freeSpinPopupType = uiManager.GetWinPopupType(socketManager.resultData.payload.freeGames.totalWinCash)
                     ?? UIManager.WinPopupType.BigWin;
                 bool freeSpinPopupClosed = false;
@@ -798,6 +816,7 @@ public class SlotManager : MonoBehaviour
                     var anim1 = winAnimationImages[row].slotImages[col].GetComponent<ImageAnimation>();
                     anim1.textureArray = GetMultiplierAnimation(md?.multiplier ?? 1);
                     anim1.doLoopAnimation = true;
+                    anim1.AnimationSpeed = GetAnimationSpeed(symbolID);
                     anim1.StartAnimation();
                 }
                 else
@@ -812,14 +831,14 @@ public class SlotManager : MonoBehaviour
                 {
                     ImageAnimation anim = winAnimationImages[row].slotImages[col].GetComponent<ImageAnimation>();
                     anim.textureArray = GetAnimationSprite(symbolID);
-                    anim.AnimationSpeed = 31f;
+                    anim.AnimationSpeed = GetAnimationSpeed(symbolID);
                     anim.doLoopAnimation = true;
                     anim.StartAnimation();
                 }
             }
         }
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3f);
     }
 
     // Cycles the winning lines one at a time, forever. StopWinLinesLoop() (called from
@@ -884,6 +903,7 @@ public class SlotManager : MonoBehaviour
                         var md = socketManager.resultData.payload.magicDiceMultipliers?.Find(m => m.row == row && m.col == col);
                         var anim1 = winAnimationImages[row].slotImages[col].GetComponent<ImageAnimation>();
                         anim1.textureArray = GetMultiplierAnimation(md?.multiplier ?? 1);
+                        anim1.AnimationSpeed = GetAnimationSpeed(symbolID);
                         anim1.doLoopAnimation = true;
                         anim1.StartAnimation();
                     }
@@ -900,7 +920,7 @@ public class SlotManager : MonoBehaviour
                         ImageAnimation anim = winAnimationImages[row].slotImages[col].GetComponent<ImageAnimation>();
                         anim.StopAnimation();
                         anim.textureArray = GetAnimationSprite(symbolID);
-                        anim.AnimationSpeed = 31f;
+                        anim.AnimationSpeed = GetAnimationSpeed(symbolID);
                         anim.doLoopAnimation = true;
                         anim.StartAnimation();
                     }
@@ -1009,6 +1029,115 @@ public class SlotManager : MonoBehaviour
     #endregion
     #region Free Spins
 
+    private Image _scatterCombineReel3Image;
+    private Image _scatterCombineReel4Image;
+    private Vector3 _scatterCombineReel3OriginalPos;
+    private Vector3 _scatterCombineReel4OriginalPos;
+    private GameObject _spawnedScatterCombineObject;
+
+    // Plays before the character intro: activates every SlotOverlay (dims the board), reveals the
+    // two half-ticket win-animation images at their landed positions, slides them toward each other
+    // until they meet, then spawns the combined-ticket prefab there and loops its ImageAnimation.
+    // Runs (and keeps looping) through PlayFreeSpinCharacterIntro; StopScatterSymbolsCombineIntro()
+    // tears it down right before PlayScatterTicketSequence starts.
+    private IEnumerator PlayScatterSymbolsCombineIntro(int? reel3Row, int? reel4Row)
+    {
+        if (!reel3Row.HasValue || !reel4Row.HasValue) yield break;
+
+        for (int j = 0; j < SlotOverlays.Count; j++)
+            for (int k = 0; k < SlotOverlays[j].slotImages.Count; k++)
+                SlotOverlays[j].slotImages[k].gameObject.SetActive(true);
+
+        // _scatterCombineReel3Image = winAnimationImages[reel3Row.Value].slotImages[3];
+        // _scatterCombineReel4Image = winAnimationImages[reel4Row.Value].slotImages[4];
+        _scatterCombineReel3Image = winAnimationImages[3].slotImages[reel3Row.Value];
+        _scatterCombineReel4Image = winAnimationImages[4].slotImages[reel4Row.Value];
+
+        ImageAnimation reel3Anim = _scatterCombineReel3Image.GetComponent<ImageAnimation>();
+        if (reel3Anim != null) reel3Anim.StopAnimation();
+        ImageAnimation reel4Anim = _scatterCombineReel4Image.GetComponent<ImageAnimation>();
+        if (reel4Anim != null) reel4Anim.StopAnimation();
+        _scatterCombineReel3Image.sprite = rightScatterSymbol;
+        _scatterCombineReel3Image.preserveAspect = false;
+        _scatterCombineReel4Image.sprite = leftScatterSymbol;
+        _scatterCombineReel4Image.preserveAspect = false;
+        SetAnimationSymbolSize(_scatterCombineReel3Image, 12);
+        SetAnimationSymbolSize(_scatterCombineReel4Image, 12);
+        _scatterCombineReel3Image.gameObject.SetActive(true);
+        _scatterCombineReel4Image.gameObject.SetActive(true);
+
+        _resultImages[3].slotImages[reel3Row.Value].gameObject.SetActive(false);
+        _resultImages[4].slotImages[reel4Row.Value].gameObject.SetActive(false);
+
+        _scatterCombineReel3OriginalPos = _scatterCombineReel3Image.transform.position;
+        _scatterCombineReel4OriginalPos = _scatterCombineReel4Image.transform.position;
+
+        // Vertical-only meet: each half keeps its own reel's X position and only slides up/down
+        // to the shared row between them. The spawn point still centers horizontally between
+        // the two reels so the combined ticket lands squarely between them.
+        float midY = Mathf.Lerp(_scatterCombineReel3OriginalPos.y, _scatterCombineReel4OriginalPos.y, 0.5f);
+        Vector3 midPoint = new Vector3(
+            Mathf.Lerp(_scatterCombineReel3OriginalPos.x, _scatterCombineReel4OriginalPos.x, 0.5f),
+            midY,
+            _scatterCombineReel3OriginalPos.z);
+
+        DG.Tweening.Sequence moveSeq = DOTween.Sequence();
+        moveSeq.Join(_scatterCombineReel3Image.transform.DOMoveY(midY, scatterCombineMoveDuration).SetEase(Ease.OutQuad));
+        moveSeq.Join(_scatterCombineReel4Image.transform.DOMoveY(midY, scatterCombineMoveDuration).SetEase(Ease.OutQuad));
+        yield return moveSeq.WaitForCompletion();
+
+        yield return new WaitForSeconds(0.5f);
+
+        if (scatterCombinedTicketPrefab != null)
+        {
+            Transform parent = scatterCombineAnimationParent != null ? scatterCombineAnimationParent : mainSlotTransform;
+            RectTransform spawned = Instantiate(scatterCombinedTicketPrefab, parent);
+            spawned.position = midPoint;
+
+            RectTransform reel3Rect = _scatterCombineReel3Image.rectTransform;
+            RectTransform reel4Rect = _scatterCombineReel4Image.rectTransform;
+            spawned.sizeDelta = new Vector2(reel3Rect.rect.width + reel4Rect.rect.width, reel3Rect.rect.height);
+
+            _spawnedScatterCombineObject = spawned.gameObject;
+
+            ImageAnimation combineAnim = spawned.GetComponent<ImageAnimation>();
+            if (combineAnim != null)
+            {
+                combineAnim.doLoopAnimation = true;
+                combineAnim.StartAnimation();
+            }
+        }
+        yield return new WaitForSeconds(2f);
+    }
+
+    // Cleanup counterpart — stops/destroys the looping combined-ticket object, restores the two
+    // half-ticket win images to where they started, and reuses ResetOverlays() to put every
+    // overlay/win-animation/result-image cell back to its normal idle state.
+    private void StopScatterSymbolsCombineIntro()
+    {
+        if (_spawnedScatterCombineObject != null)
+        {
+            Destroy(_spawnedScatterCombineObject);
+            _spawnedScatterCombineObject = null;
+        }
+
+        if (_scatterCombineReel3Image != null) _scatterCombineReel3Image.transform.position = _scatterCombineReel3OriginalPos;
+        if (_scatterCombineReel4Image != null) _scatterCombineReel4Image.transform.position = _scatterCombineReel4OriginalPos;
+
+        ResetOverlays();
+
+        for (int j = 0; j < SlotOverlays.Count; j++)
+        {
+            for (int k = 0; k < SlotOverlays[j].slotImages.Count; k++)
+            {
+                SlotOverlays[j].slotImages[k].gameObject.SetActive(true);
+            }
+        }
+
+        _scatterCombineReel3Image = null;
+        _scatterCombineReel4Image = null;
+    }
+
     // Character intro that plays before the free-spin-trigger scatter ticket flies in: pop_left
     // -> toss_left -> idle_left (looping), then a short beat before the ticket sequence starts.
     private IEnumerator PlayFreeSpinCharacterIntro()
@@ -1091,16 +1220,17 @@ public class SlotManager : MonoBehaviour
             diceColor.a = 0f;
             dice.color = diceColor;
             dice.transform.localScale = Vector3.zero;
+            var anim = dice.GetComponent<ImageAnimation>();
+            anim.textureArray = dicerollingAnimation;
+            anim.doLoopAnimation = true;
+            anim.StartAnimation();
+
             dice.DOFade(1f, diceFadeScaleDuration);
             dice.transform.DOScale(1f, diceFadeScaleDuration).OnComplete(() =>
             {
                 _resultImages[col].slotImages[spinIndex].gameObject.SetActive(false);
             });
 
-            var anim = dice.GetComponent<ImageAnimation>();
-            anim.textureArray = dicerollingAnimation;
-            anim.doLoopAnimation = true;
-            anim.StartAnimation();
         }
 
         yield return new WaitForSeconds(diceRollDuration);
@@ -1111,7 +1241,7 @@ public class SlotManager : MonoBehaviour
         {
             yield return PlayCharacterAnim("snap_left", false);
             PlayCharacterAnimLoop("idle_left");
-            yield return new WaitForSeconds(0.5f);
+            //yield return new WaitForSeconds(0.5f);
         }
 
         // Fire all lasers in parallel at the marked columns.
@@ -1121,7 +1251,7 @@ public class SlotManager : MonoBehaviour
 
         // Wait for the lasers to actually reach the marked dice before scaling the untouched
         // ones down, so the two don't visibly happen at the same time.
-        yield return new WaitForSeconds(laserTravelDuration);
+        yield return new WaitForSeconds(laserTravelDuration + 0.35f);
 
         // Scale down the non-destroyed dice now that the lasers have hit.
         for (int col = 0; col < diceRow.Count; col++)
@@ -1144,6 +1274,7 @@ public class SlotManager : MonoBehaviour
         {
             GameObject laser = Instantiate(LaserPrefab, LaserShootPosition.position, Quaternion.identity, LaserParent != null ? LaserParent.transform : null);
             yield return laser.transform.DOMove(dice.transform.position, laserTravelDuration).WaitForCompletion();
+            yield return new WaitForSeconds(0.35f);
             Destroy(laser);
         }
 
@@ -1302,7 +1433,7 @@ public class SlotManager : MonoBehaviour
         {
             case 0:
                 //slotImage.transform.localScale = new Vector2(1.15f, 1.15f);
-                slotImage.transform.DOScale(1.28f, time);
+                slotImage.transform.DOScale(1.925f, time);
                 break;
 
             case 1:
@@ -1368,6 +1499,34 @@ public class SlotManager : MonoBehaviour
             default:
                 slotImage.transform.DOScale(1f, time);
                 break;
+        }
+    }
+
+    // Per-symbol AnimationSpeed for the winning-line loop animation (ImageAnimation.AnimationSpeed).
+    // All symbols currently share the same speed the win-loop code used to hardcode inline;
+    // tune individual cases here once per-symbol timing is needed.
+    private float GetAnimationSpeed(int symbolID)
+    {
+        switch (symbolID)
+        {
+            case 0:
+                return 111;
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+            case 10:
+            case 11:
+            case 12:
+                return 31f;
+
+            default:
+                return 31f;
         }
     }
 

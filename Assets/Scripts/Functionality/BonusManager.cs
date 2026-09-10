@@ -416,6 +416,7 @@ public class BonusManager : MonoBehaviour
         {
             _bonusTotalWin += roll.winInCash;
             SetBonusText(TotalWinTextLandscape, TotalWinTextPortrait, FormatAmount(_bonusTotalWin));
+            uiManager.UpdateWin(_bonusTotalWin);
 
             // Fire-and-forget, like the punch-scale below — the roll loop doesn't wait on these.
             StartCoroutine(PlayLandingShine());

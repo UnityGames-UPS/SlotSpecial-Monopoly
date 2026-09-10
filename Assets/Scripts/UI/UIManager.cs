@@ -335,7 +335,7 @@ public class UIManager : MonoBehaviour
         InitializeUI();
         UpdateJackpotPortraitLevitationFromCurrentOrientation();
 
-        ShowUniversalWinPopup(WinPopupType.HugeWin, 99.99,false);
+        //ShowUniversalWinPopup(WinPopupType.HugeWin, 99.99,false);
     }
 
     private void OnEnable()
@@ -1180,8 +1180,10 @@ public class UIManager : MonoBehaviour
         if (freeSpinCountContainer) freeSpinCountContainer.SetActive(true);
         if (freeSpinCountContainerPortrait) freeSpinCountContainerPortrait.SetActive(true);
         // remainingSpins = totalFreeSpinsAwarded - playedSpins;
-        if (remainingFreeSpinsText) remainingFreeSpinsText.text = $"{remainingSpins}";
-        if(remainingFreeSpinsTextPortrait) remainingFreeSpinsTextPortrait.text = $"{remainingSpins}";
+        // if (remainingFreeSpinsText) remainingFreeSpinsText.text = $"{remainingSpins}";
+        // if(remainingFreeSpinsTextPortrait) remainingFreeSpinsTextPortrait.text = $"{remainingSpins}";
+        if(remainingFreeSpinsText) remainingFreeSpinsText.text = ToSpriteString(remainingSpins);
+        if(remainingFreeSpinsTextPortrait) remainingFreeSpinsTextPortrait.text = ToSpriteString(remainingSpins);
     }
 
     #endregion
