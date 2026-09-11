@@ -726,11 +726,14 @@ public class SlotManager : MonoBehaviour
             else
             {
                 ResetOverlays();
-                var freeSpinPopupType = uiManager.GetWinPopupType(socketManager.resultData.payload.freeGames.totalWinCash)
-                    ?? UIManager.WinPopupType.BigWin;
-                bool freeSpinPopupClosed = false;
-                uiManager.ShowUniversalWinPopup(freeSpinPopupType, socketManager.resultData.payload.freeGames.totalWinCash, _isAutoSpin, () => freeSpinPopupClosed = true);
-                yield return new WaitUntil(() => freeSpinPopupClosed);
+                if (socketManager.resultData.payload.freeGames.totalWinCash > 0)
+                {
+                    var freeSpinPopupType = uiManager.GetWinPopupType(socketManager.resultData.payload.freeGames.totalWinCash)
+                        ?? UIManager.WinPopupType.BigWin;
+                    bool freeSpinPopupClosed = false;
+                    uiManager.ShowUniversalWinPopup(freeSpinPopupType, socketManager.resultData.payload.freeGames.totalWinCash, _isAutoSpin, () => freeSpinPopupClosed = true);
+                    yield return new WaitUntil(() => freeSpinPopupClosed);
+                }
 
                 yield return PlayScatterTicketSequence(0f, hideCharacterAfterScaleUp: true);
 
@@ -1244,10 +1247,26 @@ public class SlotManager : MonoBehaviour
             //yield return new WaitForSeconds(0.5f);
         }
 
+        // Reference angle/length for every laser this row: the real path from LaserShootPosition to
+        // the row0/col0 dice, recomputed fresh off live transforms (not cached) so it self-corrects
+        // across orientation changes. Vector3.zero is used as a "no reference" sentinel meaning
+        // DestroyDiceAtColumn should fall back to firing straight from LaserShootPosition.
+        Vector3 referenceDirection = Vector3.zero;
+        float referenceDistance = 0f;
+        if (LaserShootPosition != null && DiceImages.Count > 0 && DiceImages[0].slotImages.Count > 0)
+        {
+            Vector3 referenceOffset = DiceImages[0].slotImages[0].transform.position - LaserShootPosition.position;
+            if (referenceOffset.sqrMagnitude > 0.0001f)
+            {
+                referenceDistance = referenceOffset.magnitude;
+                referenceDirection = referenceOffset / referenceDistance;
+            }
+        }
+
         // Fire all lasers in parallel at the marked columns.
         var laserRoutines = new List<Coroutine>();
         foreach (var md in multipliersThisRow)
-            laserRoutines.Add(StartCoroutine(DestroyDiceAtColumn(diceRow[md.col], md.multiplier, spinIndex, md.col)));
+            laserRoutines.Add(StartCoroutine(DestroyDiceAtColumn(diceRow[md.col], md.multiplier, spinIndex, md.col, referenceDirection, referenceDistance)));
 
         // Wait for the lasers to actually reach the marked dice before scaling the untouched
         // ones down, so the two don't visibly happen at the same time.
@@ -1268,12 +1287,17 @@ public class SlotManager : MonoBehaviour
             yield return routine;
     }
 
-    private IEnumerator DestroyDiceAtColumn(Image dice, int multiplier, int row, int col)
+    private IEnumerator DestroyDiceAtColumn(Image dice, int multiplier, int row, int col, Vector3 referenceDirection, float referenceDistance)
     {
         if (LaserPrefab != null && LaserShootPosition != null)
         {
-            GameObject laser = Instantiate(LaserPrefab, LaserShootPosition.position, Quaternion.identity, LaserParent != null ? LaserParent.transform : null);
-            yield return laser.transform.DOMove(dice.transform.position, laserTravelDuration).WaitForCompletion();
+            Vector3 targetPos = dice.transform.position;
+            Vector3 startPos = referenceDirection == Vector3.zero
+                ? LaserShootPosition.position
+                : targetPos - referenceDirection * referenceDistance;
+
+            GameObject laser = Instantiate(LaserPrefab, startPos, Quaternion.identity, LaserParent != null ? LaserParent.transform : null);
+            yield return laser.transform.DOMove(targetPos, laserTravelDuration).WaitForCompletion();
             yield return new WaitForSeconds(0.35f);
             Destroy(laser);
         }

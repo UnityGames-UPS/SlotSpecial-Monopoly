@@ -8,8 +8,10 @@ using System.Collections;
 public class BonusManager : MonoBehaviour
 {
     [Header("CloudAnimation")]
-    [SerializeField] private List<Sprite> cloudFullScreenAnimation;
-    [SerializeField] private List<Sprite> cloudClearScreenAnimation;
+    [SerializeField] private List<Sprite> cloudFullScreenAnimationLandscape;
+    [SerializeField] private List<Sprite> cloudClearScreenAnimationLandscape;
+    [SerializeField] private List<Sprite> cloudFullScreenAnimationPortrait;
+    [SerializeField] private List<Sprite> cloudClearScreenAnimationPortrait;
     [SerializeField] private ImageAnimation cloudAnimationPlayerLandscape;
     [SerializeField] private ImageAnimation cloudAnimationPlayerPortrait;
 
@@ -161,7 +163,7 @@ public class BonusManager : MonoBehaviour
         _bonusTotalWin = 0;
         _currentPosition = 0; // math cursor for the first roll always starts at 0
 
-        yield return PlayCloudTransition(cloudFullScreenAnimation, reverse: false);
+        yield return PlayCloudTransition(cloudFullScreenAnimationLandscape, cloudFullScreenAnimationPortrait, reverse: false);
 
         uiManager.gameLogoObject.SetActive(false);
         slotManager.DeactivateCharacterAnimation();
@@ -175,7 +177,7 @@ public class BonusManager : MonoBehaviour
         SetRollsText(RemainingRollsTextLandscape, RemainingRollsTextPortrait, _rollsRemaining.ToString());
         SetBonusText(TotalWinTextLandscape, TotalWinTextPortrait, FormatAmount(0));
 
-        yield return PlayCloudTransition(cloudClearScreenAnimation, reverse: false);
+        yield return PlayCloudTransition(cloudClearScreenAnimationLandscape, cloudClearScreenAnimationPortrait, reverse: false);
 
         uiManager.ShowStartButton(false); // visible, disabled until the first roll is armed
         SetRollButtonsInteractable(true);
@@ -223,20 +225,23 @@ public class BonusManager : MonoBehaviour
         yield return slotManager.PlayCharacterAnim("pop_left", false);
         yield return slotManager.PlayCharacterAnim("action_left", false);
 
-        yield return PlayCloudTransition(cloudFullScreenAnimation, reverse: true);
+        yield return PlayCloudTransition(cloudFullScreenAnimationLandscape, cloudFullScreenAnimationPortrait, reverse: true);
         EndBoardLogo.SetActive(false);
         BonusPanel.SetActive(false);
         slotManager.DeactivateCharacterAnimation();
         uiManager.gameLogoObject.SetActive(true);
-        yield return PlayCloudTransition(cloudClearScreenAnimation, reverse: true);
+        yield return PlayCloudTransition(cloudClearScreenAnimationLandscape, cloudClearScreenAnimationPortrait, reverse: true);
 
         IsBonusRoundActive = false;
         ClearBoardDecorations();
 
-        var popupType = uiManager.GetWinPopupType(data.winInCash) ?? UIManager.WinPopupType.BigWin;
-        bool popupClosed = false;
-        uiManager.ShowUniversalWinPopup(popupType, data.winInCash, false, () => popupClosed = true);
-        yield return new WaitUntil(() => popupClosed);
+        if (data.winInCash > 0)
+        {
+            var popupType = uiManager.GetWinPopupType(data.winInCash) ?? UIManager.WinPopupType.BigWin;
+            bool popupClosed = false;
+            uiManager.ShowUniversalWinPopup(popupType, data.winInCash, false, () => popupClosed = true);
+            yield return new WaitUntil(() => popupClosed);
+        }
     }
 
     private void PopulateBoard(List<Board> board)
@@ -415,18 +420,17 @@ public class BonusManager : MonoBehaviour
         if (roll.winInCash > 0)
         {
             _bonusTotalWin += roll.winInCash;
-            SetBonusText(TotalWinTextLandscape, TotalWinTextPortrait, FormatAmount(_bonusTotalWin));
-            uiManager.UpdateWin(_bonusTotalWin);
 
             // Fire-and-forget, like the punch-scale below — the roll loop doesn't wait on these.
+            // The win amount texts update once PlayWinLaser reaches its end position, not now.
             StartCoroutine(PlayLandingShine());
-            StartCoroutine(PlayWinLaser());
+            StartCoroutine(PlayWinLaser(_bonusTotalWin));
         }
 
         if (roll.rollsAdded.HasValue && roll.rollsAdded.Value > 0)
         {
-            if (RemainingRollsTextLandscape) RemainingRollsTextLandscape.transform.DOPunchScale(Vector3.one * 0.35f, 1f,0);
-            if (RemainingRollsTextPortrait) RemainingRollsTextPortrait.transform.DOPunchScale(Vector3.one * 0.35f, 1f,0);
+            if (RemainingRollsTextLandscape) RemainingRollsTextLandscape.transform.DOPunchScale(Vector3.one * 0.35f, 1f, 0);
+            if (RemainingRollsTextPortrait) RemainingRollsTextPortrait.transform.DOPunchScale(Vector3.one * 0.35f, 1f, 0);
         }
         // addRolls count / isEnd are applied in PlayBonusRound's loop (rolls-remaining math / loop exit).
     }
@@ -448,32 +452,50 @@ public class BonusManager : MonoBehaviour
 
     // Travels from WinLaser's rest position to the orientation-correct end point along a slight
     // curve (world space, since WinLaser and the laser end points live under different parents),
-    // then triggers the win-text panel reveal on arrival before resetting for next time.
-    private IEnumerator PlayWinLaser()
+    // then updates the win amount texts and triggers the win-text panel reveal on arrival,
+    // before resetting for next time.
+    private IEnumerator PlayWinLaser(double newTotalWin)
     {
-        if (WinLaser == null) yield break;
-
         bool isPortrait = GetOrientationChange() != null && GetOrientationChange().CurrentMode == OrientationChange.OrientationMode.MobilePortrait;
+
+        if (WinLaser == null)
+        {
+            // No laser to animate — still reflect the win immediately rather than losing it.
+            SetBonusText(TotalWinTextLandscape, TotalWinTextPortrait, FormatAmount(newTotalWin));
+            uiManager.UpdateWin(newTotalWin);
+            yield break;
+        }
+
         RectTransform endPoint = isPortrait ? laserEndPointPortrait : laserEndPointLandscape;
-        if (endPoint == null) yield break;
+        if (endPoint == null)
+        {
+            SetBonusText(TotalWinTextLandscape, TotalWinTextPortrait, FormatAmount(newTotalWin));
+            uiManager.UpdateWin(newTotalWin);
+            yield break;
+        }
 
         //WinLaser.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
         WinLaser.SetActive(true);
 
         Vector3 startPos = WinLaser.transform.position;
-        Vector3 upPos = startPos + new Vector3(1.7f,1.7f,0); // slight vertical offset to avoid a perfectly straight line
+        Vector3 upPos = startPos + new Vector3(1.7f, 1.7f, 0); // slight vertical offset to avoid a perfectly straight line
+        Vector3 charbackPos = startPos + new Vector3(-2f, 2f, 0);
         Vector3 endPos = endPoint.position;
         Vector3 mid = Vector3.Lerp(startPos, endPos, 0.5f);
         Vector3 perpendicular = Vector3.Cross((endPos - startPos).normalized, Vector3.forward);
         mid += perpendicular * (Vector3.Distance(startPos, endPos) * laserCurveAmount);
 
         yield return WinLaser.transform
-            .DOPath(new Vector3[] { startPos, upPos, mid, endPos }, laserTravelDuration, PathType.CatmullRom)
+            .DOPath(new Vector3[] { startPos, upPos, charbackPos, mid, endPos }, laserTravelDuration, PathType.CatmullRom)
             .SetEase(Ease.InOutSine)
             .WaitForCompletion();
 
 
         PlayWinTextPanel(isPortrait);
+
+        SetBonusText(TotalWinTextLandscape, TotalWinTextPortrait, FormatAmount(newTotalWin));
+        uiManager.UpdateWin(newTotalWin);
+
         yield return new WaitForSeconds(laserArrivalWaitDuration);
         WinLaser.SetActive(false);
         WinLaser.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
@@ -486,33 +508,35 @@ public class BonusManager : MonoBehaviour
         panel.StartAnimation();
     }
 
-    private IEnumerator PlayCloudTransition(List<Sprite> frames, bool reverse)
+    private IEnumerator PlayCloudTransition(List<Sprite> landscapeFrames, List<Sprite> portraitFrames, bool reverse)
     {
-        if (cloudAnimationPlayerLandscape == null ||cloudAnimationPlayerPortrait == null || frames == null || frames.Count == 0) yield break;
+        bool playLandscape = cloudAnimationPlayerLandscape != null && landscapeFrames != null && landscapeFrames.Count > 0;
+        bool playPortrait = cloudAnimationPlayerPortrait != null && portraitFrames != null && portraitFrames.Count > 0;
+        if (!playLandscape && !playPortrait) yield break;
 
         //CloudAnimation.SetActive(true);
-        cloudAnimationPlayerLandscape.textureArray = frames;
-        cloudAnimationPlayerPortrait.textureArray = frames; 
+        bool landscapeDone = !playLandscape;
+        bool portraitDone = !playPortrait;
 
-        bool done = false;
+        Quaternion rotation = reverse ? Quaternion.Euler(0, 180, 0) : Quaternion.Euler(0, 0, 0);
 
-        cloudAnimationPlayerLandscape.onAnimationComplete = () => done = true;
-        cloudAnimationPlayerPortrait.onAnimationComplete = () => done = true;
-
-        if (reverse) {
-            cloudAnimationPlayerLandscape.transform.localRotation = Quaternion.Euler(0, 180, 0);
-            cloudAnimationPlayerPortrait.transform.localRotation = Quaternion.Euler(0, 180, 0);
-        }
-        else {
-            cloudAnimationPlayerLandscape.transform.localRotation = Quaternion.Euler(0, 0, 0);
-            cloudAnimationPlayerPortrait.transform.localRotation = Quaternion.Euler(0, 0, 0);
+        if (playLandscape)
+        {
+            cloudAnimationPlayerLandscape.textureArray = landscapeFrames;
+            cloudAnimationPlayerLandscape.onAnimationComplete = () => landscapeDone = true;
+            cloudAnimationPlayerLandscape.transform.localRotation = rotation;
+            cloudAnimationPlayerLandscape.StartAnimation();
         }
 
-        // else 
-        cloudAnimationPlayerLandscape.StartAnimation();
-        cloudAnimationPlayerPortrait.StartAnimation();
+        if (playPortrait)
+        {
+            cloudAnimationPlayerPortrait.textureArray = portraitFrames;
+            cloudAnimationPlayerPortrait.onAnimationComplete = () => portraitDone = true;
+            cloudAnimationPlayerPortrait.transform.localRotation = rotation;
+            cloudAnimationPlayerPortrait.StartAnimation();
+        }
 
-        yield return new WaitUntil(() => done);
+        yield return new WaitUntil(() => landscapeDone && portraitDone);
         //CloudAnimation.SetActive(false);
     }
 
