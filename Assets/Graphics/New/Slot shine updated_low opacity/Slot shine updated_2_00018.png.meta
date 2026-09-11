@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: e5735c5d42baa473894647e2c585c12c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2341304037338161651
+    second: Slot shine updated_2_00018_0
+  - first:
+      213: 8426717484208849942
+    second: Slot shine updated_2_00018_1
+  - first:
+      213: -3542327072393921196
+    second: Slot shine updated_2_00018_2
+  - first:
+      213: -3595082362436208034
+    second: Slot shine updated_2_00018_3
+  - first:
+      213: 6637631080483426793
+    second: Slot shine updated_2_00018_4
+  - first:
+      213: 3704755357841558738
+    second: Slot shine updated_2_00018_5
+  - first:
+      213: 9209640644776488661
+    second: Slot shine updated_2_00018_6
+  - first:
+      213: 7213767729365597533
+    second: Slot shine updated_2_00018_7
+  - first:
+      213: -2180956340693065201
+    second: Slot shine updated_2_00018_8
+  - first:
+      213: 2393277011606802274
+    second: Slot shine updated_2_00018_9
+  - first:
+      213: 2898806419480181212
+    second: Slot shine updated_2_00018_10
+  - first:
+      213: 4802289574069303257
+    second: Slot shine updated_2_00018_11
+  - first:
+      213: 4666556334582713202
+    second: Slot shine updated_2_00018_12
+  - first:
+      213: 5556727272090057320
+    second: Slot shine updated_2_00018_13
+  - first:
+      213: 2720106519895282131
+    second: Slot shine updated_2_00018_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Slot shine updated_2_00018_0
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 40
+        width: 485
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f1aab00e9bfd7020800000000000000
+      internalID: 2341304037338161651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slot shine updated_2_00018_1
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 865
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61487dcb7e6b1f470800000000000000
+      internalID: 8426717484208849942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slot shine updated_2_00018_2
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 872
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45df5b3bb4027dec0800000000000000
+      internalID: -3542327072393921196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slot shine updated_2_00018_3
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 871
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5ab7b093a3bb1ec0800000000000000
+      internalID: -3595082362436208034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slot shine updated_2_00018_4
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 869
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e19e4ecc4a9d1c50800000000000000
+      internalID: 6637631080483426793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slot shine updated_2_00018_5
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 862
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dc0fdb8e5fe96330800000000000000
+      internalID: 3704755357841558738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slot shine updated_2_00018_6
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 871
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dee6e42f573fcf70800000000000000
+      internalID: 9209640644776488661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slot shine updated_2_00018_7
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 865
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5d330997837c1460800000000000000
+      internalID: 7213767729365597533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slot shine updated_2_00018_8
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 869
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f02aa5a63cfabb1e0800000000000000
+      internalID: -2180956340693065201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slot shine updated_2_00018_9
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 869
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26f8eed03c0a63120800000000000000
+      internalID: 2393277011606802274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slot shine updated_2_00018_10
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 341
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd9fcb97411aa3820800000000000000
+      internalID: 2898806419480181212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slot shine updated_2_00018_11
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 256
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d776fa8ce825a240800000000000000
+      internalID: 4802289574069303257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slot shine updated_2_00018_12
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 213
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27bc6270340f2c040800000000000000
+      internalID: 4666556334582713202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slot shine updated_2_00018_13
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 196
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86a37ae53067d1d40800000000000000
+      internalID: 5556727272090057320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slot shine updated_2_00018_14
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 143
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d11595d772cfb520800000000000000
+      internalID: 2720106519895282131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Slot shine updated_2_00018_0: 2341304037338161651
+      Slot shine updated_2_00018_1: 8426717484208849942
+      Slot shine updated_2_00018_10: 2898806419480181212
+      Slot shine updated_2_00018_11: 4802289574069303257
+      Slot shine updated_2_00018_12: 4666556334582713202
+      Slot shine updated_2_00018_13: 5556727272090057320
+      Slot shine updated_2_00018_14: 2720106519895282131
+      Slot shine updated_2_00018_2: -3542327072393921196
+      Slot shine updated_2_00018_3: -3595082362436208034
+      Slot shine updated_2_00018_4: 6637631080483426793
+      Slot shine updated_2_00018_5: 3704755357841558738
+      Slot shine updated_2_00018_6: 9209640644776488661
+      Slot shine updated_2_00018_7: 7213767729365597533
+      Slot shine updated_2_00018_8: -2180956340693065201
+      Slot shine updated_2_00018_9: 2393277011606802274
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

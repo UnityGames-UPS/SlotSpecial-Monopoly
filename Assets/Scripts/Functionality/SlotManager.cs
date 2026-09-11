@@ -685,6 +685,17 @@ public class SlotManager : MonoBehaviour
             freeSpinsRemaining = socketManager.resultData.payload.freeGames.totalSpins;
             _freeSpinsRoundWinTotal = 0;
 
+            // Backend now sends the exact scatter positions that triggered free spins —
+            // prefer that over the local matrix scan above, which stays as a fallback.
+            var triggerPositions = socketManager.resultData.payload.freeGames.scatterTriggerPosition;
+            if (triggerPositions != null)
+            {
+                var reel3Trigger = triggerPositions.Find(p => p.column == 3);
+                var reel4Trigger = triggerPositions.Find(p => p.column == 4);
+                if (reel3Trigger != null) reel3ScatterRow = reel3Trigger.row;
+                if (reel4Trigger != null) reel4ScatterRow = reel4Trigger.row;
+            }
+
             yield return PlayScatterSymbolsCombineIntro(reel3ScatterRow, reel4ScatterRow);
             yield return PlayFreeSpinCharacterIntro();
             StopScatterSymbolsCombineIntro();
@@ -795,7 +806,7 @@ public class SlotManager : MonoBehaviour
         }
 
         winAmountBigText.gameObject.SetActive(true);
-        winAmountBigText.text = socketManager.resultData.payload.winAmount.ToString("F2");
+        winAmountBigText.text = socketManager.resultData.payload.linesWinAmount.ToString("F2");
 
         for (int j = 0; j < winLines.Count; j++)
         {

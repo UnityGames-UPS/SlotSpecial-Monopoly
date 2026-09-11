@@ -155,7 +155,7 @@ public class Payload
     public FreeGames freeGames { get; set; }
     public bool goldenMultiplierApplied { get; set; }
     public CheckersBonus checkersBonus { get; set; }
-
+    public double linesWinAmount { get; set; }
 }
 
 [Serializable]
@@ -190,6 +190,7 @@ public class FreeGames
     public int totalSpins { get; set; }
     public double totalWinCash { get; set; }
     public List<int> lockedWildRows { get; set; }
+    public List<ScatterTriggerPosition> scatterTriggerPosition { get; set; }
 }
 
 [Serializable]
@@ -200,6 +201,7 @@ public class MagicDiceMultiplier
     public int multiplier { get; set; }
 }
 
+[Serializable]
 public class Board
 {
     public int multiplier { get; set; }
@@ -209,6 +211,7 @@ public class Board
     public bool? resetPosition { get; set; }
 }
 
+[Serializable]
 public class CheckersBonus
 {
     public bool triggered { get; set; }
@@ -218,6 +221,7 @@ public class CheckersBonus
     public int finalPosition { get; set; }
 }
 
+[Serializable]
 public class Roll
 {
     public int dice1 { get; set; }
@@ -232,9 +236,18 @@ public class Roll
     public bool? vaultActivated { get; set; }
 }
 
+[Serializable]
 public class Vault
 {
     public int minMultiplier { get; set; }
     public int maxMultiplier { get; set; }
 }
+
+[Serializable]
+public class ScatterTriggerPosition
+{
+    public int row { get; set; }
+    public int column { get; set; }
+}
+
 

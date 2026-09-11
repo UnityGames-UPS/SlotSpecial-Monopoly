@@ -479,7 +479,7 @@ public class BonusManager : MonoBehaviour
 
         Vector3 startPos = WinLaser.transform.position;
         Vector3 upPos = startPos + new Vector3(1.7f, 1.7f, 0); // slight vertical offset to avoid a perfectly straight line
-        Vector3 charbackPos = startPos + new Vector3(-2f, 2f, 0);
+        Vector3 charbackPos = startPos + new Vector3(-4f, 2f, 0);
         Vector3 endPos = endPoint.position;
         Vector3 mid = Vector3.Lerp(startPos, endPos, 0.5f);
         Vector3 perpendicular = Vector3.Cross((endPos - startPos).normalized, Vector3.forward);
