@@ -17,6 +17,15 @@ public class SlotManager : MonoBehaviour
     [SerializeField] private Sprite rightScatterSymbol;
     [SerializeField] private Sprite leftScatterSymbol;
 
+    [Header("Red Monopoly")]
+    [SerializeField] private List<Sprite> MonopolyChangeAnimation;
+    [SerializeField] private List<Sprite> MonopolyRedAnimation;
+    [SerializeField] private Sprite RedMonopolySymbol;
+
+    [SerializeField] private float MonopolyChangeScale;
+    [SerializeField] private float MonopolyRedScale;
+    [SerializeField] private float RedMonopolySymbolScale;
+
     [Header("Slot Images")]
     [SerializeField] private List<SlotImage> _totalImages;
     [SerializeField] internal List<SlotImage> _resultImages;
@@ -126,6 +135,9 @@ public class SlotManager : MonoBehaviour
     private Coroutine _autoSpinRoutine = null;
     private Coroutine _tweenRoutine;
     private Coroutine _winLinesLoopRoutine;
+    // Slots converted from symbolId 0 to Red Monopoly by a golden multiplier this spin —
+    // consulted by the win-line highlight so those slots keep showing the red variant.
+    private readonly HashSet<(int row, int col)> _goldenMonopolyPositions = new HashSet<(int row, int col)>();
     private bool _isSpinning = false;
     internal int _numberOfSlots = 5;
     private bool _stopSpinToggle;
@@ -381,6 +393,9 @@ public class SlotManager : MonoBehaviour
     {
         if (spineAnimController == null) yield break;
 
+        if (animName == "pop_left") audioController.PlayCharacterAppear();
+        else if (animName == "action_left") audioController.PlayCharacterSmoke();
+
         spineAnimController.isPlaying = false;
         spineAnimController.animName = animName;
         spineAnimController.Play(loop);
@@ -489,6 +504,7 @@ public class SlotManager : MonoBehaviour
         // // Load result matrix into result images
         int? reel3ScatterRow = null;
         int? reel4ScatterRow = null;
+        _goldenMonopolyPositions.Clear();
         for (int j = 0; j < socketManager.resultData.matrix.Count; j++)
         {
             for (int i = 0; i < socketManager.resultData.matrix[j].Count; i++)
@@ -514,14 +530,6 @@ public class SlotManager : MonoBehaviour
 
                     if (symbolId == 13)
                     {
-                        // if (isInFreeSpins)
-                        // {
-                        //     var md = socketManager.resultData.payload.magicDiceMultipliers
-                        //         ?.Find(m => m.row == j && m.col == i);
-                        //     if (md != null)
-                        //         _resultImages[i].slotImages[j].sprite = GetMultiplierSprite(md.multiplier);
-                        // }
-                        // else
                         {
                             int randomSprite = UnityEngine.Random.Range(1, 9);
                             _resultImages[i].slotImages[j].sprite = _symbolSprites[randomSprite];
@@ -654,6 +662,49 @@ public class SlotManager : MonoBehaviour
         {
             isBonus = true;
 
+            foreach (var item in SlotOverlays)
+            {
+                foreach (var image in item.slotImages)
+                {
+                    image.gameObject.SetActive(true);
+                }
+            }
+
+            // Flash every roulette (symbolId 12) symbol currently on the board in a loop for 3s
+            // before the character intro plays, giving the trigger a beat to register visually.
+            var roulettePositions = new List<(int row, int col)>();
+            for (int j = 0; j < socketManager.resultData.matrix.Count; j++)
+            {
+                for (int i = 0; i < socketManager.resultData.matrix[j].Count; i++)
+                {
+                    if (int.TryParse(socketManager.resultData.matrix[j][i], out int symbolId) && symbolId == 11)
+                    {
+                        SetAnimationSymbolSize(winAnimationImages[i].slotImages[j], 11);
+                        var anim = winAnimationImages[i].slotImages[j].GetComponent<ImageAnimation>();
+                        anim.textureArray = GetAnimationSprite(11);
+                        anim.AnimationSpeed = GetAnimationSpeed(11);
+                        anim.doLoopAnimation = true;
+                        anim.StartAnimation();
+                        winAnimationImages[i].slotImages[j].gameObject.SetActive(true);
+                        _resultImages[i].slotImages[j].gameObject.SetActive(false);
+
+                        roulettePositions.Add((i, j));
+                    }
+                }
+            }
+
+            if (roulettePositions.Count > 0)
+            {
+                yield return new WaitForSeconds(3f);
+
+                foreach (var (row, col) in roulettePositions)
+                {
+                    winAnimationImages[row].slotImages[col].GetComponent<ImageAnimation>().StopAnimation();
+                    winAnimationImages[row].slotImages[col].gameObject.SetActive(false);
+                    _resultImages[row].slotImages[col].gameObject.SetActive(true);
+                }
+            }
+
             //SpineAnimation
             characterAnimationParent.SetActive(true);
             SetCharacterOrientationState(CharacterAnimState.Normal);
@@ -696,18 +747,63 @@ public class SlotManager : MonoBehaviour
                 if (reel4Trigger != null) reel4ScatterRow = reel4Trigger.row;
             }
 
+            audioController.PlayScatterTrigger();
             yield return PlayScatterSymbolsCombineIntro(reel3ScatterRow, reel4ScatterRow);
             yield return PlayFreeSpinCharacterIntro();
             StopScatterSymbolsCombineIntro();
             yield return PlayScatterTicketSequence(mainSlotFreeSpinOffsetX);
 
             uiManager.OnFreeSpinsTriggered(freeSpinsRemaining);
+            //isInFreeSpins = true;
+        }
+
+        if (!isInFreeSpins && socketManager.resultData.payload.goldenMultiplierApplied)
+        {
+            var monopolyPositions = new List<(int row, int col)>();
+            var monopolyAnims = new List<ImageAnimation>();
+
+            for (int j = 0; j < socketManager.resultData.matrix.Count; j++)
+            {
+                for (int i = 0; i < socketManager.resultData.matrix[j].Count; i++)
+                {
+                    if (int.TryParse(socketManager.resultData.matrix[j][i], out int symbolId) && symbolId == 0)
+                    {
+                        winAnimationImages[i].slotImages[j].transform.DOScale(MonopolyChangeScale, 0f);
+                        var anim = winAnimationImages[i].slotImages[j].GetComponent<ImageAnimation>();
+                        anim.textureArray = MonopolyChangeAnimation;
+                        anim.AnimationSpeed = 39f;
+                        anim.doLoopAnimation = false;
+                        anim.StartAnimation();
+                        winAnimationImages[i].slotImages[j].gameObject.SetActive(true);
+                        _resultImages[i].slotImages[j].gameObject.SetActive(false);
+
+                        monopolyPositions.Add((i, j));
+                        monopolyAnims.Add(anim);
+                    }
+                }
+            }
+
+            if (monopolyAnims.Count > 0)
+            {
+                audioController.PlayMonopolyChange();
+                yield return new WaitUntil(() => monopolyAnims.TrueForAll(a => a.currentAnimationState == ImageAnimation.ImageState.FINISHED));
+
+                foreach (var (row, col) in monopolyPositions)
+                {
+                    _resultImages[row].slotImages[col].sprite = RedMonopolySymbol;
+                    _resultImages[row].slotImages[col].transform.DOScale(RedMonopolySymbolScale, 0f);
+                    _resultImages[row].slotImages[col].gameObject.SetActive(true);
+                    winAnimationImages[row].slotImages[col].gameObject.SetActive(false);
+
+                    _goldenMonopolyPositions.Add((row, col));
+                }
+            }
         }
 
         // Big/Huge/Mega win popup only applies to a normal (non free-spin) spin's own win —
         // shown before the win-line loop, which then plays once it's closed (Take, or the
         // 3s autoplay auto-close after Take becomes interactable).
-        if (!isInFreeSpins && !isBonus)
+        if (!isInFreeSpins && !isBonus && !socketManager.resultData.payload.isFreeSpinTriggered)
         {
             var popupType = uiManager.GetWinPopupType(socketManager.resultData.payload.winAmount);
             if (popupType.HasValue)
@@ -715,6 +811,10 @@ public class SlotManager : MonoBehaviour
                 bool popupClosed = false;
                 uiManager.ShowUniversalWinPopup(popupType.Value, socketManager.resultData.payload.winAmount, _isAutoSpin, () => popupClosed = true);
                 yield return new WaitUntil(() => popupClosed);
+            }
+            else if (socketManager.resultData.payload.winAmount > 0)
+            {
+                audioController.PlayNormalSmallWin();
             }
         }
 
@@ -824,31 +924,7 @@ public class SlotManager : MonoBehaviour
                 }
 
 
-                if (symbolID == 13)
-                {
-                    var md = socketManager.resultData.payload.magicDiceMultipliers?.Find(m => m.row == row && m.col == col);
-                    var anim1 = winAnimationImages[row].slotImages[col].GetComponent<ImageAnimation>();
-                    anim1.textureArray = GetMultiplierAnimation(md?.multiplier ?? 1);
-                    anim1.doLoopAnimation = true;
-                    anim1.AnimationSpeed = GetAnimationSpeed(symbolID);
-                    anim1.StartAnimation();
-                }
-                else
-                {
-                    winAnimationImages[row].slotImages[col].sprite = _symbolSprites[symbolID];
-                }
-                winAnimationImages[row].slotImages[col].gameObject.SetActive(true);
-                _resultImages[row].slotImages[col].gameObject.SetActive(false);
-                SetAnimationSymbolSize(winAnimationImages[row].slotImages[col], symbolID);
-
-                if (symbolID != 13)
-                {
-                    ImageAnimation anim = winAnimationImages[row].slotImages[col].GetComponent<ImageAnimation>();
-                    anim.textureArray = GetAnimationSprite(symbolID);
-                    anim.AnimationSpeed = GetAnimationSpeed(symbolID);
-                    anim.doLoopAnimation = true;
-                    anim.StartAnimation();
-                }
+                PlayWinSymbolAnimation(row, col, symbolID);
             }
         }
 
@@ -912,32 +988,7 @@ public class SlotManager : MonoBehaviour
                         WinFrames[row].slotImages[col].GetComponent<ImageAnimation>().StartAnimation();
                     }
 
-                    if (symbolID == 13)
-                    {
-                        var md = socketManager.resultData.payload.magicDiceMultipliers?.Find(m => m.row == row && m.col == col);
-                        var anim1 = winAnimationImages[row].slotImages[col].GetComponent<ImageAnimation>();
-                        anim1.textureArray = GetMultiplierAnimation(md?.multiplier ?? 1);
-                        anim1.AnimationSpeed = GetAnimationSpeed(symbolID);
-                        anim1.doLoopAnimation = true;
-                        anim1.StartAnimation();
-                    }
-                    else
-                    {
-                        winAnimationImages[row].slotImages[col].sprite = _symbolSprites[symbolID];
-                    }
-                    SetAnimationSymbolSize(winAnimationImages[row].slotImages[col], symbolID);
-                    winAnimationImages[row].slotImages[col].gameObject.SetActive(true);
-                    _resultImages[row].slotImages[col].gameObject.SetActive(false);
-
-                    if (symbolID != 13)
-                    {
-                        ImageAnimation anim = winAnimationImages[row].slotImages[col].GetComponent<ImageAnimation>();
-                        anim.StopAnimation();
-                        anim.textureArray = GetAnimationSprite(symbolID);
-                        anim.AnimationSpeed = GetAnimationSpeed(symbolID);
-                        anim.doLoopAnimation = true;
-                        anim.StartAnimation();
-                    }
+                    PlayWinSymbolAnimation(row, col, symbolID);
                 }
                 audioController.PlayPaylineHighlight();
 
@@ -953,6 +1004,52 @@ public class SlotManager : MonoBehaviour
 
                 yield return new WaitForSeconds(2.4f);
             }
+        }
+    }
+
+    // Shows the win-line animation for one slot, shared by ShowCombinedWinLinesHighlight and
+    // LoopWinLines. A symbolId-0 slot that a golden multiplier turned into Red Monopoly this
+    // spin (tracked in _goldenMonopolyPositions) plays MonopolyRedAnimation at MonopolyRedScale
+    // instead of the normal symbol-0 win animation.
+    private void PlayWinSymbolAnimation(int row, int col, int symbolID)
+    {
+        bool isRedMonopoly = symbolID == 0 && _goldenMonopolyPositions.Contains((row, col));
+        if (isRedMonopoly) audioController.PlayMonopolyWinReveal();
+
+        if (symbolID == 13)
+        {
+            var md = socketManager.resultData.payload.magicDiceMultipliers?.Find(m => m.row == row && m.col == col);
+            var anim1 = winAnimationImages[row].slotImages[col].GetComponent<ImageAnimation>();
+            anim1.textureArray = GetMultiplierAnimation(md?.multiplier ?? 1);
+            anim1.AnimationSpeed = GetAnimationSpeed(symbolID);
+            anim1.doLoopAnimation = true;
+            anim1.StartAnimation();
+        }
+        else
+        {
+            winAnimationImages[row].slotImages[col].sprite = isRedMonopoly ? RedMonopolySymbol : _symbolSprites[symbolID];
+        }
+
+        if (isRedMonopoly)
+        {
+            winAnimationImages[row].slotImages[col].transform.DOScale(MonopolyRedScale, 0f);
+        }
+        else
+        {
+            SetAnimationSymbolSize(winAnimationImages[row].slotImages[col], symbolID);
+        }
+
+        winAnimationImages[row].slotImages[col].gameObject.SetActive(true);
+        _resultImages[row].slotImages[col].gameObject.SetActive(false);
+
+        if (symbolID != 13)
+        {
+            ImageAnimation anim = winAnimationImages[row].slotImages[col].GetComponent<ImageAnimation>();
+            anim.StopAnimation();
+            anim.textureArray = isRedMonopoly ? MonopolyRedAnimation : GetAnimationSprite(symbolID);
+            anim.AnimationSpeed = GetAnimationSpeed(symbolID);
+            anim.doLoopAnimation = true;
+            anim.StartAnimation();
         }
     }
 
@@ -1227,6 +1324,7 @@ public class SlotManager : MonoBehaviour
         // Hide this row's result images, fade+scale the dice row in, start rolling anim.
         for (int col = 0; col < diceRow.Count; col++)
         {
+            int capturedCol = col; // for-loop variable is shared, not per-iteration — must capture a copy for the async OnComplete below
 
             var dice = diceRow[col];
             dice.gameObject.SetActive(true);
@@ -1237,12 +1335,13 @@ public class SlotManager : MonoBehaviour
             var anim = dice.GetComponent<ImageAnimation>();
             anim.textureArray = dicerollingAnimation;
             anim.doLoopAnimation = true;
+            anim.AnimationSpeed = 79f;
             anim.StartAnimation();
 
             dice.DOFade(1f, diceFadeScaleDuration);
-            dice.transform.DOScale(1f, diceFadeScaleDuration).OnComplete(() =>
+            dice.transform.DOScale(2f, diceFadeScaleDuration).OnComplete(() =>
             {
-                _resultImages[col].slotImages[spinIndex].gameObject.SetActive(false);
+                _resultImages[capturedCol].slotImages[spinIndex].gameObject.SetActive(false);
             });
 
         }
@@ -1316,8 +1415,10 @@ public class SlotManager : MonoBehaviour
         var anim = dice.GetComponent<ImageAnimation>();
         anim.textureArray = dicedestroyingAnimation;
         anim.doLoopAnimation = false;
+        anim.AnimationSpeed = 35f;
         anim.StartAnimation();
         yield return new WaitUntil(() => anim.currentAnimationState == ImageAnimation.ImageState.FINISHED);
+        yield return new WaitForSeconds(0.1f);
 
         dice.gameObject.SetActive(false);
         _resultImages[col].slotImages[row].sprite = GetMultiplierSprite(multiplier);
@@ -1523,7 +1624,7 @@ public class SlotManager : MonoBehaviour
 
             case 11:
                 //slotImage.transform.localScale = new Vector2(1.7f, 1.7f);
-                slotImage.transform.DOScale(1.28f, time);
+                slotImage.transform.DOScale(1.75f, time);
                 break;
 
             case 12:
@@ -1545,18 +1646,29 @@ public class SlotManager : MonoBehaviour
         switch (symbolID)
         {
             case 0:
-                return 111;
+                return 86f;
             case 1:
+                return 39;
             case 2:
+                return 39f;
             case 3:
+                return 47f;
             case 4:
+                return 47f;
             case 5:
+                return 39f;
             case 6:
+                return 35f;
             case 7:
+                return 39f;
             case 8:
+                return 69f;
             case 9:
+                return 47f;
             case 10:
+                return 69f;
             case 11:
+                return 61f;
             case 12:
                 return 31f;
 

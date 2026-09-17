@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: 54606bff031b34f67a888e4a878676fe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 416883260178213072
+    second: Rotating_Dice (1)09_0
+  - first:
+      213: 1071439508532782467
+    second: Rotating_Dice (1)09_1
+  - first:
+      213: -631597445502198886
+    second: Rotating_Dice (1)09_2
+  - first:
+      213: -1748190637997648734
+    second: Rotating_Dice (1)09_3
+  - first:
+      213: 3216617109026011440
+    second: Rotating_Dice (1)09_4
+  - first:
+      213: 4111919576484304219
+    second: Rotating_Dice (1)09_5
+  - first:
+      213: 5929076871654666651
+    second: Rotating_Dice (1)09_6
+  - first:
+      213: -6503976083133770058
+    second: Rotating_Dice (1)09_7
+  - first:
+      213: 3669094044544890509
+    second: Rotating_Dice (1)09_8
+  - first:
+      213: 2487308532044705399
+    second: Rotating_Dice (1)09_9
+  - first:
+      213: 1684573372709578713
+    second: Rotating_Dice (1)09_10
+  - first:
+      213: 435152489261386973
+    second: Rotating_Dice (1)09_11
+  - first:
+      213: -6788270646138890652
+    second: Rotating_Dice (1)09_12
+  - first:
+      213: 4578834514669052110
+    second: Rotating_Dice (1)09_13
+  - first:
+      213: -7943154435516890942
+    second: Rotating_Dice (1)09_14
+  - first:
+      213: -3229828954323547174
+    second: Rotating_Dice (1)09_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Rotating_Dice (1)09_0
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 391
+        width: 51
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d8aabbcd1119c500800000000000000
+      internalID: 416883260178213072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotating_Dice (1)09_1
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 381
+        width: 82
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3856a686e848ede00800000000000000
+      internalID: 1071439508532782467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotating_Dice (1)09_2
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 386
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9b1ccb387d1c37f0800000000000000
+      internalID: -631597445502198886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotating_Dice (1)09_3
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 377
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a49c7680ed2db7e0800000000000000
+      internalID: -1748190637997648734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotating_Dice (1)09_4
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 222
+        width: 296
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03970f1e738b3ac20800000000000000
+      internalID: 3216617109026011440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotating_Dice (1)09_5
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 340
+        width: 60
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b555255a119701930800000000000000
+      internalID: 4111919576484304219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotating_Dice (1)09_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 263
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b91f5fc4000584250800000000000000
+      internalID: 5929076871654666651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotating_Dice (1)09_7
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 244
+        width: 31
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b6dc21463c3db5a0800000000000000
+      internalID: -6503976083133770058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotating_Dice (1)09_8
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 210
+        width: 37
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d867994089d3be230800000000000000
+      internalID: 3669094044544890509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotating_Dice (1)09_9
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 262
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77ea25b7ee1b48220800000000000000
+      internalID: 2487308532044705399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotating_Dice (1)09_10
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 166
+        width: 52
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d7af66ae8ec06710800000000000000
+      internalID: 1684573372709578713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotating_Dice (1)09_11
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 182
+        width: 90
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddc4d8922e8f90600800000000000000
+      internalID: 435152489261386973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotating_Dice (1)09_12
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 148
+        width: 110
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4661ea920d73bc1a0800000000000000
+      internalID: -6788270646138890652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotating_Dice (1)09_13
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 172
+        width: 43
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec0a52c3bb94b8f30800000000000000
+      internalID: 4578834514669052110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotating_Dice (1)09_14
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 139
+        width: 64
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c082f2202f34c190800000000000000
+      internalID: -7943154435516890942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotating_Dice (1)09_15
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 133
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adb064cada75d23d0800000000000000
+      internalID: -3229828954323547174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Rotating_Dice (1)09_0: 416883260178213072
+      Rotating_Dice (1)09_1: 1071439508532782467
+      Rotating_Dice (1)09_10: 1684573372709578713
+      Rotating_Dice (1)09_11: 435152489261386973
+      Rotating_Dice (1)09_12: -6788270646138890652
+      Rotating_Dice (1)09_13: 4578834514669052110
+      Rotating_Dice (1)09_14: -7943154435516890942
+      Rotating_Dice (1)09_15: -3229828954323547174
+      Rotating_Dice (1)09_2: -631597445502198886
+      Rotating_Dice (1)09_3: -1748190637997648734
+      Rotating_Dice (1)09_4: 3216617109026011440
+      Rotating_Dice (1)09_5: 4111919576484304219
+      Rotating_Dice (1)09_6: 5929076871654666651
+      Rotating_Dice (1)09_7: -6503976083133770058
+      Rotating_Dice (1)09_8: 3669094044544890509
+      Rotating_Dice (1)09_9: 2487308532044705399
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

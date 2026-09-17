@@ -123,8 +123,8 @@ public class SymbolInfoCard : MonoBehaviour
         {
             { WildSymbolId, "Subtstitutes For Any Other Symbol Except For Bonus Symbols And Scatter Symbols." },
             {DoubleWildSymbolId, "Randomly acts as a multiplier upto 2x." },
-            { ScatterSymbolId, "Lands on any position to trigger the Super Wheel Bonus." },
-            { RouletteSymbolId, "Lands on any position to trigger the Super Wheel Bonus." }
+            { ScatterSymbolId, "Scatter & Free Spins are awarded appears on the 4th or 5th reel." },
+            { RouletteSymbolId, "Bonus Games are awarded when 3 or more scattered appear anywhere" }
         };
 
     private void SetupCardContent(int symbolId, SocketIOManager socketManager, int betCounter)
@@ -162,11 +162,12 @@ public class SymbolInfoCard : MonoBehaviour
             for (int m = symbolInfo.multiplier.Count - 1; m >= 0; m--)
             {
                 double win = symbolInfo.multiplier[m];
-                if (win == 0) break;
-
-                double payout = win * bet;
-                headingText += (headingText.Length > 0 ? "\n" : "") + $"x{matchCount}";
-                payoutText += (payoutText.Length > 0 ? "\n" : "") + $"{payout:0.##}";
+                if (win != 0)
+                {
+                    double payout = win * bet;
+                    headingText += (headingText.Length > 0 ? "\n" : "") + $"x{matchCount}";
+                    payoutText += (payoutText.Length > 0 ? "\n" : "") + $"{payout:0.##}";
+                }
                 matchCount--;
             }
         }

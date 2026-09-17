@@ -4,26 +4,15 @@ internal class AudioController : MonoBehaviour
 {
     [Header("Audio Sources")]
     [SerializeField] private AudioSource bgMusicSource;
-    [SerializeField] private AudioSource gameSoundSource;
-
-    // Dedicated source for the rocket background loop — added at runtime (see Awake) on this same
-    // GameObject, so it can run for the whole rocket animation without being cut off by one-shot
-    // SFX on gameSoundSource (wheel tick/stop, bonus win, etc.).
-    private AudioSource rocketBgSource;
+    [SerializeField] private AudioSource gameSoundSource; // reel spin loop + its stop hit only — the one case where stopping a loop and replacing it with a one-shot is the desired behavior
+    [SerializeField] private AudioSource sfxSource;        // every other one-shot SFX, via PlayOneShot so they layer instead of cutting each other off
 
     [Header("Background")]
-    [SerializeField] private AudioClip bgMusic; // bg .mp3
-
-    [Header("Bonus Wheel")]
-    [SerializeField] private AudioClip WheelArrowTick;      // wheelSpinning.wav
-    [SerializeField] private AudioClip WheelArrowStop;      // wheel stop.mp3
-    [SerializeField] private AudioClip bonusWheelTrigger;   // BonusWheelYTrigger.mp3
-    [SerializeField] private AudioClip bonusWin;            // BonusWin.mp3
-    [SerializeField] private AudioClip rocketBackground;    // RocketBG.mp3 — loops for the whole rocket animation, not per-rocket
+    [SerializeField] private AudioClip bgMusic; // bg.mp3
 
     [Header("Reel Sounds")]
-    [SerializeField] private AudioClip reelSpinning;   // spinning.mp3
-    [SerializeField] private AudioClip reelStop;        // spin stop.mp3
+    [SerializeField] private AudioClip reelSpinning;   // reel spining.mp3
+    [SerializeField] private AudioClip reelStop;        // reel stop.mp3
 
     [Header("UI Sounds")]
     [SerializeField] private AudioClip uiButton;        // universal all button.mp3
@@ -36,11 +25,26 @@ internal class AudioController : MonoBehaviour
     [SerializeField] private AudioClip winLineIntro;      // icons in machine.mp3 — one-shot at the start of a win line display
     [SerializeField] private AudioClip paylineHighlight;  // paylines in slot.mp3 — plays as each line is cycled through
 
-    [Header("Feature Sounds")]
-    [SerializeField] private AudioClip heatEmUp;            // hit em up.mp3
-    [SerializeField] private AudioClip scatterTrigger;      // 3 free spin in slot.mp3
-    [SerializeField] private AudioClip freeSpinsWon;        // you won free spins.mp3
-    [SerializeField] private AudioClip freeSpinsWinAmount;  // win amount in free spins .mp3
+    [Header("Free Spins")]
+    [SerializeField] private AudioClip scatterTrigger;      // roulette scatter.mp3
+
+    [Header("Base Win")]
+    [SerializeField] private AudioClip normalSmallWin;   // normal small win.mp3 — base-spin win too small for the Big/Huge/Mega popup
+
+    [Header("Ludo Bonus Board")]
+    [SerializeField] private AudioClip diceJump;          // dice jump.mp3
+    [SerializeField] private AudioClip ludoAddRolls;      // +2+3+4 in ludo.mp3
+    [SerializeField] private AudioClip ludoRoundEnd;      // end in ludo.mp3
+    [SerializeField] private AudioClip ludoCharacterMove; // man move ludo.mp3
+    [SerializeField] private AudioClip ludoGoldenMagic;   // man golden magic animation in ludo.mp3 — coin/vault landing shine
+
+    [Header("Character (shared: ludo board + free spins)")]
+    [SerializeField] private AudioClip characterAppear;  // man appear.mp3 — pop_left
+    [SerializeField] private AudioClip characterSmoke;   // man smoke.mp3 — action_left
+
+    [Header("Golden Multiplier / Red Monopoly")]
+    [SerializeField] private AudioClip monopolyChange;     // man x2.mp3 — symbol-0 to Red Monopoly conversion animation
+    [SerializeField] private AudioClip monopolyWinReveal;  // purple box in slot win.mp3 — Red Monopoly win-line highlight
 
     private bool isGameMuted = false;
     private bool isMusicMuted = false;
@@ -61,10 +65,6 @@ internal class AudioController : MonoBehaviour
     {
         _musicVolume = PlayerPrefs.GetFloat(PrefKeyMusicVol, 0.5f);
         _sfxVolume = PlayerPrefs.GetFloat(PrefKeySfxVol, 1.0f);
-
-        rocketBgSource = gameObject.AddComponent<AudioSource>();
-        rocketBgSource.loop = true;
-        rocketBgSource.playOnAwake = false;
     }
 
     internal void SetMusicVolume(float volume)
@@ -82,7 +82,7 @@ internal class AudioController : MonoBehaviour
         PlayerPrefs.SetFloat(PrefKeySfxVol, _sfxVolume);
         PlayerPrefs.Save();
         if (gameSoundSource) gameSoundSource.volume = _sfxVolume;
-        if (rocketBgSource) rocketBgSource.volume = _sfxVolume;
+        if (sfxSource) sfxSource.volume = _sfxVolume;
         MuteGame(_sfxVolume <= 0f);
     }
 
@@ -90,7 +90,7 @@ internal class AudioController : MonoBehaviour
     {
         if (bgMusicSource) bgMusicSource.volume = _musicVolume;
         if (gameSoundSource) gameSoundSource.volume = _sfxVolume;
-        if (rocketBgSource) rocketBgSource.volume = _sfxVolume;
+        if (sfxSource) sfxSource.volume = _sfxVolume;
 
         PlayBackground();
     }
@@ -110,45 +110,6 @@ internal class AudioController : MonoBehaviour
         bgMusicSource.Stop();
     }
 
-    internal void PlayWheelArrowTick(bool loop)
-    {
-        PlayGame(WheelArrowTick, loop);
-    }
-
-    internal void PlayWheelArrowStop(bool loop)
-    {
-        PlayGame(WheelArrowStop, loop);
-    }
-
-    internal void PlayBonusWheelTrigger()
-    {
-        PlayGame(bonusWheelTrigger, false);
-    }
-
-    internal void PlayBonusWin()
-    {
-        PlayGame(bonusWin, false);
-    }
-
-    // Loops for the whole rocket animation (start-to-stop of the bonus wheel's rocket spawner),
-    // not per individual rocket — uses its own AudioSource so it isn't cut off by gameSoundSource
-    // one-shots (wheel tick/stop, bonus win, etc.) playing at the same time.
-    internal void PlayRocketBackground()
-    {
-        if (!rocketBackground || rocketBgSource == null) return;
-
-        rocketBgSource.clip = rocketBackground;
-        rocketBgSource.loop = true;
-        if (!rocketBgSource.isPlaying)
-            rocketBgSource.Play();
-    }
-
-    internal void StopRocketBackground()
-    {
-        if (rocketBgSource == null) return;
-        rocketBgSource.Stop();
-    }
-
     internal void PlayReelSpinning(bool loop)
     {
         PlayGame(reelSpinning, loop);
@@ -161,59 +122,106 @@ internal class AudioController : MonoBehaviour
 
     internal void PlayUIButton(bool loop)
     {
-        PlayGame(uiButton, loop);
+        PlaySfx(uiButton);
     }
 
     internal void PlayMaxBet()
     {
-        PlayGame(maxBet, false);
+        PlaySfx(maxBet);
     }
 
     internal void PlayTurboActivate()
     {
-        PlayGame(turboActivate, false);
+        PlaySfx(turboActivate);
     }
 
     internal void PlayAutoplayOpen()
     {
-        PlayGame(autoplayOpen, false);
+        PlaySfx(autoplayOpen);
     }
 
     internal void PlayAutoplaySelect()
     {
-        PlayGame(autoplaySelect, false);
+        PlaySfx(autoplaySelect);
     }
 
     internal void PlayWinLineIntro()
     {
-        PlayGame(winLineIntro, false);
+        PlaySfx(winLineIntro);
     }
 
     internal void PlayPaylineHighlight()
     {
-        PlayGame(paylineHighlight, false);
-    }
-
-    internal void PlayHeatEmUp()
-    {
-        PlayGame(heatEmUp, false);
+        PlaySfx(paylineHighlight);
     }
 
     internal void PlayScatterTrigger()
     {
-        PlayGame(scatterTrigger, false);
+        PlaySfx(scatterTrigger);
     }
 
     internal void PlayFreeSpinsWon()
     {
-        PlayGame(freeSpinsWon, false);
+        //PlaySfx(freeSpinsWon);
     }
 
     internal void PlayFreeSpinsWinAmount()
     {
-        PlayGame(freeSpinsWinAmount, false);
+        //PlaySfx(freeSpinsWinAmount);
     }
 
+    internal void PlayNormalSmallWin()
+    {
+        PlaySfx(normalSmallWin);
+    }
+
+    internal void PlayDiceJump()
+    {
+        PlaySfx(diceJump);
+    }
+
+    internal void PlayLudoAddRolls()
+    {
+        PlaySfx(ludoAddRolls);
+    }
+
+    internal void PlayLudoRoundEnd()
+    {
+        PlaySfx(ludoRoundEnd);
+    }
+
+    internal void PlayLudoCharacterMove()
+    {
+        PlaySfx(ludoCharacterMove);
+    }
+
+    internal void PlayLudoGoldenMagic()
+    {
+        PlaySfx(ludoGoldenMagic);
+    }
+
+    internal void PlayCharacterAppear()
+    {
+        PlaySfx(characterAppear);
+    }
+
+    internal void PlayCharacterSmoke()
+    {
+        PlaySfx(characterSmoke);
+    }
+
+    internal void PlayMonopolyChange()
+    {
+        PlaySfx(monopolyChange);
+    }
+
+    internal void PlayMonopolyWinReveal()
+    {
+        PlaySfx(monopolyWinReveal);
+    }
+
+    // Stop-and-replace — only for the reel spin loop and its stop hit, where interrupting the
+    // currently playing clip is the desired behavior (starting a new spin should cut the old one).
     private void PlayGame(AudioClip clip, bool loop)
     {
         if (!clip) return;
@@ -222,6 +230,15 @@ internal class AudioController : MonoBehaviour
         gameSoundSource.clip = clip;
         gameSoundSource.loop = loop;
         gameSoundSource.Play();
+    }
+
+    // Fire-and-forget one-shot — layers on top of whatever else sfxSource is already playing
+    // instead of cutting it off, so the frequent ludo-board/dice hits don't silence UI clicks
+    // or each other.
+    private void PlaySfx(AudioClip clip)
+    {
+        if (!clip || sfxSource == null) return;
+        sfxSource.PlayOneShot(clip);
     }
 
     internal void StopGameAudio()
@@ -236,7 +253,7 @@ internal class AudioController : MonoBehaviour
         if (forceMute == isForceMuted) return;
         isForceMuted = forceMute;
 
-        AudioSource[] sources = { bgMusicSource, gameSoundSource, rocketBgSource };
+        AudioSource[] sources = { bgMusicSource, gameSoundSource, sfxSource };
         foreach (var source in sources)
         {
             if (source == null) continue;
@@ -261,11 +278,11 @@ internal class AudioController : MonoBehaviour
     internal void MuteGame(bool mute)
     {
         gameSoundSource.mute = mute;
-        if (rocketBgSource != null) rocketBgSource.mute = mute;
+        if (sfxSource != null) sfxSource.mute = mute;
         if (isForceMuted)
         {
             preFocusMuteState[gameSoundSource] = mute;
-            if (rocketBgSource != null) preFocusMuteState[rocketBgSource] = mute;
+            if (sfxSource != null) preFocusMuteState[sfxSource] = mute;
         }
     }
 

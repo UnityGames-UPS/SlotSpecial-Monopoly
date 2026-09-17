@@ -15,6 +15,27 @@ public class BonusManager : MonoBehaviour
     [SerializeField] private ImageAnimation cloudAnimationPlayerLandscape;
     [SerializeField] private ImageAnimation cloudAnimationPlayerPortrait;
 
+    [Header("Dice Animation")]
+    [SerializeField] private GameObject Dice1;
+    [SerializeField] private GameObject Dice1Jump;
+
+    [SerializeField] private GameObject Dice2;
+    [SerializeField] private GameObject Dice2Jump;
+
+    [SerializeField] private ImageAnimation Dice1Animation;
+    [SerializeField] private ImageAnimation Dice2Animation;
+    [SerializeField] private ImageAnimation Dice1JumpAnimation;
+    [SerializeField] private ImageAnimation Dice2JumpAnimation;
+
+    [SerializeField] private List<Sprite> OneNumberAnimation;
+    [SerializeField] private List<Sprite> TwoNumberAnimation;
+    [SerializeField] private List<Sprite> ThreeNumberAnimation;
+    [SerializeField] private List<Sprite> FourNumberAnimation;
+    [SerializeField] private List<Sprite> FiveNumberAnimation;
+    [SerializeField] private List<Sprite> SixNumberAnimation;
+
+    [SerializeField] private List<Sprite> DiceJumpAnimation;
+
     [Header("BonusPanel")]
     [SerializeField] private GameObject BonusPanel;
     [SerializeField] private GameObject LandscapeBackground;
@@ -42,8 +63,9 @@ public class BonusManager : MonoBehaviour
     [SerializeField] private RectTransform laserEndPointLandscape;
     [SerializeField] private RectTransform laserEndPointPortrait;
     [SerializeField] private ImageAnimation LandingShineAnimation;
-    [SerializeField] private TMP_Text Dice1Text;
-    [SerializeField] private TMP_Text Dice2Text;
+    [SerializeField] private GameObject PressToStart;
+    [SerializeField] private GameObject RingDice1;
+    [SerializeField] private GameObject RingDice2;
     [SerializeField] private Button RollButton;
     [SerializeField] private List<GameObject> boardPositions;
     [SerializeField] private GameObject vaultPrefab;
@@ -75,6 +97,10 @@ public class BonusManager : MonoBehaviour
     [Header("Shadow Pulse Tuning")]
     [SerializeField] private float shadowMinScale = 0.7f;         // shrink at mid-air peak, grows back to 1 on landing
 
+    [Header("Dice Ring Pulse Tuning")]
+    [SerializeField] private float ringPulseMaxScale = 1.3f;
+    [SerializeField] private float ringPulseDuration = 0.8f;
+
     [Header("Win Laser Settings")]
     [SerializeField] private float laserTravelDuration = 0.4f;
     [SerializeField] private float laserCurveAmount = 0.15f; // fraction of travel distance offset for the curve's midpoint — keep small for a subtle arc
@@ -84,6 +110,7 @@ public class BonusManager : MonoBehaviour
     [SerializeField] private UIManager uiManager;
     [SerializeField] private SlotManager slotManager;
     [SerializeField] private OrientationChange orientationChange;
+    [SerializeField] private AudioController audioController;
 
     // --- runtime state ---
     private int _currentPosition;
@@ -93,6 +120,9 @@ public class BonusManager : MonoBehaviour
     private bool _rollRequested;
     private RectTransform _boardGameRT;
     private readonly List<GameObject> _spawnedDecorations = new List<GameObject>();
+    private int _dice1CurrentFace = 1;
+    private int _dice2CurrentFace = 1;
+    private Sequence _ringPulseSequence;
 
     internal bool IsBonusRoundActive { get; private set; }
 
@@ -177,6 +207,9 @@ public class BonusManager : MonoBehaviour
         SetRollsText(RemainingRollsTextLandscape, RemainingRollsTextPortrait, _rollsRemaining.ToString());
         SetBonusText(TotalWinTextLandscape, TotalWinTextPortrait, FormatAmount(0));
 
+        Dice1.transform.localScale = Vector3.one * 1.5f;
+        Dice2.transform.localScale = Vector3.one * 1.5f;
+
         yield return PlayCloudTransition(cloudClearScreenAnimationLandscape, cloudClearScreenAnimationPortrait, reverse: false);
 
         uiManager.ShowStartButton(false); // visible, disabled until the first roll is armed
@@ -210,9 +243,13 @@ public class BonusManager : MonoBehaviour
 
         yield return new WaitForSeconds(postBonusPause);
 
+        const float endLogoScaleDuration = 1f;
+        yield return ScaleDiceToZero(endLogoScaleDuration);
+
+        if (audioController) audioController.PlayLudoRoundEnd();
         EndBoardLogo.transform.localScale = Vector3.zero;
         EndBoardLogo.SetActive(true);
-        EndBoardLogo.transform.DOScale(Vector3.one, 1f).SetEase(Ease.InSine);
+        EndBoardLogo.transform.DOScale(Vector3.one, endLogoScaleDuration).SetEase(Ease.InSine);
 
         yield return new WaitForSeconds(postBonusPause);
 
@@ -362,13 +399,100 @@ public class BonusManager : MonoBehaviour
         return seq;
     }
 
+    private List<Sprite> GetNumberAnimationSprites(int number)
+    {
+        switch (number)
+        {
+            case 1: return OneNumberAnimation;
+            case 2: return TwoNumberAnimation;
+            case 3: return ThreeNumberAnimation;
+            case 4: return FourNumberAnimation;
+            case 5: return FiveNumberAnimation;
+            default: return SixNumberAnimation;
+        }
+    }
+
+    // Plays `sprites1`/`sprites2` once on `anim1`/`anim2` and waits for both to finish —
+    // same dual-done-flag shape as PlayCloudTransition's landscape/portrait wait.
+    private IEnumerator PlayPairedAnimation(ImageAnimation anim1, List<Sprite> sprites1, ImageAnimation anim2, List<Sprite> sprites2)
+    {
+        bool done1 = anim1 == null;
+        bool done2 = anim2 == null;
+
+        if (anim1 != null)
+        {
+            anim1.textureArray = sprites1;
+            anim1.doLoopAnimation = false;
+            anim1.onAnimationComplete = () => done1 = true;
+            anim1.StartAnimation();
+        }
+        if (anim2 != null)
+        {
+            anim2.textureArray = sprites2;
+            anim2.doLoopAnimation = false;
+            anim2.onAnimationComplete = () => done2 = true;
+            anim2.StartAnimation();
+        }
+
+        yield return new WaitUntil(() => done1 && done2);
+    }
+
+    // Dice roll sequence: current face plays -> swap to jump objects -> jump plays -> swap back
+    // to dice objects -> winning-number reveal starts (not awaited, so the caller's character
+    // movement begins the same frame the reveal animation starts, per the bonus flow's timing).
+    private IEnumerator PlayDiceRollAnimation(Roll roll)
+    {
+        yield return PlayPairedAnimation(
+            Dice1Animation, GetNumberAnimationSprites(_dice1CurrentFace),
+            Dice2Animation, GetNumberAnimationSprites(_dice2CurrentFace));
+
+        if (Dice1) Dice1.SetActive(false);
+        if (Dice2) Dice2.SetActive(false);
+        if (Dice1Jump) Dice1Jump.SetActive(true);
+        if (Dice2Jump) Dice2Jump.SetActive(true);
+        if (audioController) audioController.PlayDiceJump();
+
+        yield return PlayPairedAnimation(
+            Dice1JumpAnimation, DiceJumpAnimation,
+            Dice2JumpAnimation, DiceJumpAnimation);
+
+        if (Dice1Jump) Dice1Jump.SetActive(false);
+        if (Dice2Jump) Dice2Jump.SetActive(false);
+        if (Dice1) Dice1.SetActive(true);
+        if (Dice2) Dice2.SetActive(true);
+
+        if (Dice1Animation != null)
+        {
+            Dice1Animation.textureArray = GetNumberAnimationSprites(roll.dice1);
+            Dice1Animation.doLoopAnimation = false;
+            Dice1Animation.StartAnimation();
+        }
+        if (Dice2Animation != null)
+        {
+            Dice2Animation.textureArray = GetNumberAnimationSprites(roll.dice2);
+            Dice2Animation.doLoopAnimation = false;
+            Dice2Animation.StartAnimation();
+        }
+
+        _dice1CurrentFace = roll.dice1;
+        _dice2CurrentFace = roll.dice2;
+    }
+
+    // Shrinks both dice objects out at the given duration — used to clear them off-screen before
+    // the end-board logo scales up at the same duration, so one visually hands off to the other.
+    private IEnumerator ScaleDiceToZero(float duration)
+    {
+        Sequence seq = DOTween.Sequence();
+        if (Dice1) seq.Join(Dice1.transform.DOScale(Vector3.zero, duration).SetEase(Ease.InSine));
+        if (Dice2) seq.Join(Dice2.transform.DOScale(Vector3.zero, duration).SetEase(Ease.InSine));
+        yield return seq.WaitForCompletion();
+    }
+
     private IEnumerator AnimateRoll(Roll roll, int boardLength)
     {
         _isRolling = true;
 
-        if (Dice1Text) Dice1Text.text = roll.dice1.ToString(); // TODO: dice roll animation
-        if (Dice2Text) Dice2Text.text = roll.dice2.ToString(); // TODO: dice roll animation
-        yield return new WaitForSeconds(diceRevealDelay);
+        yield return PlayDiceRollAnimation(roll);
 
         RectTransform parentRT = CharacterParent ? CharacterParent.GetComponent<RectTransform>() : null;
         RectTransform characterRT = Character ? Character.GetComponent<RectTransform>() : null;
@@ -380,6 +504,8 @@ public class BonusManager : MonoBehaviour
 
             RectTransform targetCell = boardPositions[_currentPosition].GetComponent<RectTransform>();
             if (targetCell == null) continue;
+
+            if (audioController) audioController.PlayLudoCharacterMove();
 
             Sequence hop = DOTween.Sequence();
             hop.Join(parentRT.DOAnchorPos(targetCell.anchoredPosition, hopDuration).SetEase(Ease.Linear));
@@ -429,6 +555,7 @@ public class BonusManager : MonoBehaviour
 
         if (roll.rollsAdded.HasValue && roll.rollsAdded.Value > 0)
         {
+            if (audioController) audioController.PlayLudoAddRolls();
             if (RemainingRollsTextLandscape) RemainingRollsTextLandscape.transform.DOPunchScale(Vector3.one * 0.35f, 1f, 0);
             if (RemainingRollsTextPortrait) RemainingRollsTextPortrait.transform.DOPunchScale(Vector3.one * 0.35f, 1f, 0);
         }
@@ -445,6 +572,7 @@ public class BonusManager : MonoBehaviour
         bool done = false;
         LandingShineAnimation.onAnimationComplete = () => done = true;
         LandingShineAnimation.StartAnimation();
+        if (audioController) audioController.PlayLudoGoldenMagic();
 
         yield return new WaitUntil(() => done);
         LandingShineAnimation.gameObject.SetActive(false);
@@ -555,6 +683,54 @@ public class BonusManager : MonoBehaviour
     {
         if (RollButton) RollButton.interactable = interactable;
         if (uiManager) uiManager.SetStartButtonInteractable(interactable);
+        if (PressToStart) PressToStart.SetActive(interactable);
+        if (RingDice1) RingDice1.SetActive(interactable);
+        if (RingDice2) RingDice2.SetActive(interactable);
+
+        if (interactable) StartRingPulse();
+        else StopRingPulse();
+    }
+
+    // Scale-up-while-fading-out pulse on both dice rings, looping for as long as PressToStart is
+    // visible. LoopType.Restart (the SetLoops default) snaps every tweened value back to its start
+    // — scale 1, alpha 1 — before replaying, so no extra reset code is needed between cycles.
+    private void StartRingPulse()
+    {
+        StopRingPulse();
+
+        _ringPulseSequence = DOTween.Sequence();
+        JoinRingPulse(_ringPulseSequence, RingDice1);
+        JoinRingPulse(_ringPulseSequence, RingDice2);
+        _ringPulseSequence.SetLoops(-1);
+    }
+
+    private void JoinRingPulse(Sequence seq, GameObject ring)
+    {
+        if (ring == null) return;
+
+        ring.transform.localScale = Vector3.one;
+        CanvasGroup group = ring.GetComponent<CanvasGroup>();
+        if (group == null) group = ring.AddComponent<CanvasGroup>();
+        group.alpha = 1f;
+
+        seq.Join(ring.transform.DOScale(ringPulseMaxScale, ringPulseDuration).SetEase(Ease.OutSine));
+        seq.Join(group.DOFade(0f, ringPulseDuration).SetEase(Ease.OutSine));
+    }
+
+    private void StopRingPulse()
+    {
+        _ringPulseSequence?.Kill();
+        _ringPulseSequence = null;
+        ResetRingVisual(RingDice1);
+        ResetRingVisual(RingDice2);
+    }
+
+    private void ResetRingVisual(GameObject ring)
+    {
+        if (ring == null) return;
+        ring.transform.localScale = Vector3.one;
+        CanvasGroup group = ring.GetComponent<CanvasGroup>();
+        if (group != null) group.alpha = 1f;
     }
 
     private string FormatAmount(double amount) => amount.ToString("0.###");

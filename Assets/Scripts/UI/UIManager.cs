@@ -1781,7 +1781,7 @@ public class UIManager : MonoBehaviour
 
         //bonusManager.IntializeBonusWheelValue();
         //StartBGAnimation();
-        //UpdateJackpotDisplay(root.jackpotData.values);
+        UpdateJackpotDisplay(root.jackpotData.values);
     }
 
     internal void SetBetButtonsInteractable(bool interactable)

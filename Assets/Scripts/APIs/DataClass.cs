@@ -228,7 +228,7 @@ public class Roll
     public int dice2 { get; set; }
     public int sum { get; set; }
     public int position { get; set; }
-    public int rewardMultiplier { get; set; }
+    public double rewardMultiplier { get; set; }
     public bool isEnd { get; set; }
     public double winInCash { get; set; }
     public int? rollsAdded { get; set; }
