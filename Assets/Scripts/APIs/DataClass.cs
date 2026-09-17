@@ -118,7 +118,7 @@ public class FreeGamesConfig
 public class GoldenMonopolyConfig
 {
     public bool enabled { get; set; }
-    public int multiplier { get; set; }
+    public double multiplier { get; set; }
 }
 
 [Serializable]
@@ -204,7 +204,7 @@ public class MagicDiceMultiplier
 [Serializable]
 public class Board
 {
-    public int multiplier { get; set; }
+    public double multiplier { get; set; }
     public int? addRolls { get; set; }
     public bool? isEnd { get; set; }
     public Vault vault { get; set; }
