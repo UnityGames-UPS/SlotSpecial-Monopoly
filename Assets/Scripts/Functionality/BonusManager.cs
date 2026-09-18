@@ -276,7 +276,12 @@ public class BonusManager : MonoBehaviour
         {
             var popupType = uiManager.GetWinPopupType(data.winInCash) ?? UIManager.WinPopupType.BigWin;
             bool popupClosed = false;
-            uiManager.ShowUniversalWinPopup(popupType, data.winInCash, false, () => popupClosed = true);
+            uiManager.ShowUniversalWinPopup(popupType, data.winInCash, false, () =>
+            {
+                uiManager.UpdateBalance(uiManager.currentBalance + data.winInCash, true);
+                uiManager.currentBalance += data.winInCash;
+                popupClosed = true;
+            });
             yield return new WaitUntil(() => popupClosed);
         }
     }

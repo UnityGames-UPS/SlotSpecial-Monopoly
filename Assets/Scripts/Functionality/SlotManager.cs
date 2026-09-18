@@ -686,7 +686,7 @@ public class SlotManager : MonoBehaviour
                         anim.doLoopAnimation = true;
                         anim.StartAnimation();
                         winAnimationImages[i].slotImages[j].gameObject.SetActive(true);
-                        _resultImages[i].slotImages[j].gameObject.SetActive(false);
+                        SetResultImageVisible(_resultImages[i].slotImages[j], false);
 
                         roulettePositions.Add((i, j));
                     }
@@ -701,7 +701,7 @@ public class SlotManager : MonoBehaviour
                 {
                     winAnimationImages[row].slotImages[col].GetComponent<ImageAnimation>().StopAnimation();
                     winAnimationImages[row].slotImages[col].gameObject.SetActive(false);
-                    _resultImages[row].slotImages[col].gameObject.SetActive(true);
+                    SetResultImageVisible(_resultImages[row].slotImages[col], true);
                 }
             }
 
@@ -717,6 +717,14 @@ public class SlotManager : MonoBehaviour
             int startingRolls = socketManager.features?.checkersBonus?.rollsCount ?? 3;
             if (startingRolls <= 0) startingRolls = 3;
             yield return bonusManager.PlayBonusRound(socketManager.resultData.payload.checkersBonus, startingRolls);
+
+            foreach (var item in SlotOverlays)
+            {
+                foreach (var image in item.slotImages)
+                {
+                    image.gameObject.SetActive(false);
+                }
+            }
         }
 
         // Reels have fully stopped now — safe to reveal the updated free-spin count/total-win.
@@ -775,7 +783,7 @@ public class SlotManager : MonoBehaviour
                         anim.doLoopAnimation = false;
                         anim.StartAnimation();
                         winAnimationImages[i].slotImages[j].gameObject.SetActive(true);
-                        _resultImages[i].slotImages[j].gameObject.SetActive(false);
+                        SetResultImageVisible(_resultImages[i].slotImages[j], false);
 
                         monopolyPositions.Add((i, j));
                         monopolyAnims.Add(anim);
@@ -792,7 +800,7 @@ public class SlotManager : MonoBehaviour
                 {
                     _resultImages[row].slotImages[col].sprite = RedMonopolySymbol;
                     _resultImages[row].slotImages[col].transform.DOScale(RedMonopolySymbolScale, 0f);
-                    _resultImages[row].slotImages[col].gameObject.SetActive(true);
+                    SetResultImageVisible(_resultImages[row].slotImages[col], true);
                     winAnimationImages[row].slotImages[col].gameObject.SetActive(false);
 
                     _goldenMonopolyPositions.Add((row, col));
@@ -901,7 +909,7 @@ public class SlotManager : MonoBehaviour
                 WinFrames[j].slotImages[k].gameObject.SetActive(false);
                 winAnimationImages[j].slotImages[k].GetComponent<ImageAnimation>().StopAnimation();
                 winAnimationImages[j].slotImages[k].gameObject.SetActive(false);
-                _resultImages[j].slotImages[k].gameObject.SetActive(true);
+                SetResultImageVisible(_resultImages[j].slotImages[k], true);
             }
         }
 
@@ -962,7 +970,7 @@ public class SlotManager : MonoBehaviour
                         SlotOverlays[j].slotImages[k].gameObject.SetActive(true);
                         WinFrames[j].slotImages[k].gameObject.SetActive(false);
                         winAnimationImages[j].slotImages[k].GetComponent<ImageAnimation>().StopAnimation();
-                        _resultImages[j].slotImages[k].gameObject.SetActive(true);
+                        SetResultImageVisible(_resultImages[j].slotImages[k], true);
                         winAnimationImages[j].slotImages[k].gameObject.SetActive(false);
                     }
                 }
@@ -1040,7 +1048,7 @@ public class SlotManager : MonoBehaviour
         }
 
         winAnimationImages[row].slotImages[col].gameObject.SetActive(true);
-        _resultImages[row].slotImages[col].gameObject.SetActive(false);
+        SetResultImageVisible(_resultImages[row].slotImages[col], false);
 
         if (symbolID != 13)
         {
@@ -1070,7 +1078,7 @@ public class SlotManager : MonoBehaviour
             {
                 SlotOverlays[j].slotImages[k].gameObject.SetActive(false);
                 WinFrames[j].slotImages[k].gameObject.SetActive(false);
-                _resultImages[j].slotImages[k].gameObject.SetActive(true);
+                SetResultImageVisible(_resultImages[j].slotImages[k], true);
                 winAnimationImages[j].slotImages[k].GetComponent<ImageAnimation>().StopAnimation();
                 winAnimationImages[j].slotImages[k].gameObject.SetActive(false);
             }
@@ -1177,8 +1185,8 @@ public class SlotManager : MonoBehaviour
         _scatterCombineReel3Image.gameObject.SetActive(true);
         _scatterCombineReel4Image.gameObject.SetActive(true);
 
-        _resultImages[3].slotImages[reel3Row.Value].gameObject.SetActive(false);
-        _resultImages[4].slotImages[reel4Row.Value].gameObject.SetActive(false);
+        SetResultImageVisible(_resultImages[3].slotImages[reel3Row.Value], false);
+        SetResultImageVisible(_resultImages[4].slotImages[reel4Row.Value], false);
 
         _scatterCombineReel3OriginalPos = _scatterCombineReel3Image.transform.position;
         _scatterCombineReel4OriginalPos = _scatterCombineReel4Image.transform.position;
@@ -1341,7 +1349,7 @@ public class SlotManager : MonoBehaviour
             dice.DOFade(1f, diceFadeScaleDuration);
             dice.transform.DOScale(2f, diceFadeScaleDuration).OnComplete(() =>
             {
-                _resultImages[capturedCol].slotImages[spinIndex].gameObject.SetActive(false);
+                SetResultImageVisible(_resultImages[capturedCol].slotImages[spinIndex], false);
             });
 
         }
@@ -1389,7 +1397,7 @@ public class SlotManager : MonoBehaviour
 
             var dice = diceRow[col];
             dice.GetComponent<ImageAnimation>().StopAnimation();
-            _resultImages[col].slotImages[spinIndex].gameObject.SetActive(true);
+            SetResultImageVisible(_resultImages[col].slotImages[spinIndex], true);
             dice.transform.DOScale(0f, laserTravelDuration).OnComplete(() => dice.gameObject.SetActive(false));
         }
 
@@ -1422,7 +1430,7 @@ public class SlotManager : MonoBehaviour
 
         dice.gameObject.SetActive(false);
         _resultImages[col].slotImages[row].sprite = GetMultiplierSprite(multiplier);
-        _resultImages[col].slotImages[row].gameObject.SetActive(true);
+        SetResultImageVisible(_resultImages[col].slotImages[row], true);
     }
 
     private Sprite GetMultiplierSprite(int multiplier)
@@ -1463,6 +1471,10 @@ public class SlotManager : MonoBehaviour
                 return i;
             }
         }
+        if (sprite == leftScatterSymbol || sprite == rightScatterSymbol)
+        {
+            return 11;
+        }
         return 0;
     }
 
@@ -1486,6 +1498,15 @@ public class SlotManager : MonoBehaviour
     private List<Sprite> GetAnimationSprite(int symbolID)
     {
         return symbolAnimations[symbolID].sprites;
+    }
+
+    // Visibility toggle for _resultImages that keeps the GameObject active and fades alpha
+    // instead, since other code (e.g. sprite/position writes) can run on these images while hidden.
+    private static void SetResultImageVisible(Image resultImage, bool visible)
+    {
+        Color color = resultImage.color;
+        color.a = visible ? 1f : 0f;
+        resultImage.color = color;
     }
 
     private void SetSymbolSize(Image slotImage, int symbolID, float time = 0f)
@@ -1712,7 +1733,7 @@ public class SlotManager : MonoBehaviour
             {
                 SlotOverlays[j].slotImages[k].gameObject.SetActive(false);
                 WinFrames[j].slotImages[k].gameObject.SetActive(false);
-                _resultImages[j].slotImages[k].gameObject.SetActive(true);
+                SetResultImageVisible(_resultImages[j].slotImages[k], true);
                 winAnimationImages[j].slotImages[k].GetComponent<ImageAnimation>().StopAnimation();
                 winAnimationImages[j].slotImages[k].gameObject.SetActive(false);
             }

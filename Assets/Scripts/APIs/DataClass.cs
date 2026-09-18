@@ -22,6 +22,19 @@ public class Data
     public int betIndex;
 }
 
+[Serializable]
+public class JackpotOpenRequest
+{
+    public string type = "JACKPOT_OPEN";
+    public JackpotOpenPayload payload = new JackpotOpenPayload();
+}
+
+[Serializable]
+public class JackpotOpenPayload
+{
+    public string tier;
+}
+
 // InIt Data Classes
 
 [Serializable]
