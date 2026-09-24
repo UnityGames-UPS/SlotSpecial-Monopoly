@@ -54093,7 +54093,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77a48a0a7ad3e416bbec0af059204b41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SocketIOManager
-  TestToken: ce7771b17fde4fedbe5d5433d42adcde
+  TestToken: 720b8d07e2ae4a048f3a8709805fa8ea
   slotManager: {fileID: 67154276}
   _uiManager: {fileID: 65615876}
   JSManager: {fileID: 977003592}

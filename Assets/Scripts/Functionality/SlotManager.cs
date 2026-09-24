@@ -865,6 +865,13 @@ public class SlotManager : MonoBehaviour
             // spin/stop buttons alone until StartFreeSpinsSequence kicks the bonus round off.
             uiManager.SetSpinButtonReady();
         }
+        else if (_isAutoSpin)
+        {
+            // Free spins were just triggered during autospin — there's no player to click
+            // "Start Free Spins", so begin the bonus round the same way a manual click would.
+            yield return new WaitForSeconds(_spinDelay);
+            uiManager.BeginFreeSpinsFromAutoSpin();
+        }
     }
     #endregion
 
