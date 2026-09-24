@@ -1102,7 +1102,16 @@ public class UIManager : MonoBehaviour
         StartFreeSpinsSequence(_freeSpinsAwardedPending);
     }
 
-    private void StartFreeSpinsSequence(int spinsAwarded)
+    // Called by SlotManager once the free-spin trigger intro finishes while autospin is
+    // running — autospin has no button to click, so it plays the same sequence a manual
+    // "Start Free Spins" click would.
+    internal void BeginFreeSpinsFromAutoSpin()
+    {
+        HideStartButton();
+        StartFreeSpinsSequence(_freeSpinsAwardedPending, viaAutoSpin: true);
+    }
+
+    private void StartFreeSpinsSequence(int spinsAwarded, bool viaAutoSpin = false)
     {
         slotManager.isInFreeSpins = true;
         int totalSpins = spinsAwarded;
@@ -1120,8 +1129,10 @@ public class UIManager : MonoBehaviour
         UpdateWinDisplay(0);
 
         // Kick off the first free spin — pressing Start is what actually begins the bonus
-        // round, same as OnSpinButtonPressed does for a normal manual spin.
-        slotManager.StartSlots();
+        // round, same as OnSpinButtonPressed does for a normal manual spin. viaAutoSpin must
+        // be true when called from autospin so StartSlots doesn't stop the running
+        // AutoSpinCoroutine (see StartSlots' !autoSpin branch).
+        slotManager.StartSlots(viaAutoSpin);
         ShowReelSpinningButton(true);
     }
 
