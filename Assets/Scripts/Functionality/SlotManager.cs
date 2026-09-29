@@ -462,6 +462,9 @@ public class SlotManager : MonoBehaviour
                 _isSpinning = false;
                 yield return new WaitForSeconds(1);
                 uiManager.LowBalPopup();
+                // OnSpinButtonPressed disabled spin/bet controls before this spin was rejected;
+                // restore them so the player can lower the bet and spin again.
+                uiManager.SetSpinButtonReady();
                 uiManager.SetBetButtonsInteractable(true);
                 yield break;
             }
