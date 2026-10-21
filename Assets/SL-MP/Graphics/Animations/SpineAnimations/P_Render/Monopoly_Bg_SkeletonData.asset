@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Monopoly_Bg_SkeletonData
   m_EditorClassIdentifier: spine-unity::Spine.Unity.SkeletonDataAsset
   atlasAssets:
-  - {fileID: 11400000, guid: adc3497f4ce124582ac273a20c7bc1dd, type: 2}
+  - {fileID: 11400000, guid: b3cf345c780934ad1942a364067a09a9, type: 2}
   scale: 0.01
-  skeletonJSON: {fileID: 4900000, guid: cf24c81c78797442085da72416fed468, type: 3}
+  skeletonJSON: {fileID: 4900000, guid: 131fb07e9ffa14c18a2ffa17e62e256c, type: 3}
   isUpgradingBlendModeMaterials: 0
   blendModeMaterials:
     requiresBlendModeMaterials: 0

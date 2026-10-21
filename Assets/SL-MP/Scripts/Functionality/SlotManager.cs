@@ -460,7 +460,7 @@ public class SlotManager : MonoBehaviour
             {
                 StopAutoSpin();
                 _isSpinning = false;
-                yield return new WaitForSeconds(1);
+                yield return new WaitForSeconds(0.2f);
                 uiManager.LowBalPopup();
                 // OnSpinButtonPressed disabled spin/bet controls before this spin was rejected;
                 // restore them so the player can lower the bet and spin again.
@@ -1057,6 +1057,7 @@ public class SlotManager : MonoBehaviour
             SetAnimationSymbolSize(winAnimationImages[row].slotImages[col], symbolID);
         }
 
+        winAnimationImages[row].slotImages[col].preserveAspect = true;
         winAnimationImages[row].slotImages[col].gameObject.SetActive(true);
         SetResultImageVisible(_resultImages[row].slotImages[col], false);
 

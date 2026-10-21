@@ -4199,7 +4199,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &103474355
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7517,7 +7517,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &209620513
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20831,7 +20831,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -48.00006, y: -540}
+  m_AnchoredPosition: {x: -48.00006, y: 13.41}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.475, y: 0}
 --- !u!222 &612787883
@@ -20862,7 +20862,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  skeletonDataAsset: {fileID: 11400000, guid: a2ee9f73f84cc4006ab418cfef8dc669, type: 2}
+  skeletonDataAsset: {fileID: 11400000, guid: 7f322bcf20fe9457cb250e865e276ed6, type: 2}
   additiveMaterial: {fileID: 0}
   multiplyMaterial: {fileID: 0}
   screenMaterial: {fileID: 0}
@@ -20871,7 +20871,7 @@ MonoBehaviour:
   initialSkinName: 
   initialFlipX: 0
   initialFlipY: 0
-  startingAnimation: animation
+  startingAnimation: BG
   startingLoop: 1
   timeScale: 1
   freeze: 0
@@ -40040,7 +40040,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -43.19992, y: -134.40332}
+  m_AnchoredPosition: {x: -15.3, y: 51.8}
   m_SizeDelta: {x: 1080, y: 1920}
   m_Pivot: {x: 0.46, y: 0.43}
 --- !u!222 &1228590867
@@ -40071,7 +40071,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  skeletonDataAsset: {fileID: 11400000, guid: c9f52063a34f24b4db086a956c7147d8, type: 2}
+  skeletonDataAsset: {fileID: 11400000, guid: e07df32eb0a9e44879d1819a7be1d230, type: 2}
   additiveMaterial: {fileID: 0}
   multiplyMaterial: {fileID: 0}
   screenMaterial: {fileID: 0}
@@ -56729,7 +56729,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &1796955422
 CanvasRenderer:
   m_ObjectHideFlags: 0
