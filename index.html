@@ -78,6 +78,10 @@
       productName: "Monopoly",
       productVersion: "1.0",
     };
+    // iPadOS reports as MacIntel, so also check for touch support.
+    var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+      (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+    if (isIOS) config.devicePixelRatio = 1.5;
 
     var script = document.createElement("script");
     script.src = loaderUrl;
